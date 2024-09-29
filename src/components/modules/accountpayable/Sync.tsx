@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -24,7 +25,16 @@ const Sync = () => {
           </div>
         </div>
         <div>
-          <div className="size-80 w-screen max-w-sm rounded-md bg-slate-200"></div>
+          <div className="flex size-80 w-screen max-w-sm items-center justify-center rounded-md bg-slate-200">
+            <Image
+              src="/assets/images/accountPayable/Vector.png"
+              alt="Sync more to save time"
+              width={500}
+              height={500}
+              quality={100}
+              className="w-3/5 rounded-md"
+            />
+          </div>
         </div>
       </div>
     </section>

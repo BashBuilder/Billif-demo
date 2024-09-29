@@ -1,3 +1,5 @@
+import { dashboardLink } from "@/data/links";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -15,7 +17,7 @@ const Easysetup = () => {
           </p>
           <div className="pt-4">
             <Link
-              href="#"
+              href={dashboardLink}
               className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
             >
               Get Started
@@ -23,7 +25,15 @@ const Easysetup = () => {
           </div>
         </div>
         <div>
-          <div className="size-80 w-screen max-w-sm rounded-md bg-slate-200"></div>
+          <div className="size-80 w-screen max-w-sm overflow-hidden rounded-md bg-slate-200">
+            <Image
+              src="/assets/images/accountPayable/image 3.png"
+              alt="Easily setup your invoice"
+              width={450}
+              height={450}
+              className="mx-auto mt-20 w-4/5 rounded-sm object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>

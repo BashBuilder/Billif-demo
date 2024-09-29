@@ -10,7 +10,7 @@ interface Pageprops {
 const AccountSteps = ({ title, steps }: Pageprops) => {
   return (
     <section className="contain space-y-6 py-20">
-      <h2 className="mx-auto max-w-xl text-center text-3xl font-semibold">
+      <h2 className="font-heading text-orange-dark mx-auto max-w-screen-lg text-center text-4xl font-semibold">
         {title}
       </h2>
       <div className="flex flex-wrap items-center justify-center gap-10 pt-4">

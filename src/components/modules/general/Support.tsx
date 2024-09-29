@@ -5,10 +5,10 @@ const Support = () => {
   return (
     <section className="bg-orange-dark py-20">
       <div className="contain space-y-4">
-        <h2 className="text-center text-3xl font-semibold text-white">
+        <h2 className="font-heading text-center text-3xl font-semibold text-white">
           Hands-on support
         </h2>
-        <p className="text-center text-orange-100">
+        <p className="max-w-screen-lg text-center text-orange-100">
           NextGen’s team of in-house technical account managers and integration
           managers are dedicated to your success. From API setup to integration
           and deployment, we work with you to ensure our integrations unlock

@@ -1,25 +1,27 @@
 import { MoveRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const ApAutomation = () => {
   return (
     <section className="contain space-y-6 py-20">
-      <h2 className="text-orange-dark mx-auto max-w-xl text-center text-3xl font-semibold">
+      <h2 className="text-orange-dark font-heading mx-auto max-w-screen-lg text-center text-4xl font-semibold">
         AP automation software that does more
       </h2>
-      <div className="flex flex-wrap justify-center gap-10 pt-4">
+      <div className="flex flex-wrap justify-center gap-16 pt-4">
         <div className="max-w-64 space-y-3">
-          <div className="flex h-[80vw] max-h-48 w-full items-center justify-center rounded-md bg-slate-100 p-10 shadow-md">
-            {/* <Image
-                src={step.image}
-                alt={step.label}
-                width={100}
-                height={100}
-                className="w-3/5"
-              /> */}
+          <div className="flex h-[80vw] max-h-48 w-full items-center justify-center overflow-hidden rounded-md bg-slate-100 shadow-md">
+            <Image
+              src="/assets/images/accountPayable/Screenshot 2024-09-18 201700 1.png"
+              alt="AP automation software that does more"
+              width={400}
+              height={400}
+              quality={100}
+              className="mx-auto mt-16 w-4/5"
+            />
           </div>
-          <p className="">
+          <p className="text-orange-dark font-semibold">
             With NextGen automations you can pay from anywhere.
           </p>
           <div className="">
@@ -35,16 +37,17 @@ const ApAutomation = () => {
           </div>
         </div>
         <div className="max-w-64 space-y-3">
-          <div className="flex h-[80vw] max-h-48 w-full items-center justify-center rounded-md bg-orange-100 p-10 shadow-md">
-            {/* <Image
-                src={step.image}
-                alt={step.label}
-                width={100}
-                height={100}
-                className="w-3/5"
-              /> */}
+          <div className="flex h-[80vw] max-h-48 w-full items-center justify-center rounded-md bg-orange-100 shadow-md">
+            <Image
+              src="/assets/images/accountPayable/Clip path group.png"
+              alt="AP automation software that does more"
+              width={400}
+              height={400}
+              quality={100}
+              className="h-full w-full object-cover"
+            />
           </div>
-          <p className="">
+          <p className="text-orange-dark font-semibold">
             Extend payment terms on your bills and smooth out cash flows in
             seconds.
           </p>
@@ -62,16 +65,17 @@ const ApAutomation = () => {
         </div>
 
         <div className="max-w-64 space-y-3">
-          <div className="flex h-[80vw] max-h-48 w-full items-center justify-center rounded-md bg-orange-100 p-10 shadow-md">
-            {/* <Image
-                src={step.image}
-                alt={step.label}
-                width={100}
-                height={100}
-                className="w-3/5"
-              /> */}
+          <div className="flex h-[80vw] max-h-48 w-full items-center justify-center overflow-hidden rounded-md bg-slate-100 shadow-md">
+            <Image
+              src="/assets/images/accountPayable/image 4.png"
+              alt="AP automation software that does more"
+              width={400}
+              height={400}
+              quality={100}
+              className="ml-10 mt-32 h-4/5 object-cover"
+            />
           </div>
-          <p className="">
+          <p className="text-orange-dark font-semibold">
             NextGen easily monitors your transactions for ease of operations
           </p>
           <div className="">

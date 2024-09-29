@@ -18,9 +18,9 @@ const AccountHeading = ({ image, title, subtitle, description }: PageProps) => {
           color="black"
           className="absolute -bottom-[50%] -left-[25%] rotate-90 opacity-50"
         />
-        <section className="flex w-full flex-col gap-5 max-lg:items-center max-lg:text-center lg:max-w-lg lg:pb-20">
+        <section className="relative z-10 flex w-full flex-col gap-5 max-lg:items-center max-lg:text-center lg:max-w-lg lg:pb-20">
           <p className="uppercase text-slate-700"> {subtitle} </p>
-          <h1 className="text-4xl font-semibold">{title}</h1>
+          <h1 className="font-heading text-4xl font-semibold">{title}</h1>
           <div className="h-px w-4/5 rounded-full bg-primary" />
           <p className="text-slate-700">{description}</p>
           <SubmitEmailForm />
@@ -32,7 +32,7 @@ const AccountHeading = ({ image, title, subtitle, description }: PageProps) => {
             width={500}
             height={500}
             quality={100}
-            className="max-h-72 rounded-md object-cover"
+            className="relative z-10 max-h-72 rounded-md object-cover"
           />
         </section>
       </div>
