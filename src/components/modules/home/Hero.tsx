@@ -13,10 +13,10 @@ const Hero = () => {
         />
         <TopographySvg
           color="white"
-          className="absolute -right-[25%] -top-[50%] z-40 rotate-12"
+          className="absolute -right-[25%] -top-[50%] z-10 rotate-12"
         />
-        <section className="flex w-full flex-col gap-8 pt-32 max-lg:items-center max-lg:text-center lg:max-w-lg lg:pb-20">
-          <h1 className="text-6xl font-semibold">
+        <section className="relative z-20 flex w-full flex-col gap-8 pt-32 max-lg:items-center max-lg:text-center lg:max-w-lg lg:pb-20">
+          <h1 className="font-heading text-6xl font-semibold">
             Value your time and money. <br /> Save both.
           </h1>
           <div className="h-px w-4/5 rounded-full bg-primary" />
@@ -29,20 +29,21 @@ const Hero = () => {
         <section className="relative min-h-full max-lg:py-10">
           <div className="absolute -right-[15vw] -top-[10vw] h-[53vw] w-[53vw] rounded-full bg-black max-lg:-z-10" />
           <Image
-            src="/assets/images/hero image 1.png"
+            src="/assets/images/home/nextgenlaptop.png"
             alt="nextgen dashboard image"
             width={1500}
             height={1500}
             quality={100}
-            className="-right-32 top-40 lg:absolute lg:scale-125"
+            className="-right-16 top-32 z-20 lg:absolute lg:scale-110"
           />
           <Image
-            src="/assets/images/hero overlay.png"
+            // src="/assets/images/hero overlay.png"
+            src="/assets/images/home/blank_smartphone_mockup_isolate_on_background.png"
             alt="nextgen dashboard image"
-            width={250}
+            width={350}
             height={250}
             quality={100}
-            className="absolute bottom-4 right-20 max-lg:w-1/2 lg:bottom-10"
+            className="absolute bottom-4 z-30 max-lg:-right-10 max-lg:w-1/2 lg:-right-40 lg:bottom-10"
           />
         </section>
       </main>

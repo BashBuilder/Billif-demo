@@ -1,28 +1,29 @@
 export const navigationLinks: NavigationLinksTypes[] = [
   {
-    href: "/product",
-    label: "Product",
-    sublink: [
-      { href: "/product", label: "Product" },
-      { href: "/product", label: "Product" },
-    ],
+    href: "/account-payable",
+    label: "AR solution",
+    // sublink: [
+    //   { href: "/product", label: "Product" },
+    //   { href: "/product", label: "Product" },
+    // ],
   },
   {
-    href: "/solution",
-    label: "Solution",
-    sublink: [
-      { href: "/product", label: "Product" },
-      { href: "/product", label: "Product" },
-    ],
+    href: "/account-receivable",
+    label: "AP solution",
+    // sublink: [
+    //   { href: "/product", label: "Product" },
+    //   { href: "/product", label: "Product" },
+    // ],
   },
   {
-    href: "/resources",
-    label: "resources",
-    sublink: [
-      { href: "/product", label: "Product" },
-      { href: "/product", label: "Product" },
-    ],
+    href: "/integrations",
+    label: "Integrations",
+    // sublink: [
+    //   { href: "/product", label: "Product" },
+    //   { href: "/product", label: "Product" },
+    // ],
   },
+  { href: "/approval", label: "Approval" },
   { href: "/pricing", label: "Pricing" },
 ];
 

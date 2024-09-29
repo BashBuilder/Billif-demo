@@ -20,13 +20,13 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex items-center gap-6 max-md:hidden">
-          <nav className="flex items-center gap-6">
+        <div className="flex items-center gap-10 max-md:hidden">
+          <nav className="flex items-center gap-10">
             {navigationLinks.map((link) => (
               <Link
                 href={link.href}
                 key={link.label}
-                className="flex items-center gap-2"
+                className="relative flex items-center gap-2 transition-colors duration-300 after:absolute after:-bottom-2 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:rounded-full after:bg-primary after:transition-all after:duration-300 hover:text-primary hover:after:w-full"
               >
                 <span className="text-sm font-semibold">{link.label}</span>
                 {link.sublink && (

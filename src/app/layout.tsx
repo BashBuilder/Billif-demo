@@ -3,13 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { Roboto, Fredoka } from "@next/font/google";
+import { Open_Sans } from "@next/font/google";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
 // const geistMono = localFont({
 //   src: "./fonts/GeistMonoVF.woff",
 //   variable: "--font-geist-mono",
@@ -21,14 +16,9 @@ export const metadata: Metadata = {
   description: "Revenue pament-tech by QorePay",
 };
 
-const roboto = Roboto({
+const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "700"], // specify the weights you need
-});
-
-const fredoka = Fredoka({
-  subsets: ["latin"],
-  weight: ["400", "700"], // specify the weights you need
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export default function RootLayout({
@@ -44,10 +34,7 @@ export default function RootLayout({
           content="NextGen: Revenue pament-tech by QorePay"
         />
       </head>
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={`${roboto.className}`}
-      >
+      <body className={` ${openSans.className}`}>
         <Navbar />
         {children}
         <Footer />

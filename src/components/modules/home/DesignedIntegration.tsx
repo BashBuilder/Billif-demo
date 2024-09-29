@@ -1,13 +1,14 @@
 /*eslint-disable */
 
 import { integrationsData } from "@/data/data";
+import { dashboardLink } from "@/data/links";
 import Link from "next/link";
 import React from "react";
 
 const DesignedIntegration = () => {
   return (
     <section className="contain space-y-6 py-20 text-center">
-      <h2 className="mx-auto max-w-xl text-3xl font-semibold">
+      <h2 className="font-heading mx-auto max-w-screen-md text-4xl font-semibold">
         Designed to integrate and share data with your finance tech stack
       </h2>
       <p className="mx-auto max-w-2xl py-3">
@@ -19,7 +20,7 @@ const DesignedIntegration = () => {
         {integrationsData.map((integration) => (
           <div
             key={integration.title}
-            className="flex h-40 w-80 items-center justify-center rounded-md bg-orange-100"
+            className="flex h-40 w-80 items-center justify-center rounded-md bg-orange-100 shadow-md"
           >
             <img
               src={integration.icon}
@@ -32,7 +33,7 @@ const DesignedIntegration = () => {
 
       <div className="pt-5">
         <Link
-          href="#"
+          href={dashboardLink}
           className="rounded-full bg-primary px-5 py-3 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
         >
           Get Started
