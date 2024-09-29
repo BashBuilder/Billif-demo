@@ -1,0 +1,55 @@
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+const Levelup = () => {
+  return (
+    <section className="contain space-y-6 py-20">
+      <h2 className="text-orange-dark text-center text-3xl font-semibold">
+        Level up with NextGen Integrations
+      </h2>
+      <div className="flex flex-wrap items-center justify-center gap-10">
+        <div className="flex w-full max-w-48 flex-col items-center space-y-3 rounded-md border border-slate-500/10 p-8 text-center shadow-sm">
+          <Image
+            src="/assets/images/integrations/earth.png"
+            alt="make payment anywhere"
+            width={100}
+            height={100}
+            className="max-h-16 object-contain"
+          />
+          <p className="font-semibold">Make payment anywhere</p>
+        </div>
+        <div className="flex w-full max-w-48 flex-col items-center space-y-3 rounded-md border border-slate-500/10 p-8 text-center shadow-sm">
+          <Image
+            src="/assets/images/integrations/EULA.png"
+            alt="make payment anywhere"
+            width={100}
+            height={100}
+            className="max-h-16 object-contain"
+          />
+          <p className="font-semibold">Automate manual tasks</p>
+        </div>
+        <div className="flex w-full max-w-48 flex-col items-center space-y-3 rounded-md border border-slate-500/10 p-8 text-center shadow-sm">
+          <Image
+            src="/assets/images/integrations/magnifying glass.png"
+            alt="make payment anywhere"
+            width={100}
+            height={100}
+            className="max-h-16 object-contain"
+          />
+          <p className="font-semibold">Accounting tools at your disposal</p>
+        </div>
+      </div>
+      <div className="flex items-center justify-center pt-4">
+        <Link
+          href="#"
+          className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
+        >
+          Get Started
+        </Link>
+      </div>
+    </section>
+  );
+};
+
+export default Levelup;

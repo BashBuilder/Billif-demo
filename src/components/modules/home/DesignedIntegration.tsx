@@ -1,22 +1,8 @@
 /*eslint-disable */
 
+import { integrationsData } from "@/data/data";
 import Link from "next/link";
 import React from "react";
-
-const integrationsData = [
-  {
-    title: "Quickbooks Integrations",
-    image: "/assets/Svg/quickbooks.svg",
-  },
-  {
-    title: "Sage Integrations",
-    image: "/assets/Svg/sagelogo.svg",
-  },
-  {
-    title: "Xero Integrations",
-    image: "/assets/Svg/xerologo.svg",
-  },
-];
 
 const DesignedIntegration = () => {
   return (
@@ -36,7 +22,7 @@ const DesignedIntegration = () => {
             className="flex h-40 w-80 items-center justify-center rounded-md bg-orange-100"
           >
             <img
-              src={integration.image}
+              src={integration.icon}
               alt={integration.title}
               className="h-3/5 w-4/5 object-contain"
             />

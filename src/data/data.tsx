@@ -66,3 +66,27 @@ export const accountReceivableSteps = [
       "/assets/images/accountPayable/round check mark side view yellow.png",
   },
 ];
+
+export const integrationsData = [
+  {
+    title: "Quickbooks Integrations",
+    icon: "/assets/Svg/quickbooks.svg",
+    description:
+      "NextGen integrates seamlessly with QuickBooks Online and Desktop to automate the accounts payable process from purchase orders to payments. We take care of the data entry and offer SmartCoding technology that helps your team code and approve invoices faster than ever. Our reporting gives your team insight into the entire AP workflow, and helps you identify and remove any bottlenecks in the process.",
+    image: "/assets/images/integrations/unsplash_744oGeqpxPQ.png",
+  },
+  {
+    title: "Sage Integrations",
+    icon: "/assets/Svg/sagelogo.svg",
+    description:
+      "Sage AP Automation integrates seamlessly with your Sage ERP to save your team from time-consuming and error-prone tasks while maintaining complete control over the entire AP process. Sage AP Automation helps automate your invoice process and delivers real-time reporting on your invoices as they progress from purchase order, through coding, to approvals, and finally to payments.",
+    image: "/assets/images/integrations/sage 1.png",
+  },
+  {
+    title: "Xero Integrations",
+    icon: "/assets/Svg/xerologo.svg",
+    description:
+      "NextGen AP provides accounts payable (AP) automation services to help Xero users incorporate a fast and easy way to manage their AP workflow. The software offers AP teams a simple, streamlined and secure way to process invoices and make payments through multiple channels. NextGen AP’s integration supports a touchless experience with two and three-way PO matching capabilities, providing customized approvals and enhanced internal controls.",
+    image: "/assets/images/integrations/Dashboard-hero.1646877532037 1.png",
+  },
+];

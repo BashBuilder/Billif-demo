@@ -9,7 +9,7 @@ const GetStarted = () => {
           <h2 className="text-center text-3xl font-semibold text-white">
             Get started with your NextGen account today
           </h2>
-          <div className="*:mxau">
+          <div className="*:mx-auto">
             <SubmitEmailForm />
           </div>
         </div>
