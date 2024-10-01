@@ -1,7 +1,11 @@
+"use client";
+
 import SubmitEmailForm from "@/components/global/SubmitEmailForm";
 import TopographySvg from "@/components/global/TopographySvg";
 import Image from "next/image";
 import React from "react";
+import "@/styles/text-reveal.css";
+import FadeAnimation from "@/components/global/fade";
 
 const Hero = () => {
   return (
@@ -16,15 +20,19 @@ const Hero = () => {
           className="absolute -right-[25%] -top-[50%] z-10 rotate-12"
         />
         <section className="relative z-20 flex w-full flex-col gap-8 pt-32 max-lg:items-center max-lg:text-center lg:max-w-lg lg:pb-20">
-          <h1 className="font-heading text-6xl font-semibold">
+          <h1 className="animate-text font-heading text-6xl font-semibold">
             Value your time and money. <br /> Save both.
           </h1>
           <div className="h-px w-4/5 rounded-full bg-primary" />
-          <p className="text-slate-700">
-            The smart way to handle bills, invoices, expenses, budgets, and
-            business credit—all in one platform.
-          </p>
-          <SubmitEmailForm />
+          <FadeAnimation duration={1}>
+            <p className="text-slate-700">
+              The smart way to handle bills, invoices, expenses, budgets, and
+              business credit—all in one platform.
+            </p>
+          </FadeAnimation>
+          <FadeAnimation duration={2}>
+            <SubmitEmailForm />
+          </FadeAnimation>
         </section>
         <section className="relative min-h-full max-lg:py-10">
           <div className="absolute -right-[15vw] -top-[10vw] h-[53vw] w-[53vw] rounded-full bg-black max-lg:-z-10" />
@@ -37,7 +45,6 @@ const Hero = () => {
             className="-right-16 top-32 z-20 lg:absolute lg:scale-110"
           />
           <Image
-            // src="/assets/images/hero overlay.png"
             src="/assets/images/home/blank_smartphone_mockup_isolate_on_background.png"
             alt="nextgen dashboard image"
             width={350}
