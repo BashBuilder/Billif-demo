@@ -9,7 +9,7 @@ import FadeAnimation from "@/components/global/fade";
 
 const Hero = () => {
   return (
-    <div className="bg-orange-50">
+    <div className="h-[max(100%,100vh)] bg-orange-50">
       <main className="contain relative grid gap-6 overflow-hidden lg:grid-cols-2">
         <TopographySvg
           color="black"
@@ -35,23 +35,34 @@ const Hero = () => {
           </FadeAnimation>
         </section>
         <section className="relative min-h-full max-lg:py-10">
-          <div className="absolute -right-[15vw] -top-[10vw] h-[53vw] w-[53vw] rounded-full bg-black max-lg:-z-10" />
-          <Image
-            src="/assets/images/home/nextgenlaptop.png"
-            alt="nextgen dashboard image"
-            width={1500}
-            height={1500}
-            quality={100}
-            className="-right-16 top-32 z-20 lg:absolute lg:scale-110"
-          />
-          <Image
-            src="/assets/images/home/blank_smartphone_mockup_isolate_on_background.png"
-            alt="nextgen dashboard image"
-            width={350}
-            height={250}
-            quality={100}
+          <div className="absolute -right-[15vw] -top-[10vw] h-[53vw] max-h-[80rem] w-[53vw] max-w-[80rem] rounded-full bg-black max-lg:-z-10" />
+          <FadeAnimation
+            className="-right-16 top-32 z-20 lg:absolute"
+            direction="left"
+            duration={3}
+          >
+            <Image
+              src="/assets/images/home/nextgenlaptop.png"
+              alt="nextgen dashboard image"
+              width={1500}
+              height={1500}
+              quality={100}
+              className="w-screen min-w-full"
+            />
+          </FadeAnimation>
+          <FadeAnimation
             className="absolute bottom-4 z-30 max-lg:-right-10 max-lg:w-1/2 lg:-right-40 lg:bottom-10"
-          />
+            direction="left"
+            duration={4}
+          >
+            <Image
+              src="/assets/images/home/blank_smartphone_mockup_isolate_on_background.png"
+              alt="nextgen dashboard image"
+              width={350}
+              height={250}
+              quality={100}
+            />
+          </FadeAnimation>
         </section>
       </main>
     </div>

@@ -1,3 +1,4 @@
+import FadeAnimation from "@/components/global/fade";
 import Topography2Svg from "@/components/global/Topography2Svg";
 import { dashboardLink } from "@/data/links";
 import Link from "next/link";
@@ -12,24 +13,28 @@ const PurposeBuilt = () => {
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-5"
         />
         <div className="relative space-y-8">
-          <h2 className="font-heading text-4xl font-semibold text-slate-50">
-            Purpose-built to save companies money
-          </h2>
-          <p className="text-orange-100">
-            Address AP and purchasing challenges, from rogue spending and manual
-            processes to uninformed purchasing decisions, that cost you time and
-            money. NextGen empowers your organization to control and reduce
-            costs while enhancing operational efficiencies, freeing up time to
-            focus on higher-value initiatives.
-          </p>
-          <div>
+          <FadeAnimation>
+            <h2 className="font-heading text-4xl font-semibold text-slate-50">
+              Purpose-built to save companies money
+            </h2>
+          </FadeAnimation>
+          <FadeAnimation>
+            <p className="text-orange-100">
+              Address AP and purchasing challenges, from rogue spending and
+              manual processes to uninformed purchasing decisions, that cost you
+              time and money. NextGen empowers your organization to control and
+              reduce costs while enhancing operational efficiencies, freeing up
+              time to focus on higher-value initiatives.
+            </p>
+          </FadeAnimation>
+          <FadeAnimation>
             <Link
               href={dashboardLink}
               className="text-orange-dark cursor-pointer rounded-full bg-white px-5 py-3 text-sm font-semibold"
             >
               Explore our platform
             </Link>
-          </div>
+          </FadeAnimation>
         </div>
       </section>
     </section>
