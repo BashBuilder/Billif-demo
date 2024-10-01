@@ -9,7 +9,7 @@ const page = () => {
   return (
     <main>
       <AccountHeading
-        image="/assets/images/home/invoice image.png"
+        image="/assets/images/integrations/Frame 7149.png"
         title="Automation. Integration. We've got you covered."
         subtitle="NextGen Integrations"
         description="Reduce manual data entry, reconcile accounts faster, and improve team productivity with automatic sync and data integration."

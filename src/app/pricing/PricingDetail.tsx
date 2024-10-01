@@ -32,15 +32,15 @@ const pricingData = [
 const PricingDetail = () => {
   return (
     <section className="space-y-16 bg-gradient-to-b from-orange-100 to-white pb-20">
-      <div className="relative pt-20">
+      <div className="relative bg-white pt-20">
         <Image
-          src="/assets/images/approvalImage.png"
+          src="/assets/images/accountPayable/unsplash_ULJCBY8Tcfg.png"
           alt="Approval software"
           width={2000}
           height={2000}
           className="absolute left-0 top-0 h-full object-cover opacity-20"
         />
-        <div className="contain space-y-8 pb-20 pt-12 text-center">
+        <div className="contain relative z-10 space-y-8 pb-20 pt-12 text-center">
           <h1 className="text-orange-dark font-heading text-center text-5xl font-semibold">
             Plans and pricing
           </h1>

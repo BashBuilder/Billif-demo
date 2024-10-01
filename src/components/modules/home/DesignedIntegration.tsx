@@ -8,7 +8,7 @@ import React from "react";
 const DesignedIntegration = () => {
   return (
     <section className="contain space-y-6 py-20 text-center">
-      <h2 className="font-heading mx-auto max-w-screen-md text-4xl font-semibold">
+      <h2 className="font-heading text-orange-dark mx-auto max-w-screen-md text-4xl font-semibold">
         Designed to integrate and share data with your finance tech stack
       </h2>
       <p className="mx-auto max-w-2xl py-3">

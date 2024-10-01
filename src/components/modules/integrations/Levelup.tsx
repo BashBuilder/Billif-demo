@@ -5,7 +5,7 @@ import React from "react";
 const Levelup = () => {
   return (
     <section className="contain space-y-6 py-20">
-      <h2 className="text-orange-dark text-center text-3xl font-semibold">
+      <h2 className="text-orange-dark font-heading text-center text-4xl font-semibold">
         Level up with NextGen Integrations
       </h2>
       <div className="flex flex-wrap items-center justify-center gap-10">
@@ -17,7 +17,7 @@ const Levelup = () => {
             height={100}
             className="max-h-16 object-contain"
           />
-          <p className="font-semibold">Make payment anywhere</p>
+          <p className="text-sm font-semibold">Make payment anywhere</p>
         </div>
         <div className="flex w-full max-w-48 flex-col items-center space-y-3 rounded-md border border-slate-500/10 p-8 text-center shadow-sm">
           <Image
@@ -27,7 +27,7 @@ const Levelup = () => {
             height={100}
             className="max-h-16 object-contain"
           />
-          <p className="font-semibold">Automate manual tasks</p>
+          <p className="text-sm font-semibold">Automate manual tasks</p>
         </div>
         <div className="flex w-full max-w-48 flex-col items-center space-y-3 rounded-md border border-slate-500/10 p-8 text-center shadow-sm">
           <Image
@@ -37,7 +37,9 @@ const Levelup = () => {
             height={100}
             className="max-h-16 object-contain"
           />
-          <p className="font-semibold">Accounting tools at your disposal</p>
+          <p className="text-sm font-semibold">
+            Accounting tools at your disposal
+          </p>
         </div>
       </div>
       <div className="flex items-center justify-center pt-4">

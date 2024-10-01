@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
-import { ChevronDown, MenuSquareIcon } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 import { navigationLinks } from "@/data/data";
 import { usePathname } from "next/navigation";
 
@@ -40,11 +39,18 @@ const Navbar = () => {
               </Link>
             ))}
           </nav>
-          <Button>Sign in</Button>
+          <div>
+            <Link
+              href="#"
+              className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
+            >
+              Request a demo
+            </Link>
+          </div>
         </div>
 
         <button className="md:hidden">
-          <MenuSquareIcon />
+          <Menu />
         </button>
       </div>
     </header>

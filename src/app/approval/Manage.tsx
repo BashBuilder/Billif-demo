@@ -1,3 +1,4 @@
+import { dashboardLink } from "@/data/links";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,10 +8,10 @@ const Manage = () => {
     <section className="bg-orange-dark py-20">
       <div className="contain max-md:flexcol flex items-center justify-center gap-8">
         <div className="basis-3/5 space-y-8">
-          <h1 className="max-w-sm text-3xl font-semibold text-white max-md:text-center">
+          <h1 className="font-heading max-w-md text-4xl font-semibold text-white max-md:text-center">
             Manage spending before it occurs.
           </h1>
-          <p className="text-orange-50">
+          <p className="text-orange-50/90">
             Manual spend approval processes are full of errors and lengthy email
             chains, causing slow approvals and poor spending visibility.
             NextGen’s automated approval workflows solve these problems. With
@@ -23,31 +24,31 @@ const Manage = () => {
               <h3 className="text-xl font-medium text-white">
                 Faster approvals
               </h3>
-              <p className="font-thin text-white/50">
+              <p className="font-thin text-white/70">
                 Replace slow email chains with streamlined, automated workflows.
               </p>
             </li>
             <li>
-              <h3 className="text-xl font-medium text-white">
+              <h3 className="font-heading text-xl font-medium text-white">
                 End-to-end visibility
               </h3>
-              <p className="font-thin text-white/50">
+              <p className="font-heading font-thin text-white/70">
                 Gain real-time insights into your spending before you make
                 approvals.
               </p>
             </li>
             <li>
-              <h3 className="text-xl font-medium text-white">
+              <h3 className="font-heading text-xl font-medium text-white">
                 Increased spend control
               </h3>
-              <p className="font-thin text-white/50">
+              <p className="font-thin text-white/70">
                 Set custom rules and enforce spending limits for compliance.
               </p>
             </li>
           </ul>
           <div>
             <Link
-              href="#"
+              href={dashboardLink}
               className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
             >
               Get started

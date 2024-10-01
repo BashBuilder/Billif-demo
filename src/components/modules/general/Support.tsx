@@ -5,7 +5,7 @@ const Support = () => {
   return (
     <section className="bg-orange-dark py-20">
       <div className="contain space-y-4">
-        <h2 className="font-heading text-center text-3xl font-semibold text-white">
+        <h2 className="font-heading text-center text-4xl font-semibold text-white">
           Hands-on support
         </h2>
         <p className="max-w-screen-lg text-center text-orange-100">

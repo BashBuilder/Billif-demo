@@ -1,3 +1,4 @@
+import { dashboardLink } from "@/data/links";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -26,18 +27,18 @@ const Heading = () => {
         <div className="flex items-center justify-center gap-8">
           <div>
             <Link
-              href="#"
-              className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
+              href={dashboardLink}
+              className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-primary/80"
             >
               Explore our platform
             </Link>
           </div>
           <div>
             <Link
-              href="#"
-              className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
+              href={dashboardLink}
+              className="cursor-pointer rounded-full border-2 border-primary px-5 py-3 text-sm font-semibold text-primary transition-colors duration-300 hover:bg-primary/20"
             >
-              Explore our platform
+              Request a demo
             </Link>
           </div>
         </div>
