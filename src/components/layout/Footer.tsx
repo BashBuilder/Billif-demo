@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import TopographySvg from "../global/TopographySvg";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
         color="black"
         className="absolute -right-[25%] -top-[50%] z-10 rotate-12 opacity-40"
       />
-      <div className="contain space-y-20">
+      <div className="contain relative z-10 space-y-20">
         <div className="grid grid-cols-2 justify-items-center gap-6 md:grid-cols-3 lg:grid-cols-5">
           <div className="space-y-6">
             <div className="h-12">
@@ -28,13 +29,13 @@ const Footer = () => {
             </div>
             <ul className="text-orange-dark space-y-4 font-semibold">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Terms and condition</Link>
+                <Link href="/terms">Terms and condition</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Privacy policy</Link>
+                <Link href="/policy">Privacy policy</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">User Agreement</Link>
+                <Link href="/agreement">User Agreement</Link>
               </li>
             </ul>
           </div>
@@ -95,18 +96,35 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Socials</h3>
             </div>
-            <ul className="text-orange-dark space-y-4 font-semibold">
+            <ul className="text-orange-dark flex flex-wrap gap-4 font-semibold">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">About us</Link>
+                <Link
+                  target="_blank"
+                  href="https://www.facebook.com/share/UYzJkNC8VERKwCz6/?mibextid=LQQJ4d"
+                >
+                  <Facebook />
+                </Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Contact</Link>
+                <Link
+                  target="_blank"
+                  href="https://www.instagram.com/nextgen_revenue?igsh=MWY2Mzd2b3V2NHdoag%3D%3D&utm_source=qr "
+                >
+                  <Instagram />
+                </Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Blog</Link>
+                <Link target="_blank" href="https://x.com/ngrpay?s=21">
+                  <Twitter />
+                </Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Pricing</Link>
+                <Link
+                  target="_blank"
+                  href="https://www.linkedin.com/company/nextgen-revenue-paymentech/"
+                >
+                  <Linkedin />
+                </Link>
               </li>
             </ul>
           </div>

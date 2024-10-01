@@ -15,7 +15,7 @@ const Heading = () => {
       />
       <div className="contain relative space-y-8 text-center">
         <p className="text-center">Approval software</p>
-        <h1 className="text-orange-dark text-center text-5xl font-semibold">
+        <h1 className="text-orange-dark font-heading text-center text-5xl font-semibold">
           Optimize Your Approval Process
         </h1>
         <p className="mt-8 text-center text-lg">

@@ -32,7 +32,7 @@ const AccountHeading = ({ image, title, subtitle, description }: PageProps) => {
             width={500}
             height={500}
             quality={100}
-            className="relative z-10 max-h-72 rounded-md object-cover"
+            className="relative z-10 mx-auto max-h-72 rounded-md object-cover"
           />
         </section>
       </div>
