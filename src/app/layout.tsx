@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { Open_Sans } from "@next/font/google";
 
 // const geistMono = localFont({
 //   src: "./fonts/GeistMonoVF.woff",
@@ -16,10 +15,10 @@ export const metadata: Metadata = {
   description: "Revenue pament-tech by QorePay",
 };
 
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
+// const openSans = Open_Sans({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "600", "700", "800"],
+// });
 
 export default function RootLayout({
   children,
@@ -34,7 +33,8 @@ export default function RootLayout({
           content="NextGen: Revenue pament-tech by QorePay"
         />
       </head>
-      <body className={` ${openSans.className}`}>
+      {/* <body className={` ${openSans.className}`}> */}
+      <body>
         <Navbar />
         {children}
         <Footer />
