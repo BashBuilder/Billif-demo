@@ -16,7 +16,7 @@ const Footer = () => {
         className="absolute -right-[25%] -top-[50%] z-10 rotate-12 opacity-40"
       />
       <div className="contain relative z-10 space-y-20">
-        <div className="grid grid-cols-2 justify-items-center gap-6 md:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 lg:justify-items-center">
           <div className="space-y-6">
             <div className="h-12">
               <Image
@@ -92,11 +92,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-6 max-md:col-span-2">
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Socials</h3>
             </div>
-            <ul className="text-orange-dark flex flex-wrap gap-4 font-semibold">
+            <ul className="text-orange-dark flex flex-wrap gap-4 font-semibold max-md:gap-8">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"

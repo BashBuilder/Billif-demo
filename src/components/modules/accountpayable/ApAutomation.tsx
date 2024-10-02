@@ -1,3 +1,5 @@
+import Fade from "@/components/global/fade";
+import { dashboardLink } from "@/data/links";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,12 +8,14 @@ import React from "react";
 const ApAutomation = () => {
   return (
     <section className="contain space-y-6 py-20">
-      <h2 className="text-orange-dark font-heading mx-auto max-w-screen-lg text-center text-4xl font-semibold">
-        AP automation software that does more
-      </h2>
+      <Fade>
+        <h2 className="text-orange-dark font-heading mx-auto max-w-screen-lg text-center text-4xl font-semibold">
+          AP automation software that does more
+        </h2>
+      </Fade>
       <div className="flex flex-wrap justify-center gap-16 pt-4">
-        <div className="max-w-64 space-y-3">
-          <div className="flex h-[80vw] max-h-48 w-full items-center justify-center overflow-hidden rounded-md bg-slate-100 shadow-md">
+        <div className="w-4/5 space-y-3 sm:max-w-64">
+          <Fade className="flex h-[80vw] w-full items-center justify-center overflow-hidden rounded-md bg-slate-100 shadow-md max-sm:h-64 sm:max-h-48">
             <Image
               src="/assets/images/accountPayable/Screenshot 2024-09-18 201700 1.png"
               alt="AP automation software that does more"
@@ -20,13 +24,15 @@ const ApAutomation = () => {
               quality={100}
               className="mx-auto mt-16 w-4/5"
             />
-          </div>
-          <p className="text-orange-dark font-semibold">
-            With NextGen automations you can pay from anywhere.
-          </p>
-          <div className="">
+          </Fade>
+          <Fade>
+            <p className="text-orange-dark font-semibold">
+              With NextGen automations you can pay from anywhere.
+            </p>
+          </Fade>
+          <Fade>
             <Link
-              href="#"
+              href={dashboardLink}
               className="flex items-center gap-2 rounded-full py-2 text-sm"
             >
               <span>Explore automation</span>
@@ -34,10 +40,10 @@ const ApAutomation = () => {
                 <MoveRight className="mt-1 size-4 text-slate-500" />
               </span>
             </Link>
-          </div>
+          </Fade>
         </div>
-        <div className="max-w-64 space-y-3">
-          <div className="flex h-[80vw] max-h-48 w-full items-center justify-center rounded-md bg-orange-100 shadow-md">
+        <div className="w-4/5 space-y-3 sm:max-w-64">
+          <Fade className="flex h-[80vw] w-full items-center justify-center overflow-hidden rounded-md bg-slate-100 shadow-md max-sm:h-64 sm:max-h-48">
             <Image
               src="/assets/images/accountPayable/Clip path group.png"
               alt="AP automation software that does more"
@@ -46,14 +52,16 @@ const ApAutomation = () => {
               quality={100}
               className="h-full w-full object-cover"
             />
-          </div>
-          <p className="text-orange-dark font-semibold">
-            Extend payment terms on your bills and smooth out cash flows in
-            seconds.
-          </p>
-          <div className="">
+          </Fade>
+          <Fade>
+            <p className="text-orange-dark font-semibold">
+              Extend payment terms on your bills and smooth out cash flows in
+              seconds.
+            </p>
+          </Fade>
+          <Fade>
             <Link
-              href="#"
+              href={dashboardLink}
               className="flex items-center gap-2 rounded-full py-2 text-sm"
             >
               <span>Explore automation</span>
@@ -61,11 +69,11 @@ const ApAutomation = () => {
                 <MoveRight className="mt-1 size-4 text-slate-500" />
               </span>
             </Link>
-          </div>
+          </Fade>
         </div>
 
-        <div className="max-w-64 space-y-3">
-          <div className="flex h-[80vw] max-h-48 w-full items-center justify-center overflow-hidden rounded-md bg-slate-100 shadow-md">
+        <div className="w-4/5 space-y-3 sm:max-w-64">
+          <Fade className="flex h-[80vw] w-full items-center justify-center overflow-hidden rounded-md bg-slate-100 shadow-md max-sm:h-64 sm:max-h-48">
             <Image
               src="/assets/images/accountPayable/image 4.png"
               alt="AP automation software that does more"
@@ -74,13 +82,16 @@ const ApAutomation = () => {
               quality={100}
               className="ml-10 mt-32 h-4/5 object-cover"
             />
-          </div>
-          <p className="text-orange-dark font-semibold">
-            NextGen easily monitors your transactions for ease of operations
-          </p>
-          <div className="">
+            f
+          </Fade>
+          <Fade>
+            <p className="text-orange-dark font-semibold">
+              NextGen easily monitors your transactions for ease of operations
+            </p>
+          </Fade>
+          <Fade className="">
             <Link
-              href="#"
+              href={dashboardLink}
               className="flex items-center gap-2 rounded-full py-2 text-sm"
             >
               <span>Explore automation</span>
@@ -88,7 +99,7 @@ const ApAutomation = () => {
                 <MoveRight className="mt-1 size-4 text-slate-500" />
               </span>
             </Link>
-          </div>
+          </Fade>
         </div>
       </div>
     </section>

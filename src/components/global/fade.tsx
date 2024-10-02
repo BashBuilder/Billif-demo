@@ -9,7 +9,7 @@ type Direction = "up" | "down" | "left" | "right";
 interface FadeAnimationProps extends HTMLMotionProps<"div"> {
   direction?: Direction;
   duration?: number;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 // Dynamically import motion.div to ensure it's only used on the client side
@@ -18,7 +18,7 @@ const MotionDiv = dynamic(
   { ssr: false },
 );
 
-const FadeAnimation: React.FC<FadeAnimationProps> = ({
+const Fade: React.FC<FadeAnimationProps> = ({
   direction = "up",
   duration = 0.5,
   children,
@@ -52,4 +52,4 @@ const FadeAnimation: React.FC<FadeAnimationProps> = ({
   );
 };
 
-export default FadeAnimation;
+export default Fade;

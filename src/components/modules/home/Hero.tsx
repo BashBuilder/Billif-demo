@@ -5,7 +5,7 @@ import TopographySvg from "@/components/global/TopographySvg";
 import Image from "next/image";
 import React from "react";
 import "@/styles/text-reveal.css";
-import FadeAnimation from "@/components/global/fade";
+import Fade from "@/components/global/fade";
 
 const Hero = () => {
   return (
@@ -24,19 +24,19 @@ const Hero = () => {
             Value your time and money. <br /> Save both.
           </h1>
           <div className="h-px w-4/5 rounded-full bg-primary" />
-          <FadeAnimation duration={1}>
+          <Fade duration={1}>
             <p className="text-slate-700">
               The smart way to handle bills, invoices, expenses, budgets, and
               business credit—all in one platform.
             </p>
-          </FadeAnimation>
-          <FadeAnimation duration={2}>
+          </Fade>
+          <Fade duration={2} className="w-full max-w-xl max-lg:mx-auto">
             <SubmitEmailForm />
-          </FadeAnimation>
+          </Fade>
         </section>
         <section className="relative min-h-full max-lg:py-10">
           <div className="absolute -right-[15vw] -top-[10vw] h-[53vw] max-h-[80rem] w-[53vw] max-w-[80rem] rounded-full bg-black max-lg:-z-10" />
-          <FadeAnimation
+          <Fade
             className="-right-16 top-32 z-20 lg:absolute"
             direction="left"
             duration={3}
@@ -49,8 +49,8 @@ const Hero = () => {
               quality={100}
               className="w-screen min-w-full"
             />
-          </FadeAnimation>
-          <FadeAnimation
+          </Fade>
+          <Fade
             className="absolute bottom-4 z-30 max-lg:-right-10 max-lg:w-1/2 lg:-right-40 lg:bottom-10"
             direction="left"
             duration={4}
@@ -62,7 +62,7 @@ const Hero = () => {
               height={250}
               quality={100}
             />
-          </FadeAnimation>
+          </Fade>
         </section>
       </main>
     </div>

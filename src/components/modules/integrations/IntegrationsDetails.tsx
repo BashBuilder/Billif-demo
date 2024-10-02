@@ -1,8 +1,8 @@
+import Fade from "@/components/global/fade";
 import { integrationsData } from "@/data/data";
 import { dashboardLink } from "@/data/links";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const IntegrationsDetails = () => {
   return (
@@ -21,24 +21,24 @@ const IntegrationsDetails = () => {
                 height={100}
                 className={`${index === 0 && "w-full max-w-52"}`}
               />
-              <div className="space-y-2">
+              <Fade className="space-y-2">
                 <h3 className="font-heading text-orange-dark text-3xl font-semibold">
                   {item.title}
                 </h3>
                 <div className="h-1 w-full rounded-full bg-primary" />
-              </div>
+              </Fade>
               <p> {item.description} </p>
-              <div className="">
+              <Fade className="">
                 <Link
                   href={dashboardLink}
                   className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
                 >
                   Request demo
                 </Link>
-              </div>
+              </Fade>
             </div>
             <div className="flex items-center justify-center">
-              <div className="flex h-[20vw] w-[20vw] items-center justify-center rounded-full bg-orange-200 p-4">
+              <Fade className="flex items-center justify-center rounded-full bg-orange-200 p-4 lg:h-[20vw] lg:w-[20vw]">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -47,7 +47,7 @@ const IntegrationsDetails = () => {
                   quality={100}
                   className="h-full w-full rounded-md object-cover"
                 />
-              </div>
+              </Fade>
             </div>
           </div>
         ))}

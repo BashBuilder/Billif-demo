@@ -1,3 +1,4 @@
+import Fade from "@/components/global/fade";
 import SubmitEmailForm from "@/components/global/SubmitEmailForm";
 import TopographySvg from "@/components/global/TopographySvg";
 import Image from "next/image";
@@ -19,13 +20,21 @@ const AccountHeading = ({ image, title, subtitle, description }: PageProps) => {
           className="absolute -bottom-[50%] -left-[25%] rotate-90 opacity-50"
         />
         <section className="relative z-10 flex w-full flex-col gap-5 max-lg:items-center max-lg:text-center lg:max-w-lg lg:pb-20">
-          <p className="uppercase text-slate-700"> {subtitle} </p>
-          <h1 className="font-heading text-4xl font-semibold">{title}</h1>
+          <Fade>
+            <p className="text-orange-dark uppercase"> {subtitle} </p>
+          </Fade>
+          <Fade duration={0.8}>
+            <h1 className="font-heading text-4xl font-semibold">{title}</h1>
+          </Fade>
           <div className="h-px w-4/5 rounded-full bg-primary" />
-          <p className="text-slate-700">{description}</p>
-          <SubmitEmailForm />
+          <Fade duration={1.2}>
+            <p className="text-slate-700">{description}</p>
+          </Fade>
+          <Fade duration={1.6} className="w-full max-w-xl max-lg:mx-auto">
+            <SubmitEmailForm />
+          </Fade>
         </section>
-        <section className="min-h-full max-lg:py-10">
+        <Fade direction="left" className="min-h-full max-lg:py-10">
           <Image
             src={image}
             alt={title}
@@ -34,7 +43,7 @@ const AccountHeading = ({ image, title, subtitle, description }: PageProps) => {
             quality={100}
             className="relative z-10 mx-auto max-h-72 rounded-md object-cover"
           />
-        </section>
+        </Fade>
       </div>
     </section>
   );

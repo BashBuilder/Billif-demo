@@ -1,3 +1,4 @@
+import Fade from "@/components/global/fade";
 import { dashboardLink } from "@/data/links";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,24 +9,28 @@ const Easysetup = () => {
     <section className="bg-slate-100">
       <div className="contain mx-auto flex flex-wrap items-center justify-center gap-8 py-20 lg:gap-16">
         <div className="max-w-md space-y-4">
-          <h3 className="text-orange-dark text-3xl font-semibold">
-            Easily setup your invoice
-          </h3>
-          <p>
-            There are multiple ways to quickly import your invoices into
-            NextGen, with little to no manual entry required.
-          </p>
-          <div className="pt-4">
+          <Fade>
+            <h3 className="text-orange-dark text-3xl font-semibold">
+              Easily setup your invoice
+            </h3>
+          </Fade>
+          <Fade>
+            <p>
+              There are multiple ways to quickly import your invoices into
+              NextGen, with little to no manual entry required.
+            </p>
+          </Fade>
+          <Fade className="max pt-4 max-md:hidden">
             <Link
               href={dashboardLink}
               className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
             >
               Get Started
             </Link>
-          </div>
+          </Fade>
         </div>
         <div>
-          <div className="size-80 w-screen max-w-sm overflow-hidden rounded-md bg-slate-200">
+          <Fade className="size-80 w-screen max-w-sm overflow-hidden rounded-md bg-slate-200">
             <Image
               src="/assets/images/accountPayable/image 3.png"
               alt="Easily setup your invoice"
@@ -33,8 +38,16 @@ const Easysetup = () => {
               height={450}
               className="mx-auto mt-20 w-4/5 rounded-sm object-contain"
             />
-          </div>
+          </Fade>
         </div>
+        <Fade className="max mx-auto flex w-full items-center justify-center pt-4">
+          <Link
+            href={dashboardLink}
+            className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
+          >
+            Get Started
+          </Link>
+        </Fade>
       </div>
     </section>
   );

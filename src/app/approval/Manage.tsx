@@ -6,7 +6,7 @@ import React from "react";
 const Manage = () => {
   return (
     <section className="bg-orange-dark py-20">
-      <div className="contain max-md:flexcol flex items-center justify-center gap-8">
+      <div className="contain flex items-center justify-center gap-8 max-md:flex-col">
         <div className="basis-3/5 space-y-8">
           <h1 className="font-heading max-w-md text-4xl font-semibold text-white max-md:text-center">
             Manage spending before it occurs.

@@ -3,13 +3,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
-import { navigationLinks } from "@/data/data";
+import { dashboardLink, navigationLinks } from "@/data/links";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
-    <header className="fixed left-0 top-0 z-50 w-screen overflow-y-hidden bg-white bg-opacity-50 py-4 shadow backdrop-blur">
+    <header className="fixed left-0 top-0 z-50 w-screen bg-white bg-opacity-50 py-4 shadow backdrop-blur">
       <div className="contain relative z-50 flex items-center justify-between gap-6">
         <div>
           <Link href="/">
@@ -22,7 +26,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex items-center gap-10 max-md:hidden">
+        <div className="flex items-center gap-10 max-lg:hidden">
           <nav className="flex items-center gap-10">
             {navigationLinks.map((link) => (
               <Link
@@ -41,7 +45,7 @@ const Navbar = () => {
           </nav>
           <div>
             <Link
-              href="#"
+              href={dashboardLink}
               className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
             >
               Request a demo
@@ -49,10 +53,14 @@ const Navbar = () => {
           </div>
         </div>
 
-        <button className="md:hidden">
+        <button className="lg:hidden" onClick={() => setIsSidebarOpen(true)}>
           <Menu />
         </button>
       </div>
+      <Sidebar
+        isSidebarOpen={isSidebarOpen}
+        setIsSidebarOpen={setIsSidebarOpen}
+      />
     </header>
   );
 };

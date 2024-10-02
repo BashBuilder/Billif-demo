@@ -1,3 +1,4 @@
+import Fade from "@/components/global/fade";
 import Link from "next/link";
 import React from "react";
 
@@ -31,35 +32,41 @@ const receivableContent = [
 const AccountReceivableDetail = () => {
   return (
     <section className="bg-slate-100 py-20">
-      <div className="contain space-y-4">
+      <div className="contain space-y-10">
         {receivableContent.map((item, index) => (
           <div
             key={index}
             className="contain mx-auto flex flex-wrap items-center justify-center gap-8 lg:gap-16"
           >
-            <div className={`max-w-md space-y-4 ${index % 2 && "md:order-2"} `}>
-              <h3 className="text-orange-dark font-heading text-3xl font-semibold">
-                {item.heading}
-              </h3>
-              <p>{item.description}</p>
-              <div className="pt-4">
+            <div
+              className={`space-y-4 md:max-w-md ${index % 2 && "md:order-2"} `}
+            >
+              <Fade>
+                <h3 className="text-orange-dark font-heading text-3xl font-semibold">
+                  {item.heading}
+                </h3>
+              </Fade>
+              <Fade>
+                <p>{item.description}</p>
+              </Fade>
+              <Fade className="pt-4">
                 <Link
                   href="#"
                   className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
                 >
                   Get Started
                 </Link>
-              </div>
+              </Fade>
             </div>
             <div>
-              <div className="size-80 w-screen max-w-sm rounded-md bg-slate-200">
+              <Fade className="max-h-80 w-full max-w-sm rounded-md bg-slate-200">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className="h-full w-full rounded-md object-cover"
                   src={item.image}
                   alt=""
                 />
-              </div>
+              </Fade>
             </div>
           </div>
         ))}

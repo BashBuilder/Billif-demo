@@ -1,4 +1,4 @@
-import FadeAnimation from "@/components/global/fade";
+import Fade from "@/components/global/fade";
 import SubmitEmailForm from "@/components/global/SubmitEmailForm";
 import React from "react";
 
@@ -6,14 +6,14 @@ const GetStarted = () => {
   return (
     <section className="bg-orange-dark py-20">
       <div className="contain">
-        <FadeAnimation className="mx-auto w-4/5 space-y-5 rounded-lg bg-white/50 p-10 backdrop:blur">
-          <h2 className="text-center text-3xl font-semibold text-white">
+        <Fade className="mx-auto space-y-5 rounded-lg bg-white/50 p-4 backdrop:blur sm:w-4/5 sm:p-10">
+          <h2 className="font-heading text-center text-2xl font-semibold text-white md:text-3xl">
             Get started with your NextGen account today
           </h2>
-          <div className="*:mx-auto">
+          <div className="">
             <SubmitEmailForm />
           </div>
-        </FadeAnimation>
+        </Fade>
       </div>
     </section>
   );
