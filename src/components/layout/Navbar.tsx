@@ -48,7 +48,7 @@ const Navbar = () => {
               href={dashboardLink}
               className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
             >
-              Request a demo
+              Sign in
             </Link>
           </div>
         </div>
