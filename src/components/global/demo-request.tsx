@@ -61,31 +61,34 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    const payload: DemoDataType = {
-      ...values,
-      email: isDemo.email,
-    };
-    handleSendDemo(payload)
-      .then(() => {
-        setIsDemo({ state: false, email: "" });
-        toast({
-          description: (
-            <div className="space-y-2">
-              <h2 className="font-heading text-2xl font-semibold text-emerald-500">
-                Success
-              </h2>
-              <p>
-                Your demo request was successfully. We will get back to you
-                shortly
-              </p>
-            </div>
-          ),
-        });
-        drawercloseRef.current?.click();
-        form.reset();
-      })
-      .catch((error) => console.log(error));
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const payload: DemoDataType = {
+        ...values,
+        email: isDemo.email,
+        message: `${values.businessName} with email ${isDemo.email} is requesting for a demo`,
+        title: "Demo request",
+      };
+      await handleSendDemo(payload);
+      setIsDemo({ state: false, email: "" });
+      toast({
+        description: (
+          <div className="space-y-2">
+            <h2 className="font-heading text-2xl font-semibold text-emerald-500">
+              Success
+            </h2>
+            <p>
+              Your demo request was successfully. We will get back to you
+              shortly
+            </p>
+          </div>
+        ),
+      });
+      drawercloseRef.current?.click();
+      form.reset();
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   useEffect(() => {
@@ -157,8 +160,11 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
                       </FormItem>
                     )}
                   />
-                  <Button className="w-full">
-                    {form.formState.isLoading ? (
+                  <Button
+                    className="w-full"
+                    disabled={form.formState.isSubmitting}
+                  >
+                    {form.formState.isSubmitting ? (
                       <Loader2 className="animate-spin" />
                     ) : (
                       "Submit"

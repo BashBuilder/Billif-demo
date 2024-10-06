@@ -3,7 +3,14 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const key = `user:demo`;
+    // const { searchParams } = new URL(req.url);
+    // const phoneNumber = searchParams.get("phoneNumber");
+
+    // if (!phoneNumber) {
+    //   throw new Error("Phone number is missing in the query parameters");
+    // }
+
+    const key = `user:contact`;
     const user = await kv.hgetall(key);
 
     if (!user) {
@@ -23,13 +30,8 @@ export async function POST(req: NextRequest) {
       throw new Error("Invalid request body");
     }
 
-    if (!body.phoneNumber) {
-      throw new Error("Phone number is missing");
-    }
-    console.log(body.phoneNumber);
+    const key = `user:contact`;
 
-    const key = `user:demo`;
-    // Save data to Vercel KV
     await kv.hmset(key, body);
     return NextResponse.json(
       { message: "Data saved successfully" },

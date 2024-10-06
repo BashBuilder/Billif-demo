@@ -15,6 +15,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
+import { handleSendContact } from "@/lib/api-request";
+import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -38,28 +40,32 @@ const ContactForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    // handleSendDemo(payload)
-    // .then(() => {
-    toast({
-      description: (
-        <div className="space-y-2">
-          <h2 className="font-heading text-2xl font-semibold text-emerald-500">
-            Success
-          </h2>
-          <p>
-            Your message was successfully delivered. We will get back to you
-            shortly.
-          </p>
-        </div>
-      ),
-    });
-    form.setValue("message", "");
-    form.reset();
-    // })
-    // .catch((error) => console.log(error));
-    // }
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const payload: DemoDataType = {
+        ...values,
+        title: "Contact form",
+      };
+      await handleSendContact(payload);
+
+      toast({
+        description: (
+          <div className="space-y-2">
+            <h2 className="font-heading text-2xl font-semibold text-emerald-500">
+              Success
+            </h2>
+            <p>
+              Your message was successfully delivered. We will get back to you
+              shortly.
+            </p>
+          </div>
+        ),
+      });
+      form.setValue("message", "");
+      form.reset();
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   return (
@@ -148,7 +154,13 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button className="w-full">Submit</Button>
+        <Button disabled={form.formState.isSubmitting}>
+          {form.formState.isSubmitting ? (
+            <Loader2 className="animate-spin" />
+          ) : (
+            "Submit"
+          )}
+        </Button>
       </form>
     </Form>
   );

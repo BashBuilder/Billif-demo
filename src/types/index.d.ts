@@ -9,4 +9,6 @@ declare interface DemoDataType {
   businessName: string;
   email: string;
   phoneNumber: string;
+  message: string;
+  title: string;
 }
