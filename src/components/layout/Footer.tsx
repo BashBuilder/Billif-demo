@@ -27,15 +27,12 @@ const Footer = () => {
                 className="h-full object-contain"
               />
             </div>
-            <ul className="text-orange-dark space-y-4 font-semibold">
+            <ul className="space-y-4 font-semibold text-orange-dark">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link href="/terms">Terms and condition</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/policy">Privacy policy</Link>
-              </li>
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/agreement">User Agreement</Link>
+                <Link href="/privacy-policy">Privacy policy</Link>
               </li>
             </ul>
           </div>
@@ -43,9 +40,9 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Solutions</h3>
             </div>
-            <ul className="text-orange-dark space-y-4 font-semibold">
+            <ul className="space-y-4 font-semibold text-orange-dark">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/acount-payable">Account payable</Link>
+                <Link href="/account-payable">Account payable</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link href="/account-receivable">Accoount Receivable</Link>
@@ -61,15 +58,15 @@ const Footer = () => {
                 Integrations
               </h3>
             </div>
-            <ul className="text-orange-dark space-y-4 font-semibold">
+            <ul className="space-y-4 font-semibold text-orange-dark">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Quickbooks</Link>
+                <Link href="/integrations">Quickbooks</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Sage</Link>
+                <Link href="/integrations">Sage</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Xero</Link>
+                <Link href="/integrations">Xero</Link>
               </li>
             </ul>
           </div>
@@ -77,18 +74,15 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Resources</h3>
             </div>
-            <ul className="text-orange-dark space-y-4 font-semibold">
+            <ul className="space-y-4 font-semibold text-orange-dark">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">About us</Link>
+                <Link href="/contact">Contact</Link>
               </li>
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Contact</Link>
-              </li>
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
+              {/* <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link href="#">Blog</Link>
-              </li>
+              </li> */}
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Pricing</Link>
+                <Link href="/pricing">Pricing</Link>
               </li>
             </ul>
           </div>
@@ -96,7 +90,7 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Socials</h3>
             </div>
-            <ul className="text-orange-dark flex flex-wrap gap-4 font-semibold max-md:gap-8">
+            <ul className="flex flex-wrap gap-4 font-semibold text-orange-dark max-md:gap-8">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"

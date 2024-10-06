@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 // const geistMono = localFont({
 //   src: "./fonts/GeistMonoVF.woff",
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>

@@ -3,3 +3,10 @@ declare interface NavigationLinksTypes {
   label: string;
   sublink?: { href: string; label: string }[];
 }
+
+declare interface DemoDataType {
+  firstName: string;
+  businessName: string;
+  email: string;
+  phoneNumber: string;
+}
