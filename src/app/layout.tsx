@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import Script from "next/script";
-
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
 
 export const metadata: Metadata = {
   title: "NextGen",
@@ -54,10 +46,8 @@ export default function RootLayout({
           `,
           }}
         />
-        <Navbar />
         {children}
         <Toaster />
-        <Footer />
       </body>
     </html>
   );

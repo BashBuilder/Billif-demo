@@ -23,8 +23,8 @@ export async function POST(req: NextRequest) {
       throw new Error("Invalid request body");
     }
 
-    const key = `user:demo`;
-    // Save data to Vercel KV
+    const key = `user:waitlist`;
+
     await kv.hmset(key, body);
     return NextResponse.json(
       { message: "Data saved successfully" },

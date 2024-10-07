@@ -1,8 +1,7 @@
+import Demo from "@/components/global/demo";
 import Fade from "@/components/global/fade";
 import { integrationsData } from "@/data/data";
-import { dashboardLink } from "@/data/links";
 import Image from "next/image";
-import Link from "next/link";
 
 const IntegrationsDetails = () => {
   return (
@@ -22,19 +21,14 @@ const IntegrationsDetails = () => {
                 className={`${index === 0 && "w-full max-w-52"}`}
               />
               <Fade className="space-y-2">
-                <h3 className="font-heading text-orange-dark text-3xl font-semibold">
+                <h3 className="font-heading text-3xl font-semibold text-orange-dark">
                   {item.title}
                 </h3>
                 <div className="h-1 w-full rounded-full bg-primary" />
               </Fade>
               <p> {item.description} </p>
               <Fade className="">
-                <Link
-                  href={dashboardLink}
-                  className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
-                >
-                  Request demo
-                </Link>
+                <Demo />
               </Fade>
             </div>
             <div className="flex items-center justify-center">
