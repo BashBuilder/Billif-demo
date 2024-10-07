@@ -13,7 +13,7 @@ const AccountSteps = ({ title, steps }: Pageprops) => {
   return (
     <section className="contain space-y-6 py-20">
       <Fade>
-        <h2 className="font-heading text-orange-dark mx-auto max-w-screen-lg text-center text-4xl font-semibold">
+        <h2 className="mx-auto max-w-screen-lg text-center font-heading text-4xl font-semibold text-orange-dark">
           {title}
         </h2>
       </Fade>
@@ -24,12 +24,13 @@ const AccountSteps = ({ title, steps }: Pageprops) => {
               <Image
                 src={step.image}
                 alt={step.label}
-                width={100}
-                height={100}
-                className="h-full w-3/5 object-contain"
+                width={200}
+                height={200}
+                quality={100}
+                className="w-4/5"
               />
             </div>
-            <p className="font-semibold"> {step.label} </p>
+            <p className="text-center text-lg font-semibold"> {step.label} </p>
           </Fade>
         ))}
       </div>

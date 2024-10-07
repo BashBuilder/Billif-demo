@@ -18,10 +18,12 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <Image
-              src="/assets/Svg/nextgen with qorepay logo light 1.svg"
+              // src="/assets/Svg/nextgen with qorepay logo light 1.svg"
+              src="/assets/images/nextgen resized.png"
               alt="Nextgen logo"
               width={150}
               height={150}
+              quality={100}
             />
           </Link>
         </div>

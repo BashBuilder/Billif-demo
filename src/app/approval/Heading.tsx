@@ -17,10 +17,7 @@ const Heading = () => {
       />
       <div className="contain relative space-y-8 text-center">
         <Fade>
-          <p className="text-center">Approval software</p>
-        </Fade>
-        <Fade>
-          <h1 className="text-orange-dark font-heading text-center text-5xl font-semibold">
+          <h1 className="text-center font-heading text-5xl font-semibold text-orange-dark">
             Optimize Your Approval Process
           </h1>
         </Fade>
@@ -43,7 +40,7 @@ const Heading = () => {
           <Fade>
             <Link
               href={dashboardLink}
-              className="cursor-pointer rounded-full border-2 border-primary px-5 py-3 text-sm font-semibold text-primary transition-colors duration-300 hover:bg-primary/20"
+              className="cursor-pointer rounded-full border border-primary px-5 py-3 text-sm font-semibold text-primary transition-colors duration-300 hover:bg-primary/20"
             >
               Request a demo
             </Link>

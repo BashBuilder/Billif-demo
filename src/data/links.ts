@@ -1,8 +1,8 @@
-export const dashboardLink = "";
+export const dashboardLink = "/waitlist";
 
 export const navigationLinks: NavigationLinksTypes[] = [
   {
-    href: "/account-payable",
+    href: "/account-receivable",
     label: "AR solution",
     // sublink: [
     //   { href: "/product", label: "Product" },
@@ -10,7 +10,7 @@ export const navigationLinks: NavigationLinksTypes[] = [
     // ],
   },
   {
-    href: "/account-receivable",
+    href: "/account-payable",
     label: "AP solution",
     // sublink: [
     //   { href: "/product", label: "Product" },

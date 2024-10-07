@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import Script from "next/script";
 
 // const geistMono = localFont({
 //   src: "./fonts/GeistMonoVF.woff",
@@ -34,8 +35,25 @@ export default function RootLayout({
           content="NextGen: Revenue pament-tech by QorePay"
         />
       </head>
-      {/* <body className={` ${openSans.className}`}> */}
       <body>
+        <Script
+          id="brevo-conversations"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function(d, w, c) {
+                w.BrevoConversationsID = '670362f58365a217a50b0078';
+                w[c] = w[c] || function() {
+                    (w[c].q = w[c].q || []).push(arguments);
+                };
+                var s = d.createElement('script');
+                s.async = true;
+                s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+                if (d.head) d.head.appendChild(s);
+            })(document, window, 'BrevoConversations');
+          `,
+          }}
+        />
         <Navbar />
         {children}
         <Toaster />
