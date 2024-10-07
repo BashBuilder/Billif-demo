@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "./Heading";
-import Faq from "@/components/global/Faq";
+// import Faq from "@/components/global/Faq";
 import GetStarted from "@/components/modules/general/GetStarted";
 import Manage from "./Manage";
 import Features from "./Features";
@@ -11,7 +11,7 @@ const page = () => {
       <Heading />
       <Manage />
       <Features />
-      <Faq />
+      {/* <Faq /> */}
       <GetStarted />
     </main>
   );

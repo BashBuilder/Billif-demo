@@ -18,10 +18,11 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <Image
-              src="/assets/Svg/nextgen with qorepay logo light 1.svg"
+              src="/assets/images/nextgen resized.png"
               alt="Nextgen logo"
               width={150}
               height={150}
+              quality={100}
             />
           </Link>
         </div>
@@ -48,7 +49,7 @@ const Navbar = () => {
               href={dashboardLink}
               className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
             >
-              Sign in
+              Join waitlist
             </Link>
           </div>
         </div>

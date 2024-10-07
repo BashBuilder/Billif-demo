@@ -1,33 +1,33 @@
+import Demo from "@/components/global/demo";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
-const pricingData = [
-  {
-    title: "Essentials",
-    price: 45,
-    description:
-      "Spend 50% less time on AP or automate invoicing and get paid 2x faster.",
-  },
-  {
-    title: "Team",
-    price: 55,
-    description:
-      "Get more granular controls and automatic 2-way sync with leading accounting software.",
-  },
-  {
-    title: "Corporate",
-    price: 79,
-    description:
-      "Get additional customization and confidently manage AP and AR all in one place.",
-  },
-  {
-    title: "Enterprise",
-    price: "Custom price",
-    description:
-      "Unlock enhanced security, premium support, multi-location accounting capabilities, and more.",
-  },
-];
+// const pricingData = [
+//   {
+//     title: "Essentials",
+//     price: 45,
+//     description:
+//       "Spend 50% less time on AP or automate invoicing and get paid 2x faster.",
+//   },
+//   {
+//     title: "Team",
+//     price: 55,
+//     description:
+//       "Get more granular controls and automatic 2-way sync with leading accounting software.",
+//   },
+//   {
+//     title: "Corporate",
+//     price: 79,
+//     description:
+//       "Get additional customization and confidently manage AP and AR all in one place.",
+//   },
+//   {
+//     title: "Enterprise",
+//     price: "Custom price",
+//     description:
+//       "Unlock enhanced security, premium support, multi-location accounting capabilities, and more.",
+//   },
+// ];
 
 const PricingDetail = () => {
   return (
@@ -41,7 +41,7 @@ const PricingDetail = () => {
           className="absolute left-0 top-0 h-full object-cover opacity-20"
         />
         <div className="contain relative z-10 space-y-8 pb-20 pt-12 text-center">
-          <h1 className="text-orange-dark font-heading text-center text-5xl font-semibold">
+          <h1 className="text-center font-heading text-5xl font-semibold text-orange-dark">
             Plans and pricing
           </h1>
           <p className="mx-auto mt-8 max-w-screen-lg text-center">
@@ -51,18 +51,18 @@ const PricingDetail = () => {
           </p>
           <div className="flex items-center justify-center gap-8">
             <div>
-              <Link
-                href="#"
-                className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
-              >
-                Request a demo
-              </Link>
+              <Demo />
             </div>
           </div>
         </div>
       </div>
 
       <div className="contain space-y-8">
+        <h2 className="animate-pulse py-24 text-center font-heading text-4xl font-semibold text-orange-dark">
+          Coming soon ...
+        </h2>
+      </div>
+      {/* <div className="contain space-y-8">
         <h2 className="font-heading text-orange-dark text-center text-3xl font-semibold">
           Account Payable and Account Receivable
         </h2>
@@ -105,7 +105,7 @@ const PricingDetail = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
