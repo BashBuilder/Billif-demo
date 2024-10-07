@@ -1,4 +1,4 @@
-import Faq from "@/components/global/Faq";
+// import Faq from "@/components/global/Faq";
 import GetStarted from "@/components/modules/general/GetStarted";
 import Support from "@/components/modules/general/Support";
 import React from "react";
@@ -9,7 +9,7 @@ const page = () => {
     <main>
       <PricingDetail />
       <Support />
-      <Faq />
+      {/* <Faq /> */}
       <GetStarted />
     </main>
   );

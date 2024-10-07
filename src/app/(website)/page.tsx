@@ -7,13 +7,13 @@ import WhyNextgen from "@/components/modules/home/WhyNextgen";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <WhyNextgen />
       <Details />
       <PurposeBuilt />
       <DesignedIntegration />
       <GetStarted />
-    </>
+    </div>
   );
 }

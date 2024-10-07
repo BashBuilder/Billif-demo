@@ -25,7 +25,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: PropType) => {
 
       <section className="relative z-[101] w-4/5 space-y-10 bg-orange-50 px-20 py-32">
         <button
-          className="text-orange-dark absolute right-20 top-20"
+          className="absolute right-20 top-20 text-orange-dark"
           onClick={() => setIsSidebarOpen(false)}
         >
           <X />
@@ -53,7 +53,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: PropType) => {
             onClick={() => setIsSidebarOpen(false)}
             className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
           >
-            Request a demo
+            Join waitlist
           </Link>
         </div>
       </section>

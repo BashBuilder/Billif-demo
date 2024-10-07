@@ -9,10 +9,9 @@ import {
 const Faq = ({ faq }: { faq?: { question: string; answer: string }[] }) => {
   return (
     <section className="contain space-y-6 py-20">
-      <h1 className="text-orange-dark font-heading text-center text-4xl font-semibold">
+      <h1 className="text-center font-heading text-4xl font-semibold text-orange-dark">
         Frequently asked questions
       </h1>
-      a
       {faq && (
         <div className="mx-auto max-w-screen-md">
           <Accordion type="single" collapsible>
@@ -23,7 +22,7 @@ const Faq = ({ faq }: { faq?: { question: string; answer: string }[] }) => {
                 className="hover:*:decoration-transparent"
               >
                 <AccordionTrigger className="">
-                  <p className="font-heading text-orange-dark text-xl font-semibold">
+                  <p className="whitespace-pre-wrapf font-heading text-xl font-semibold text-orange-dark">
                     {faqItem.question}
                   </p>
                 </AccordionTrigger>

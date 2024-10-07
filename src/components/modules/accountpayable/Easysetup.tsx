@@ -10,7 +10,7 @@ const Easysetup = () => {
       <div className="contain mx-auto flex flex-wrap items-center justify-center gap-8 py-20 lg:gap-16">
         <div className="max-w-md space-y-4">
           <Fade>
-            <h3 className="text-orange-dark text-3xl font-semibold">
+            <h3 className="text-3xl font-semibold text-orange-dark">
               Easily setup your invoice
             </h3>
           </Fade>
@@ -20,10 +20,10 @@ const Easysetup = () => {
               NextGen, with little to no manual entry required.
             </p>
           </Fade>
-          <Fade className="max pt-4 max-md:hidden">
+          <Fade className="pt-4">
             <Link
               href={dashboardLink}
-              className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
+              className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80 max-md:hidden"
             >
               Get Started
             </Link>
@@ -40,10 +40,10 @@ const Easysetup = () => {
             />
           </Fade>
         </div>
-        <Fade className="max mx-auto flex w-full items-center justify-center pt-4">
+        <Fade className="mx-auto flex w-full items-center justify-center pt-4 md:hidden">
           <Link
             href={dashboardLink}
-            className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
+            className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80 md:hidden"
           >
             Get Started
           </Link>

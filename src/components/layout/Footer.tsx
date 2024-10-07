@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import TopographySvg from "../global/TopographySvg";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -16,26 +16,24 @@ const Footer = () => {
         className="absolute -right-[25%] -top-[50%] z-10 rotate-12 opacity-40"
       />
       <div className="contain relative z-10 space-y-20">
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 lg:justify-items-center">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 lg:justify-items-center">
           <div className="space-y-6">
             <div className="h-12">
               <Image
-                src="/assets/Svg/nextgen with qorepay logo light 1.svg"
+                src="/assets/images/nextgen resized.png"
                 alt="NextGen Revenue Paymentech"
                 width={150}
                 height={150}
+                quality={100}
                 className="h-full object-contain"
               />
             </div>
-            <ul className="text-orange-dark space-y-4 font-semibold">
+            <ul className="space-y-4 font-semibold text-orange-dark">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/terms">Terms and condition</Link>
+                <Link href="/terms">Terms and Condition</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/policy">Privacy policy</Link>
-              </li>
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/agreement">User Agreement</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
             </ul>
           </div>
@@ -43,33 +41,18 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Solutions</h3>
             </div>
-            <ul className="text-orange-dark space-y-4 font-semibold">
+            <ul className="space-y-4 font-semibold text-orange-dark">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/acount-payable">Account payable</Link>
+                <Link href="/account-payable">Account Payable</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/account-receivable">Accoount Receivable</Link>
+                <Link href="/account-receivable">Account Receivable</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/approval">Approval policy</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-6">
-            <div className="flex h-12 items-center">
-              <h3 className="font-heading text-2xl font-semibold">
-                Integrations
-              </h3>
-            </div>
-            <ul className="text-orange-dark space-y-4 font-semibold">
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Quickbooks</Link>
+                <Link href="/approval">Approval Policy</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Sage</Link>
-              </li>
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Xero</Link>
+                <Link href="/integrations">Integrations</Link>
               </li>
             </ul>
           </div>
@@ -77,18 +60,15 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Resources</h3>
             </div>
-            <ul className="text-orange-dark space-y-4 font-semibold">
+            <ul className="space-y-4 font-semibold text-orange-dark">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">About us</Link>
+                <Link href="/contact">Contact</Link>
               </li>
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Contact</Link>
-              </li>
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
+              {/* <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link href="#">Blog</Link>
-              </li>
+              </li> */}
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Pricing</Link>
+                <Link href="/pricing">Pricing</Link>
               </li>
             </ul>
           </div>
@@ -96,7 +76,7 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Socials</h3>
             </div>
-            <ul className="text-orange-dark flex flex-wrap gap-4 font-semibold max-md:gap-8">
+            <ul className="flex flex-wrap items-center gap-4 font-semibold text-orange-dark max-md:gap-8">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"
@@ -115,7 +95,13 @@ const Footer = () => {
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link target="_blank" href="https://x.com/ngrpay?s=21">
-                  <Twitter />
+                  <Image
+                    src="/assets/Svg/X_logo_2023_original.svg"
+                    alt="Twitter"
+                    width={20}
+                    height={10}
+                    className="fill-orange-dark"
+                  />
                 </Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">

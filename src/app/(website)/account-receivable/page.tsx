@@ -1,4 +1,4 @@
-import Faq from "@/components/global/Faq";
+// import Faq from "@/components/global/Faq";
 import AccountHeading from "@/components/modules/accountpayable/AccountHeading";
 import AccountSteps from "@/components/modules/accountpayable/AcountSteps";
 import AccountReceivableDetail from "@/components/modules/accountreceivable/AccountReceivableDetail";
@@ -21,7 +21,7 @@ const page = () => {
       />
       <AccountReceivableDetail />
       <DesignedIntegration />
-      <Faq />
+      {/* <Faq /> */}
       <GetStarted />
     </main>
   );
