@@ -66,7 +66,7 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
       const payload: DemoDataType = {
         ...values,
         email: isDemo.email,
-        message: `${values.businessName} with email ${isDemo.email} is requesting for a demo`,
+        message: `${values.businessName} with email ${isDemo.email} is requesting to get started for free`,
         title: "Demo request",
       };
       await handleSendDemo(payload);
@@ -105,7 +105,7 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
           <DrawerHeader>
             <DrawerTitle>
               <h3 className="mx-auto max-w-lg px-8 pb-4 text-2xl font-semibold text-orange-dark">
-                Request demo
+                Contact us
               </h3>
             </DrawerTitle>
             <DrawerDescription>

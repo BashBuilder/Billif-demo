@@ -16,7 +16,7 @@ const page = () => {
         description="Automate invoicing and get paid faster"
       />
       <AccountSteps
-        title="Simlify invoicing in four steps"
+        title="Simplify invoicing in four steps"
         steps={accountReceivableSteps}
       />
       <AccountReceivableDetail />
