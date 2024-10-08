@@ -6,7 +6,7 @@ import Easysetup from "@/components/modules/accountpayable/Easysetup";
 import Sync from "@/components/modules/accountpayable/Sync";
 import GetStarted from "@/components/modules/general/GetStarted";
 import { accountPayableSteps } from "@/data/data";
-import { arFaq } from "@/data/faq";
+import { ApSolution } from "@/data/faq";
 import React from "react";
 
 const page = () => {
@@ -25,7 +25,7 @@ const page = () => {
       <Easysetup />
       <ApAutomation />
       <Sync />
-      <Faq faq={arFaq} />
+      <Faq faq={ApSolution} />
       <GetStarted />
     </main>
   );

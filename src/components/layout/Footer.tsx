@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-center font-semibold text-slate-950/50">
-          © {new Date().getFullYear()} NextGen Revenue paymentech. All rights
+          © {new Date().getFullYear()} NextGen Revenue Paymentech. All rights
           reserved.
         </p>
       </div>

@@ -1,9 +1,10 @@
-// import Faq from "@/components/global/Faq";
+import Faq from "@/components/global/Faq";
 import AccountHeading from "@/components/modules/accountpayable/AccountHeading";
 import GetStarted from "@/components/modules/general/GetStarted";
 import Support from "@/components/modules/general/Support";
 import IntegrationsDetails from "@/components/modules/integrations/IntegrationsDetails";
 import Levelup from "@/components/modules/integrations/Levelup";
+import { integrationsFaq } from "@/data/faq";
 
 const page = () => {
   return (
@@ -17,7 +18,7 @@ const page = () => {
       <Levelup />
       <IntegrationsDetails />
       <Support />
-      {/* <Faq /> */}
+      <Faq faq={integrationsFaq} />
       <GetStarted />
     </main>
   );

@@ -1,10 +1,11 @@
-// import Faq from "@/components/global/Faq";
+import Faq from "@/components/global/Faq";
 import AccountHeading from "@/components/modules/accountpayable/AccountHeading";
 import AccountSteps from "@/components/modules/accountpayable/AcountSteps";
 import AccountReceivableDetail from "@/components/modules/accountreceivable/AccountReceivableDetail";
 import GetStarted from "@/components/modules/general/GetStarted";
 import DesignedIntegration from "@/components/modules/home/DesignedIntegration";
 import { accountReceivableSteps } from "@/data/data";
+import { ArSolution } from "@/data/faq";
 
 const page = () => {
   return (
@@ -16,12 +17,12 @@ const page = () => {
         description="Automate invoicing and get paid faster"
       />
       <AccountSteps
-        title="Simlify invoicing in four steps"
+        title="Simplify invoicing in four steps"
         steps={accountReceivableSteps}
       />
       <AccountReceivableDetail />
       <DesignedIntegration />
-      {/* <Faq /> */}
+      <Faq faq={ArSolution} />
       <GetStarted />
     </main>
   );
