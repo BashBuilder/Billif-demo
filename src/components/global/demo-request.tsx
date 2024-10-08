@@ -67,7 +67,7 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
         ...values,
         email: isDemo.email,
         message: `${values.businessName} with email ${isDemo.email} is requesting to get started for free`,
-        title: "Demo request",
+        title: "Get started for free",
       };
       await handleSendDemo(payload);
       setIsDemo({ state: false, email: "" });
