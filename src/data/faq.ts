@@ -45,3 +45,134 @@ The volume of papers and bills tends to increase dramatically. Monthly and quart
 `,
   },
 ];
+
+export const ArSolution = [
+  {
+    question: "What features are included in the AR solution?",
+    answer:
+      "Our AR solution includes automated invoicing, payment reminders, online payment portals, and detailed reporting to streamline the receivables process.",
+  },
+  {
+    question: "How does the AR solution help reduce late payments?",
+    answer:
+      "It sends automatic payment reminders and offers convenient online payment options, making it easier for customers to pay on time.",
+  },
+  {
+    question: "Can I customize the invoices in the AR solution?",
+    answer:
+      "Yes, you can customize invoice templates to match your branding and include all necessary information.",
+  },
+  {
+    question: "Does the AR solution integrate with my accounting software?",
+    answer:
+      "Yes, it integrates with popular accounting software like QuickBooks, Xero, and others to ensure seamless data flow.",
+  },
+  {
+    question: "How secure is the AR solution?",
+    answer:
+      "We use advanced encryption and security protocols to protect your data and ensure secure transactions.",
+  },
+];
+
+export const ApSolution = [
+  {
+    question: "What functionalities are available in the AP solution?",
+    answer:
+      "Our AP solution includes vendor management, automated invoice processing, payment scheduling, and comprehensive reporting.",
+  },
+  {
+    question: "How does the AP solution streamline the approval process?",
+    answer:
+      "It offers automated workflows for invoice approvals, reducing manual intervention and speeding up the process.",
+  },
+  {
+    question: "Can I set up recurring payments with the AP solution?",
+    answer:
+      "Yes, you can schedule recurring payments to vendors to ensure timely payments and avoid late fees.",
+  },
+  {
+    question: "Does the AP solution support multiple currencies?",
+    answer:
+      "Yes, it supports transactions in multiple currencies, making it ideal for businesses with international vendors.",
+  },
+  {
+    question: "How do I track my expenses using the AP solution?",
+    answer:
+      "The solution provides detailed reports and dashboards to help you monitor and manage your expenses effectively.",
+  },
+];
+
+export const integrationsFaq = [
+  {
+    question: "Which third-party applications can I integrate with Nextgen?",
+    answer:
+      "You can integrate with various third-party applications such as QuickBooks, Xero, sage, and more.",
+  },
+  {
+    question: "Is there an API available for custom integrations?",
+    answer:
+      "Yes, we provide a robust API that allows for custom integrations to meet your specific business needs.",
+  },
+  {
+    question: "How do I set up an integration?",
+    answer:
+      "You can set up integrations through our user-friendly interface or by following the detailed API documentation available on our website.",
+  },
+  {
+    question: "Can I sync data in real-time with integrations?",
+    answer:
+      "Yes, our integrations support real-time data syncing to ensure your information is always up-to-date.",
+  },
+];
+
+export const approvalFaq = [
+  {
+    question: "How does the approval process work in Nextgen?",
+    answer:
+      "The approval process is automated with customizable workflows, allowing you to set rules and permissions for invoice approvals.",
+  },
+  {
+    question:
+      "Can I set different approval levels for different types of invoices?",
+    answer:
+      "Yes, you can configure multiple approval levels based on invoice type, amount, or other criteria.",
+  },
+  {
+    question: "How do approvers receive notifications?",
+    answer:
+      "Approvers receive email notifications and can also review and approve invoices directly through the Nextgen dashboard.",
+  },
+  {
+    question: "Is it possible to track the status of an approval?",
+    answer:
+      "Yes, you can track the approval status in real-time through the dashboard and receive updates on pending and completed approvals.",
+  },
+  {
+    question: "Can I override an approval if necessary?",
+    answer:
+      "Yes, administrators have the ability to override approvals if necessary, ensuring flexibility in the process.",
+  },
+];
+
+export const pricingFaq = [
+  {
+    question: "What are the pricing plans for Nextgen?",
+    answer:
+      "We offer flexible pricing plans tailored to the size and needs of your business. Please visit our pricing page for detailed information.",
+  },
+  {
+    question: "Are there any hidden fees?",
+    answer:
+      "No, our pricing is transparent with no hidden fees. All charges are clearly outlined in the pricing plan you choose.",
+  },
+  {
+    question: "Can I switch plans at any time?",
+    answer:
+      "Yes, you can upgrade or downgrade your plan at any time to better suit your business needs.",
+  },
+  {
+    question: "Do you offer discounts for annual subscriptions?",
+    answer:
+      "Yes, we offer discounts for annual subscriptions, allowing you to save money while enjoying uninterrupted service.",
+  },
+];

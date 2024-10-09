@@ -1,11 +1,13 @@
 "use client";
 
-import SubmitEmailForm from "@/components/global/SubmitEmailForm";
 import TopographySvg from "@/components/global/TopographySvg";
 import Image from "next/image";
 import React from "react";
 import "@/styles/text-reveal.css";
 import Fade from "@/components/global/fade";
+import Demo from "@/components/global/demo";
+import { dashboardLink } from "@/data/links";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -31,7 +33,20 @@ const Hero = () => {
             </p>
           </Fade>
           <Fade duration={2} className="w-full max-w-xl max-lg:mx-auto">
-            <SubmitEmailForm />
+            <div className="flex items-center gap-8 max-lg:justify-center">
+              {/* <Fade> */}
+              <Fade>
+                <Demo />
+              </Fade>
+              <Fade>
+                <Link
+                  href={dashboardLink}
+                  className="cursor-pointer rounded-full border border-primary px-5 py-3 text-sm font-semibold text-primary transition-colors duration-300 hover:bg-primary/20"
+                >
+                  Get started
+                </Link>
+              </Fade>
+            </div>
           </Fade>
         </section>
         <section className="relative min-h-full max-lg:py-10">

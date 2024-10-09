@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <meta
           name="description"
-          content="NextGen: Revenue pament-tech by QorePay"
+          content="NextGen Revenue Paymentech by QorePay"
         />
       </head>
       <body>

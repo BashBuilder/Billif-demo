@@ -1,4 +1,5 @@
 import Fade from "@/components/global/fade";
+import { dashboardLink } from "@/data/links";
 import Link from "next/link";
 import React from "react";
 
@@ -42,7 +43,7 @@ const AccountReceivableDetail = () => {
               className={`space-y-4 md:max-w-md ${index % 2 && "md:order-2"} `}
             >
               <Fade>
-                <h3 className="text-orange-dark font-heading text-3xl font-semibold">
+                <h3 className="font-heading text-3xl font-semibold text-orange-dark">
                   {item.heading}
                 </h3>
               </Fade>
@@ -51,7 +52,7 @@ const AccountReceivableDetail = () => {
               </Fade>
               <Fade className="pt-4">
                 <Link
-                  href="#"
+                  href={dashboardLink}
                   className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
                 >
                   Get Started

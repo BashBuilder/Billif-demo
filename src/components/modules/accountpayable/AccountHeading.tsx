@@ -1,7 +1,9 @@
+import Demo from "@/components/global/demo";
 import Fade from "@/components/global/fade";
-import SubmitEmailForm from "@/components/global/SubmitEmailForm";
 import TopographySvg from "@/components/global/TopographySvg";
+import { dashboardLink } from "@/data/links";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface PageProps {
@@ -21,7 +23,7 @@ const AccountHeading = ({ image, title, subtitle, description }: PageProps) => {
         />
         <section className="relative z-10 flex w-full flex-col gap-5 max-lg:items-center max-lg:text-center lg:max-w-lg lg:pb-20">
           <Fade>
-            <p className="text-orange-dark uppercase"> {subtitle} </p>
+            <p className="uppercase text-orange-dark"> {subtitle} </p>
           </Fade>
           <Fade duration={0.8}>
             <h1 className="font-heading text-4xl font-semibold">{title}</h1>
@@ -30,8 +32,20 @@ const AccountHeading = ({ image, title, subtitle, description }: PageProps) => {
           <Fade duration={1.2}>
             <p className="text-slate-700">{description}</p>
           </Fade>
-          <Fade duration={1.6} className="w-full max-w-xl max-lg:mx-auto">
-            <SubmitEmailForm />
+          <Fade duration={1} className="w-full max-w-xl pt-4 max-lg:mx-auto">
+            <div className="flex items-center gap-8 max-lg:justify-center">
+              <Fade>
+                <Demo />
+              </Fade>
+              <Fade>
+                <Link
+                  href={dashboardLink}
+                  className="cursor-pointer rounded-full border border-primary px-5 py-3 text-sm font-semibold text-primary transition-colors duration-300 hover:bg-primary/20"
+                >
+                  Get started
+                </Link>
+              </Fade>
+            </div>
           </Fade>
         </section>
         <Fade direction="left" className="min-h-full max-lg:py-10">
