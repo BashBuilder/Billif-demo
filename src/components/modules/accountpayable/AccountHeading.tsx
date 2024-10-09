@@ -1,6 +1,5 @@
 import Demo from "@/components/global/demo";
 import Fade from "@/components/global/fade";
-import SubmitEmailForm from "@/components/global/SubmitEmailForm";
 import TopographySvg from "@/components/global/TopographySvg";
 import { dashboardLink } from "@/data/links";
 import Image from "next/image";
