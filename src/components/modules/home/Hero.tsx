@@ -1,6 +1,5 @@
 "use client";
 
-import SubmitEmailForm from "@/components/global/SubmitEmailForm";
 import TopographySvg from "@/components/global/TopographySvg";
 import Image from "next/image";
 import React from "react";
