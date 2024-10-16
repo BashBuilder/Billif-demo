@@ -8,14 +8,14 @@ const WhyNextgen = () => {
   return (
     <section className="contain space-y-4 py-20">
       <Fade>
-        <h2 className="text-orange-dark font-heading mx-auto max-w-lg text-center text-4xl font-medium">
+        <h2 className="mx-auto max-w-lg text-center font-heading text-4xl font-medium text-orange-dark">
           For startups, global enterprises, and everyone in between.
         </h2>
       </Fade>
       <Fade>
         <p className="text-center">
           Simple defaults, direct integrations, and advanced customization means
-          Ramp will scale with you.
+          Nextgen will scale with you.
         </p>
       </Fade>
 
@@ -37,7 +37,7 @@ const WhyNextgen = () => {
               quality={100}
             />
           </div>
-          <h5 className="text-orange-dark font-heading text-lg font-semibold">
+          <h5 className="font-heading text-lg font-semibold text-orange-dark">
             Integrate and stay synced
           </h5>
           <p className="text-sm text-slate-500">
@@ -55,7 +55,7 @@ const WhyNextgen = () => {
               quality={100}
             />
           </div>
-          <h5 className="text-orange-dark font-heading text-lg font-semibold">
+          <h5 className="font-heading text-lg font-semibold text-orange-dark">
             Operate globally
           </h5>
           <p className="text-sm text-slate-500">
@@ -72,7 +72,7 @@ const WhyNextgen = () => {
               quality={100}
             />
           </div>
-          <h5 className="text-orange-dark font-heading text-lg font-semibold">
+          <h5 className="font-heading text-lg font-semibold text-orange-dark">
             Completely flexible
           </h5>
           <p className="text-sm text-slate-500">
@@ -90,7 +90,7 @@ const WhyNextgen = () => {
               className=""
             />
           </div>
-          <h5 className="text-orange-dark font-heading text-lg font-semibold">
+          <h5 className="font-heading text-lg font-semibold text-orange-dark">
             An extension of your team
           </h5>
           <p className="text-sm text-slate-500">
