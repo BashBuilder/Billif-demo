@@ -78,7 +78,7 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
               Success
             </h2>
             <p>
-              Your demo request was successfully. We will get back to you
+              Your contact request was successfully. We will get back to you
               shortly
             </p>
           </div>

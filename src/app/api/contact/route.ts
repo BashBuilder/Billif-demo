@@ -1,15 +1,9 @@
+import { sendSlackMessage } from "@/lib/api-request";
 import { kv } from "@vercel/kv";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    // const { searchParams } = new URL(req.url);
-    // const phoneNumber = searchParams.get("phoneNumber");
-
-    // if (!phoneNumber) {
-    //   throw new Error("Phone number is missing in the query parameters");
-    // }
-
     const key = `user:contact`;
     const user = await kv.hgetall(key);
 
@@ -33,6 +27,7 @@ export async function POST(req: NextRequest) {
     const key = `user:contact`;
 
     await kv.hmset(key, body);
+    await sendSlackMessage(body);
     return NextResponse.json(
       { message: "Data saved successfully" },
       { status: 200 },
