@@ -40,13 +40,7 @@ const WaitListForm = () => {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      const payload: {
-        title: string;
-        email: string;
-        firstName: string;
-        businessName: string;
-        phoneNumber: string;
-      } = {
+      const payload: WaitlistDataType = {
         ...values,
         title: "Waitlist",
       };
