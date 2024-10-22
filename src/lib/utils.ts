@@ -7,7 +7,6 @@ export function cn(...inputs: ClassValue[]) {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const announceOnSlack = async (message: Record<string, any>) => {
-  console.log("in request");
   const data = await fetch(`https://slack.com/api/chat.postMessage`, {
     method: "POST",
     headers: {
@@ -18,10 +17,7 @@ export const announceOnSlack = async (message: Record<string, any>) => {
   }).catch((error) => {
     console.error(error);
   });
-
   const json = await data?.json();
-
-  console.log(json);
 
   return json;
 };

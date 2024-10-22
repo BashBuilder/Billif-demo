@@ -50,7 +50,8 @@ export const sendSlackMessage = async (body: WaitlistDataType) => {
         type: "section",
         text: {
           type: "mrkdwn",
-          text: `${`[TEST] ${body.title?.toUpperCase()}`}\nHi, a new request has come in`,
+          // text: `${`[TEST] ${body.title?.toUpperCase()}`}\nHi, a new request has come in`,
+          text: `${`${body.title?.toUpperCase()}`}\nHi, a new request has come in`,
         },
       },
       {
