@@ -1,4 +1,3 @@
-import { slack } from "@/data/api-key";
 import { announceOnSlack, transformRequestTypeToList } from "./utils";
 
 export const handleSendDemo = async (payload: DemoDataType) => {
@@ -43,10 +42,9 @@ export const handleSendWaitlist = async (payload: {
   return result;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const sendSlackMessage = async (body: WaitlistDataType) => {
   await announceOnSlack({
-    channel: slack.nextGenPaymentChannel,
+    channel: "C07SVFU437F",
     blocks: [
       {
         type: "section",
