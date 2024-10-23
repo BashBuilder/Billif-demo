@@ -46,8 +46,8 @@ export default function RootLayout({
           `,
           }}
         />
-        {children}
         <Toaster />
+        {children}
       </body>
     </html>
   );
