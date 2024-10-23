@@ -12,3 +12,11 @@ declare interface DemoDataType {
   message: string;
   title: string;
 }
+
+declare interface WaitlistDataType {
+  title: string;
+  email: string;
+  firstName: string;
+  businessName: string;
+  phoneNumber: string;
+}

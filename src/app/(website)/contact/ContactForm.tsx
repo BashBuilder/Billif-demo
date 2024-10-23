@@ -44,7 +44,7 @@ const ContactForm = () => {
     try {
       const payload: DemoDataType = {
         ...values,
-        title: "Contact form",
+        title: "Contact",
       };
       await handleSendContact(payload);
 
