@@ -15,7 +15,7 @@ const WhyNextgen = () => {
       <Fade>
         <p className="text-center">
           Simple defaults, direct integrations, and advanced customization means
-          Nextgen will scale with you.
+          NextGen will scale with you.
         </p>
       </Fade>
 
