@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/toaster";
 import ".././globals.css";
 
 export default function RootLayout({
@@ -13,6 +14,7 @@ export default function RootLayout({
           content="NextGen: Revenue pament-tech by QorePay join waitlist"
         />
       </head>
+      <Toaster />
       <body>{children}</body>
     </html>
   );
