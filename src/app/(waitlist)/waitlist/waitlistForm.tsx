@@ -59,7 +59,8 @@ const WaitListForm = () => {
           </div>
         ),
       });
-      router.push("/");
+      setTimeout(() => router.push("/"), 5000);
+
       form.reset();
     } catch (error) {
       console.error(error);

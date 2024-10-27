@@ -8,12 +8,12 @@ const Support = () => {
     <section className="bg-orange-dark py-20">
       <div className="contain space-y-4">
         <Fade>
-          <h2 className="font-heading text-center text-4xl font-semibold text-white">
+          <h2 className="text-center font-heading text-4xl font-semibold text-white">
             Hands-on support
           </h2>
         </Fade>
         <Fade>
-          <p className="max-w-screen-lg text-center text-orange-100">
+          <p className="mx-auto max-w-screen-lg text-center text-orange-100">
             NextGen’s team of in-house technical account managers and
             integration managers are dedicated to your success. From API setup
             to integration and deployment, we work with you to ensure our

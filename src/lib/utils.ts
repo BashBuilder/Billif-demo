@@ -7,19 +7,25 @@ export function cn(...inputs: ClassValue[]) {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const announceOnSlack = async (message: Record<string, any>) => {
-  const data = await fetch(`https://slack.com/api/chat.postMessage`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.SLACK_CUSTOMER_BOT_TOKEN}`,
-    },
-    body: JSON.stringify(message),
-  }).catch((error) => {
-    console.error(error);
-  });
-  const json = await data?.json();
+  try {
+    const data = await fetch(`https://slack.com/api/chat.postMessage`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.SLACK_CUSTOMER_BOT_TOKEN}`,
+      },
+      body: JSON.stringify(message),
+    }).catch((error) => {
+      console.error(error);
+    });
+    const json = await data?.json();
 
-  return json;
+    return json;
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (error: any) {
+    throw new Error(error?.message || "Error sending message to slack");
+  }
 };
 
 export function snakeCaseToTitle(str: string) {
