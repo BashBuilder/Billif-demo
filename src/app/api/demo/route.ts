@@ -1,14 +1,22 @@
 import { sendSlackMessage } from "@/lib/api-request";
+<<<<<<< HEAD
 import { kv } from "@vercel/kv";
+=======
+>>>>>>> anthony-dev
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
+<<<<<<< HEAD
     const key = `user:demo`;
     await kv.hmset(key, body);
     await sendSlackMessage(body);
+=======
+    await sendSlackMessage(body);
+
+>>>>>>> anthony-dev
     return NextResponse.json(
       { message: "Data saved successfully" },
       { status: 200 },

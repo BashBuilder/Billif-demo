@@ -26,6 +26,10 @@ export default function RootLayout({
           name="description"
           content="NextGen Revenue Paymentech by QorePay"
         />
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        ></link>
       </head>
       <body>
         <Script

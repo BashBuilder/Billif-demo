@@ -1,6 +1,7 @@
-import Link from "next/link";
+import CalendlyWidget from "../Widget/calendly";
 
 const Demo = () => {
+<<<<<<< HEAD
   return (
     <Link
       target="_blank"
@@ -10,6 +11,9 @@ const Demo = () => {
       Request Demo
     </Link>
   );
+=======
+  return <CalendlyWidget />;
+>>>>>>> anthony-dev
 };
 
 export default Demo;
