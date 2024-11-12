@@ -29,7 +29,7 @@ export default function RootLayout({
         <link
           href="https://assets.calendly.com/assets/external/widget.css"
           rel="stylesheet"
-        ></link>
+        />
       </head>
       <body>
         <Script
@@ -48,6 +48,23 @@ export default function RootLayout({
                 if (d.head) d.head.appendChild(s);
             })(document, window, 'BrevoConversations');
           `,
+          }}
+        />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2ZTXVB19FL"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-2ZTXVB19FL');
+        `,
           }}
         />
         <Toaster />
