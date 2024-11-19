@@ -7,7 +7,7 @@ const TermOfUse = () => {
       <section className="bg-orange-50 pb-20 pt-32">
         <div className="contain space-y-10">
           <h1 className="mx-auto max-w-screen-md text-center font-heading text-4xl text-orange-dark">
-            NextGen Revenue Paymentech (NGRPay) <br /> Terms of Service
+            NextGen Revenue Paymentech (Nextgen) <br /> Terms of Service
           </h1>
           <p className="text-center"> Effective Date: </p>
         </div>
@@ -69,18 +69,18 @@ const TermOfUse = () => {
             <span>Email : </span>
             <Link
               target="_blank"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@ngrpay.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@getnextgen.io"
               className="underline"
             >
-              hello@ngrpay.com
+              hello@getnextgen.io
             </Link>
             <span>,</span>
             <Link
               target="_blank"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=support@ngrpay.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=support@getnextgen.io"
               className="underline"
             >
-              support@ngrpay.com
+              support@getnextgen.io
             </Link>
           </li>
         </ul>
