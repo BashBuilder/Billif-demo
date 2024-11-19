@@ -5,6 +5,7 @@ import GoBack from "./back";
 const Waitlist = () => {
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-orange-dark p-8">
+      {/* Some comments in the waitlist */}
       <GoBack />
       <TopographySvg
         color="white"
