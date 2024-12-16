@@ -1,10 +1,11 @@
 "use client";
 
-import { dashboardLink, navigationLinks } from "@/data/links";
+import { dashboardLink, navigationLinks, signupLink } from "@/data/links";
 import { ChevronDown, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { Dispatch, SetStateAction } from "react";
+import { Button } from "../ui/button";
 
 interface PropType {
   isSidebarOpen: boolean;
@@ -47,13 +48,12 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: PropType) => {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center justify-center">
-          <Link
-            href={dashboardLink}
-            onClick={() => setIsSidebarOpen(false)}
-            className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
-          >
-            Join waitlist
+        <div className="flex flex-col items-center gap-2">
+          <Link href={signupLink}>
+            <Button variant="outline">Signup</Button>
+          </Link>
+          <Link href={dashboardLink}>
+            <Button> Login </Button>
           </Link>
         </div>
       </section>
