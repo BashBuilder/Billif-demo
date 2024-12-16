@@ -1,4 +1,5 @@
-export const dashboardLink = "/waitlist";
+export const dashboardLink = "https://app.getnextgen.io";
+export const signupLink = "https://app.getnextgen.io/register";
 
 export const navigationLinks: NavigationLinksTypes[] = [
   {

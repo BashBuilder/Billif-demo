@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
-import { dashboardLink, navigationLinks } from "@/data/links";
+import { dashboardLink, navigationLinks, signupLink } from "@/data/links";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
+import { Button } from "../ui/button";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -21,7 +22,7 @@ const Navbar = () => {
               src="/assets/images/nextgen resized.png"
               alt="Nextgen logo"
               width={150}
-              height={150}
+              height={50}
               quality={100}
             />
           </Link>
@@ -44,12 +45,12 @@ const Navbar = () => {
               </Link>
             ))}
           </nav>
-          <div>
-            <Link
-              href={dashboardLink}
-              className="cursor-pointer rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white"
-            >
-              Join waitlist
+          <div className="flex items-center gap-2">
+            <Link href={signupLink}>
+              <Button variant="outline">Signup</Button>
+            </Link>
+            <Link href={dashboardLink}>
+              <Button> Login </Button>
             </Link>
           </div>
         </div>
