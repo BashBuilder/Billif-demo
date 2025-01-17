@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import ContactForm from "./ContactForm";
 import { MapPinIcon } from "lucide-react";
 
@@ -12,29 +12,26 @@ const page = () => {
             Get in touch
           </h1>
         </div>
-        <div className="relative flex items-start justify-center gap-8 max-md:flex-col">
-          <div className="space-y-6 rounded-md bg-white/50 pt-6 shadow-md">
+        <section className="relative grid gap-8 md:grid-cols-2">
+          <article className="space-y-6 overflow-hidden rounded-md bg-white/50 pt-6 shadow-md">
             <div className="space-y-4 px-6">
               <h3 className="text-2xl font-semibold text-orange-dark">
                 Contact Information
               </h3>
               <div />
-              <p className="flex max-w-lg flex-wrap items-center gap-2">
+              <p className="flex max-w-lg items-center gap-2">
                 <MapPinIcon className="size-4 text-orange-dark" />
-                km18 lekki-Epe expressway, Agungi, Lagos, Nigeria.
+                Plot 5 Chief Yesufu Abiodun Oniru Road. Victoria Island.
               </p>
             </div>
-            <Image
-              src="/assets/images/contactimage.png"
+            <img
+              src="/assets/images/1967.jpg"
               alt="Nextgen contact support"
-              width={400}
-              height={800}
-              quality={100}
-              className="max-h-[36.5rem] w-full rounded-md object-cover shadow-sm"
+              className="h-full w-full rounded-md object-cover shadow-sm"
             />
-          </div>
+          </article>
           <ContactForm />
-        </div>
+        </section>
       </div>
     </section>
   );

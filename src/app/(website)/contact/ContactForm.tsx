@@ -72,7 +72,7 @@ const ContactForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="h-fit max-w-lg basis-1/2 space-y-6 rounded-md bg-white/50 p-8 shadow-md backdrop:blur"
+        className="w-full space-y-6 rounded-md bg-white/50 p-8 shadow-md backdrop:blur"
       >
         <h3 className="text-2xl font-semibold text-orange-dark">
           Reach out to us
