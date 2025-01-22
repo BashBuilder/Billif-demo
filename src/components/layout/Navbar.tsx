@@ -47,7 +47,7 @@ const Navbar = () => {
           </nav>
           <div className="flex items-center gap-2">
             <Link href={signupLink}>
-              <Button variant="outline">Signup</Button>
+              <Button variant="outline">Get Started</Button>
             </Link>
             <Link href={dashboardLink}>
               <Button> Login </Button>

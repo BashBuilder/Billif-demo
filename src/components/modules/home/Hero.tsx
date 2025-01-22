@@ -6,8 +6,7 @@ import React from "react";
 import "@/styles/text-reveal.css";
 import Fade from "@/components/global/fade";
 import Demo from "@/components/global/demo";
-import { dashboardLink } from "@/data/links";
-import Link from "next/link";
+import DemoTour from "@/components/global/demo-tour";
 
 const Hero = () => {
   return (
@@ -39,12 +38,7 @@ const Hero = () => {
                 <Demo />
               </Fade>
               <Fade>
-                <Link
-                  href={dashboardLink}
-                  className="cursor-pointer rounded-full border border-primary px-5 py-3 text-sm font-semibold text-primary transition-colors duration-300 hover:bg-primary/20"
-                >
-                  Get started
-                </Link>
+                <DemoTour />
               </Fade>
             </div>
           </Fade>

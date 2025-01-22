@@ -42,9 +42,13 @@ export const handleSendWaitlist = async (payload: {
   return result;
 };
 
-export const sendSlackMessage = async (body: WaitlistDataType) => {
+export const sendSlackMessage = async (
+  // eslint-disable-next-line
+  body: any,
+  channel: string,
+) => {
   await announceOnSlack({
-    channel: "C07SVFU437F",
+    channel,
     blocks: [
       {
         type: "section",

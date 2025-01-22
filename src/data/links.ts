@@ -29,3 +29,7 @@ export const navigationLinks: NavigationLinksTypes[] = [
   { href: "/approval", label: "Approval" },
   { href: "/pricing", label: "Pricing" },
 ];
+
+export const slackLinks: Record<string, string> = {
+  demoTour: "C089RSRSL0J",
+};
