@@ -30,6 +30,7 @@ export const navigationLinks: NavigationLinksTypes[] = [
   { href: "/pricing", label: "Pricing" },
 ];
 
-export const slackLinks: Record<string, string> = {
+export const slackLinks = {
   demoTour: "C089RSRSL0J",
+  contact: "C07SVFU437F",
 };

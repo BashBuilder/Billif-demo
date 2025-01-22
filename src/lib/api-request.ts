@@ -1,7 +1,7 @@
 import { announceOnSlack, transformRequestTypeToList } from "./utils";
 
 export const handleSendDemo = async (payload: DemoDataType) => {
-  const response = await fetch("/api/demo", {
+  const response = await fetch("/api/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export const handleSendWaitlist = async (payload: {
   businessName: string;
   phoneNumber: string;
 }) => {
-  const response = await fetch("/api/waitlist", {
+  const response = await fetch("/api/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
