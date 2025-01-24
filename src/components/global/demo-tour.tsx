@@ -180,14 +180,14 @@ const DemoTour = () => {
                     {form.formState.isSubmitting ? (
                       <Loader2 className="animate-spin" />
                     ) : (
-                      "Download tour"
+                      "Download Deck"
                     )}
                   </Button>
                 </form>
               </Form>
               <div className="">
                 <Link
-                  href="/file/NEXTGEN DEMO DECKs.pdf"
+                  href="/file/NEXTGEN DEMO DECK.pdf"
                   download={true}
                   className="hidden"
                   target="_blank"
