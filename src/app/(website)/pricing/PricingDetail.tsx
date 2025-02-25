@@ -57,6 +57,7 @@ const PricingDetail = () => {
           Coming soon ...
         </h2>
       </div> */}
+      {/* added some comment */}
       <div className="contain space-y-8">
         <h2 className="text-center font-heading text-3xl font-semibold text-orange-dark">
           Account Payable and Account Receivable
