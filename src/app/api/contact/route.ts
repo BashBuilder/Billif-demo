@@ -1,12 +1,19 @@
-import { slackLinks } from "@/data/links";
-import { sendSlackMessage } from "@/lib/api-request";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    await sendSlackMessage(body, slackLinks.contact);
+    const payload = {
+      ...body,
+      type: "nextgen-contact",
+    };
+
+    const baseUrl = process.env.GOOGLE_CHAT_WEBHOOK_URL || "";
+    const queryParams = JSON.stringify(payload);
+    const url = `${baseUrl}?data=${queryParams}`;
+
+    await fetch(url);
 
     return NextResponse.json(
       { message: "Data saved successfully" },
