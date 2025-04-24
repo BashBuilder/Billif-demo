@@ -6,7 +6,7 @@ import React from "react";
 const pricingData = [
   {
     title: "Premium",
-    price: "49,999",
+    price: "39,999",
     description: [
       "Everything in Essential Package plus",
       "Automate 2-way sync with accounting software",
@@ -70,7 +70,7 @@ const PricingDetail = () => {
             </h5>
             <div className="flex gap-1">
               <span>₦</span>
-              <h1 className="font-heading text-3xl text-orange-dark">39,999</h1>
+              <h1 className="font-heading text-3xl text-orange-dark">29,999</h1>
               <p className="text-xs text-black/50">user/month</p>
             </div>
             <div className="grid justify-between gap-2 md:grid-cols-2">
