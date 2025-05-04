@@ -1,6 +1,6 @@
-import Demo from "@/components/global/demo";
 import Fade from "@/components/global/fade";
 import TopographySvg from "@/components/global/TopographySvg";
+import { Button } from "@/components/ui/button";
 import { dashboardLink } from "@/data/links";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,14 +35,19 @@ const AccountHeading = ({ image, title, subtitle, description }: PageProps) => {
           <Fade duration={1} className="w-full max-w-xl pt-4 max-lg:mx-auto">
             <div className="flex items-center gap-8 max-lg:justify-center">
               <Fade>
-                <Demo />
+                {/* <Demo /> */}
+                <Link href={dashboardLink}>
+                  <Button>Get started</Button>
+                </Link>
               </Fade>
               <Fade>
-                <Link
-                  href={dashboardLink}
-                  className="cursor-pointer rounded-full border border-primary px-5 py-3 text-sm font-semibold text-primary transition-colors duration-300 hover:bg-primary/20"
-                >
-                  Get started
+                <Link href={dashboardLink}>
+                  <Button
+                    variant="outline"
+                    className="border-primary bg-transparent text-primary hover:bg-primary hover:text-white"
+                  >
+                    Try for free
+                  </Button>
                 </Link>
               </Fade>
             </div>

@@ -1,5 +1,5 @@
 import Fade from "@/components/global/fade";
-import { dashboardLink } from "@/data/links";
+import { signupLink } from "@/data/links";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -101,10 +101,10 @@ const WhyNextgen = () => {
       </div>
       <Fade className="flex items-center justify-center pt-4">
         <Link
-          href={dashboardLink}
+          href={signupLink}
           className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
         >
-          Get Started
+          Try for free
         </Link>
       </Fade>
     </section>

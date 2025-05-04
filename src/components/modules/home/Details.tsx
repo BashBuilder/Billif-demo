@@ -1,5 +1,6 @@
 import Fade from "@/components/global/fade";
-import { dashboardLink } from "@/data/links";
+import { Button } from "@/components/ui/button";
+import { signupLink } from "@/data/links";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -48,7 +49,7 @@ const Details = () => {
   return (
     <section className="space-y-20 bg-orange-100/50 py-20">
       <Fade>
-        <h1 className="contain font-heading text-orange-dark max-w-screen-lg text-center text-4xl font-semibold">
+        <h1 className="contain max-w-screen-lg text-center font-heading text-4xl font-semibold text-orange-dark">
           Maximize your savings with streamlined purchasing and payments
         </h1>
       </Fade>
@@ -91,7 +92,7 @@ const Details = () => {
                 <h4>{details.subHeading}</h4>
               </Fade>
               <Fade>
-                <h3 className="text-orange-dark font-heading text-3xl font-semibold">
+                <h3 className="font-heading text-3xl font-semibold text-orange-dark">
                   {details.heading}
                 </h3>
               </Fade>
@@ -109,11 +110,8 @@ const Details = () => {
                 ))}
               </ul>
               <Fade className="pt-4">
-                <Link
-                  href={dashboardLink}
-                  className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
-                >
-                  Get Started
+                <Link href={signupLink}>
+                  <Button>Buy Now, 14 days free trial</Button>
                 </Link>
               </Fade>
             </div>

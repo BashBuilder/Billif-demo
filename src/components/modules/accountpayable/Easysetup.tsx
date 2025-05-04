@@ -25,7 +25,7 @@ const Easysetup = () => {
               href={dashboardLink}
               className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80 max-md:hidden"
             >
-              Get Started
+              Try for free
             </Link>
           </Fade>
         </div>
@@ -45,7 +45,7 @@ const Easysetup = () => {
             href={dashboardLink}
             className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80 md:hidden"
           >
-            Get Started
+            Try for free
           </Link>
         </Fade>
       </div>

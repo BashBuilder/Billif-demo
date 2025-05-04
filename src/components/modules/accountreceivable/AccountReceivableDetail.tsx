@@ -55,7 +55,7 @@ const AccountReceivableDetail = () => {
                   href={dashboardLink}
                   className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
                 >
-                  Get Started
+                  14 days free trial
                 </Link>
               </Fade>
             </div>
