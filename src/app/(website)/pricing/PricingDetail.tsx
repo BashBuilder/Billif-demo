@@ -1,4 +1,6 @@
 import Demo from "@/components/global/demo";
+import { Button } from "@/components/ui/button";
+import { signupLink } from "@/data/links";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -52,12 +54,6 @@ const PricingDetail = () => {
         </div>
       </div>
 
-      {/* <div className="contain space-y-8">
-        <h2 className="animate-pulse py-24 text-center font-heading text-4xl font-semibold text-orange-dark">
-          Coming soon ...
-        </h2>
-      </div> */}
-      {/* added some comment */}
       <div className="contain space-y-8">
         <h2 className="text-center font-heading text-3xl font-semibold text-orange-dark">
           Account Payable and Account Receivable
@@ -101,11 +97,8 @@ const PricingDetail = () => {
               </div>
             </div>
             <div>
-              <Link
-                href="#"
-                className="cursor-pointer rounded-full bg-primary px-4 py-2 text-xs font-semibold text-white"
-              >
-                Request a demo
+              <Link href={signupLink}>
+                <Button size="sm">Try for free</Button>
               </Link>
             </div>
           </div>
@@ -139,12 +132,13 @@ const PricingDetail = () => {
                 ))}
               </ul>
               <div className="">
-                <Link
-                  href="#"
-                  className="cursor-pointer rounded-full bg-primary px-4 py-2 text-xs font-semibold text-white"
-                >
-                  Request a demo
-                </Link>
+                {item.price === "Custom price" ? (
+                  <Demo />
+                ) : (
+                  <Link href={signupLink}>
+                    <Button size="sm">Try for free</Button>
+                  </Link>
+                )}
               </div>
             </div>
           ))}
