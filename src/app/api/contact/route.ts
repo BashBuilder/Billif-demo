@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
     };
 
     const baseUrl = process.env.GOOGLE_CHAT_WEBHOOK_URL || "";
-    const queryParams = JSON.stringify(payload);
+    const queryParams = encodeURIComponent(JSON.stringify(payload));
     const url = `${baseUrl}?data=${queryParams}`;
 
     await fetch(url);
