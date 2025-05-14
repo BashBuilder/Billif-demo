@@ -43,6 +43,8 @@ export async function POST(req: NextRequest) {
     const queryParams = encodeURIComponent(JSON.stringify(payload));
     const url = `${baseUrl}?data=${queryParams}`;
 
+    console.log("url", url);
+
     await fetch(url);
 
     return NextResponse.json(
