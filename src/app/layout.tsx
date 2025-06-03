@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
@@ -30,6 +29,23 @@ export default function RootLayout({
         <link
           href="https://assets.calendly.com/assets/external/widget.css"
           rel="stylesheet"
+        />
+        {/* Google Ads Global site tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17119316230"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-ads"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17119316230');
+            `,
+          }}
         />
       </head>
       <body>
