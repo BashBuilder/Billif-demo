@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import Script from "next/script";
+import CookieModal from "@/components/global/cookie-modal";
 
 export const metadata: Metadata = {
   title: "NextGen",
@@ -107,6 +108,7 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=893808749088712&ev=PageView&noscript=1"
           />
         </noscript>
+        <CookieModal />
         <Toaster />
         {children}
       </body>
