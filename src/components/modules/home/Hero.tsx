@@ -61,16 +61,19 @@ const Hero = () => {
             />
           </Fade>
           <Fade
-            className="absolute bottom-4 z-30 max-lg:-right-10 max-lg:w-1/2 lg:-right-40 lg:bottom-10"
+            // className="absolute -right-20 bottom-4 z-30 max-lg:-right-10 max-lg:w-1/2 lg:-right-40 lg:bottom-10"
+            className="absolute bottom-0 right-0 z-30"
             direction="left"
             duration={4}
           >
             <Image
-              src="/assets/images/home/blank_smartphone_mockup_isolate_on_background.png"
+              // src="/assets/images/home/blank_smartphone_mockup_isolate_on_background.png"
+              src="/assets/images/Artboard_1-removebg-preview.png"
               alt="nextgen dashboard image"
               width={350}
               height={250}
               quality={100}
+              className="w-full max-w-[350px] max-md:w-3/4"
             />
           </Fade>
         </section>

@@ -13,13 +13,14 @@ const CookieModal = () => {
   };
 
   useEffect(() => {
-    // Check if cookies have been accepted
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       const cookiesAccepted = localStorage.getItem("cookiesAccepted");
-      if (JSON.stringify(cookiesAccepted) !== "true") {
+      if (cookiesAccepted !== "true") {
         setOpen(true);
       }
     }, 5000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
