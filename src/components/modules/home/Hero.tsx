@@ -51,7 +51,8 @@ const Hero = () => {
             duration={3}
           >
             <Image
-              src="/assets/images/home/nextgenlaptop.png"
+              // src="/assets/images/home/nextgenlaptop.png"
+              src="/assets/images/Untitled-1.png"
               alt="nextgen dashboard image"
               width={1500}
               height={1500}
