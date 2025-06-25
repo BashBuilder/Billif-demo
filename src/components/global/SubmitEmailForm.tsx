@@ -15,21 +15,21 @@ import {
 } from "@/components/ui/form";
 
 const formSchema = z.object({
-  email: z.string().email(),
+  message: z.string().min(10),
 });
 
 const SubmitEmailForm = () => {
-  const [isDemo, setIsDemo] = useState({ state: false, email: "" });
+  const [isDemo, setIsDemo] = useState({ state: false, message: "" });
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      message: "",
     },
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsDemo({ state: true, email: values.email });
+    setIsDemo({ state: true, message: values.message });
     form.clearErrors();
     form.reset();
   }
@@ -38,17 +38,17 @@ const SubmitEmailForm = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className={`relative rounded-full bg-orange-100 p-2 shadow-md ${form.formState.errors.email && "border-2 border-red-500"}`}
+          className={`relative rounded-full bg-orange-100 p-2 shadow-md ${form.formState.errors.message && "border-2 border-red-500"}`}
         >
           <FormField
             control={form.control}
-            name="email"
+            name="message"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
                   <Input
                     {...field}
-                    type="email"
+                    type="text"
                     placeholder="What's your business email?"
                     className="rounded-full border-none bg-transparent pr-44 outline-none ring-0 ring-transparent"
                   />

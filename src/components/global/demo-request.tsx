@@ -26,18 +26,18 @@ import { Input } from "../ui/input";
 import { PhoneInput } from "../ui/phone-input";
 import { Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { handleSendDemo } from "@/lib/api-request";
+import { handleSendContact } from "@/lib/api-request";
 
 interface RequestPropstypes {
   setIsDemo: React.Dispatch<
     React.SetStateAction<{
       state: boolean;
-      email: string;
+      message: string;
     }>
   >;
   isDemo: {
     state: boolean;
-    email: string;
+    message: string;
   };
 }
 
@@ -45,6 +45,7 @@ const formSchema = z.object({
   firstName: z.string().min(2),
   businessName: z.string().min(2),
   phoneNumber: z.string().min(9),
+  email: z.string().email(),
 });
 
 const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
@@ -58,6 +59,7 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
       firstName: "",
       businessName: "",
       phoneNumber: "",
+      email: "",
     },
   });
 
@@ -65,12 +67,11 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
     try {
       const payload: DemoDataType = {
         ...values,
-        email: isDemo.email,
-        message: `${values.businessName} with email ${isDemo.email} is requesting to get started for free`,
-        title: "Get started for free",
+        message: isDemo.message,
+        title: "Contact",
       };
-      await handleSendDemo(payload);
-      setIsDemo({ state: false, email: "" });
+      await handleSendContact(payload);
+      setIsDemo({ state: false, message: "" });
       toast({
         description: (
           <div className="space-y-2">
@@ -154,6 +155,22 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
                           <PhoneInput
                             className={`border-none bg-opacity-5 ${form.formState.errors.phoneNumber && "border-2 border-red-500"} `}
                             defaultCountry="NG"
+                            {...field}
+                          />
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Email</FormLabel>
+                        <FormControl>
+                          <Input
+                            type="email"
+                            className={`border-none bg-opacity-5 ${form.formState.errors.email && "border-2 border-red-500"} `}
                             {...field}
                           />
                         </FormControl>
