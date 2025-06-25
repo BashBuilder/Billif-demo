@@ -49,7 +49,7 @@ const SubmitEmailForm = () => {
                   <Input
                     {...field}
                     type="text"
-                    placeholder="What's your business email?"
+                    placeholder="Leave us a message?"
                     className="rounded-full border-none bg-transparent pr-44 outline-none ring-0 ring-transparent"
                   />
                 </FormControl>
@@ -57,8 +57,7 @@ const SubmitEmailForm = () => {
             )}
           />
           <Button className="absolute right-2 top-1/2 -translate-y-1/2">
-            <span className="max-sm:hidden">Get started for free</span>
-            <span className="sm:hidden">Get started</span>
+            <span>Send message</span>
           </Button>
         </form>
       </Form>

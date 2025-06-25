@@ -6,9 +6,9 @@ const GetStarted = () => {
   return (
     <section className="bg-orange-dark py-20">
       <div className="contain">
-        <Fade className="mx-auto space-y-5 rounded-lg bg-white/50 p-4 backdrop:blur sm:w-4/5 sm:p-10">
-          <h2 className="font-heading text-center text-2xl font-semibold text-white md:text-3xl">
-            Get started with your NextGen account today
+        <Fade className="mx-auto max-w-screen-sm space-y-5 rounded-lg bg-white/50 p-4 backdrop:blur sm:w-4/5 sm:p-10">
+          <h2 className="text-center font-heading text-2xl font-semibold text-white md:text-3xl">
+            Contact us
           </h2>
           <div className="">
             <SubmitEmailForm />
