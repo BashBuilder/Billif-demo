@@ -7,21 +7,60 @@ import React from "react";
 
 const pricingData = [
   {
-    title: "Premium",
-    price: "39,999",
+    title: "Basic",
+    price: "15,000",
+    users: 1,
     description: [
-      "Everything in Essential Package plus",
-      "Automate 2-way sync with accounting software",
-      "QuickBooks and Xero Bespoke support",
+      "Create professional, custom invoices",
+      "Send invoices flexibly",
+      "Track invoices flexibly",
+      "Automate payment reminders",
+      "Get paid through payment link",
+      "Create recurring invoices",
+    ],
+  },
+  {
+    title: "Standard",
+    price: "30,000",
+    users: 2,
+    description: [
+      "Easily enter bills",
+      "Automate approval workflows",
+      "Pay by Bank Transfer",
+      "Manage bills from a centralized inbox",
+      "Set standard approval policies",
+      "Create professional, custom invoices",
+      "Send invoices flexibly",
+      "Track invoices flexibly",
+      "Automate payment reminders",
+      "Get paid through payment link",
+      "Create recurring invoices",
+    ],
+  },
+  {
+    title: "Premium",
+    price: "50,000",
+    users: 4,
+    description: [
+      "Everything in Standard Package",
+      "Automate 2-way sync with accounting software; QuickBooks and Xero",
+      "Bespoke support",
+      "Advanced analytics and reporting",
+      "Priority customer support",
     ],
   },
   {
     title: "Enterprise",
     price: "Custom price",
     description: [
-      "Everything in Premium Package plus;",
+      "Everything in Premium Package",
       "Custom integration and setup",
       "Custom reconciliation",
+      "White label solutions",
+      "Dedicated account manager",
+      "Custom requirements and features",
+      "Unlimited users",
+      "API access and custom development",
     ],
   },
 ];
@@ -59,8 +98,8 @@ const PricingDetail = () => {
           Account Payable and Account Receivable
         </h2>
 
-        <div className="mx-auto grid max-w-screen-md gap-6 md:grid-cols-2">
-          <div className="col-span-2 w-full space-y-6 rounded-2xl bg-white p-6 shadow">
+        <div className="mx-auto grid max-w-screen-2xl gap-6 md:grid-cols-2">
+          {/* <div className="col-span-2 w-full space-y-6 rounded-2xl bg-white p-6 shadow">
             <h5 className="font-heading text-lg text-orange-dark">
               Essentials
             </h5>
@@ -101,11 +140,11 @@ const PricingDetail = () => {
                 <Button size="sm">Try for free</Button>
               </Link>
             </div>
-          </div>
+          </div> */}
           {pricingData.map((item) => (
             <div
               key={item.title}
-              className="col-span-1 w-full space-y-6 rounded-2xl bg-white p-6 shadow"
+              className="col-span-1 h-fit w-full space-y-6 rounded-2xl bg-white p-6 shadow"
             >
               <h5 className="font-heading text-lg text-orange-dark">
                 {item.title}
@@ -120,7 +159,9 @@ const PricingDetail = () => {
                   <h1 className="font-heading text-3xl text-orange-dark">
                     {item.price}
                   </h1>
-                  <p className="text-xs text-black/50">user/month</p>
+                  <p className="text-xs text-black/50">
+                    Up to {item.users} user/month
+                  </p>
                 </div>
               )}
 
