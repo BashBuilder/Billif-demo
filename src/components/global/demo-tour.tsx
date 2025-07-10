@@ -185,17 +185,13 @@ const DemoTour = () => {
                   </Button>
                 </form>
               </Form>
-              <div className="">
-                <Link
-                  href="/file/NEXTGEN DEMO DECK.pdf"
-                  download={true}
-                  className="hidden"
-                  target="_blank"
-                  ref={donwloadDoc}
-                >
-                  download
-                </Link>
-              </div>
+              <Link
+                href="/file/GetNextGen Pitch Deck.pdf"
+                download={true}
+                className="hidden"
+                target="_blank"
+                ref={donwloadDoc}
+              />
             </DialogDescription>
           </DialogHeader>
 
