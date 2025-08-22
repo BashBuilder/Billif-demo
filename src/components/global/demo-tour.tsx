@@ -194,14 +194,6 @@ const DemoTour = () => {
               />
             </DialogDescription>
           </DialogHeader>
-
-          {/* <DrawerFooter className="hidden">
-            <DrawerClose className="mx-auto max-w-lg px-8">
-              <Button variant="outline" className="w-full" ref={drawercloseRef}>
-                Cancel
-              </Button>
-            </DrawerClose>
-          </DrawerFooter> */}
         </DialogContent>
       </Dialog>
     </div>
