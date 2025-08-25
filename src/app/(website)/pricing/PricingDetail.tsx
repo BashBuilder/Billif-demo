@@ -67,10 +67,10 @@ const pricingData = [
 
 const PricingDetail = () => {
   return (
-    <section className="space-y-16 bg-gradient-to-b from-primary/10 to-white pb-20">
+    <section className="space-y-16 bg-gradient-to-b from-blue-50 to-white pb-20">
       <div className="relative bg-white pt-20">
         <Image
-          src="/assets/images/accountPayable/unsplash_ULJCBY8Tcfg.png"
+          src="/assets/images/18851.jpg"
           alt="Approval software"
           width={2000}
           height={2000}

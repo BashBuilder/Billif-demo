@@ -28,6 +28,7 @@ export const navigationLinks: NavigationLinksTypes[] = [
   },
   { href: "/approval", label: "Approval" },
   { href: "/pricing", label: "Pricing" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export const slackLinks = {

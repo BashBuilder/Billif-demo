@@ -38,7 +38,7 @@ const SubmitEmailForm = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className={`relative rounded-full bg-primary/10 p-2 shadow-md ${form.formState.errors.message && "border-2 border-red-500"}`}
+          className={`relative rounded-full bg-blue-50 p-2 shadow-md ${form.formState.errors.message && "border-2 border-red-500"}`}
         >
           <FormField
             control={form.control}

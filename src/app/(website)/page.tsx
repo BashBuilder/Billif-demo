@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <WhyBillif />
+      <DesignedIntegration />
       <Details />
       <PurposeBuilt />
-      <DesignedIntegration />
+      <WhyBillif />
       <GetStarted />
     </main>
   );

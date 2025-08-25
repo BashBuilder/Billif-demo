@@ -13,7 +13,7 @@ const Support = () => {
           </h2>
         </Fade>
         <Fade>
-          <p className="mx-auto max-w-screen-lg text-center text-primary/10">
+          <p className="mx-auto max-w-screen-lg text-center text-blue-50">
             Bill-if’s team of in-house technical account managers and
             integration managers are dedicated to your success. From API setup
             to integration and deployment, we work with you to ensure our

@@ -91,7 +91,7 @@ export function HeroSection() {
 
             <div className="flex flex-wrap items-center justify-center gap-8 opacity-60 lg:gap-12">
               <div className="flex items-center space-x-2">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
                   <span className="text-xs font-bold text-primary">B</span>
                 </div>
                 <span className="text-sm font-medium">Banking</span>
@@ -103,7 +103,7 @@ export function HeroSection() {
                 <span className="text-sm font-medium">FinTech</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
                   <span className="text-xs font-bold text-primary">E</span>
                 </div>
                 <span className="text-sm font-medium">Enterprise</span>
@@ -129,7 +129,7 @@ export function HeroSection() {
               </p> */}
             </div>
             <div className="space-y-3 text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50">
                 <CheckCircle className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-bold text-primary">Zero Errors</h3>

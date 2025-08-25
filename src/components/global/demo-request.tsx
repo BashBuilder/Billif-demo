@@ -102,7 +102,7 @@ const DemoRequest = ({ setIsDemo, isDemo }: RequestPropstypes) => {
     <div>
       <Drawer>
         <DrawerTrigger ref={drawerOpenRef} className="hidden" />
-        <DrawerContent className="bg-primary/10">
+        <DrawerContent className="bg-blue-50">
           <DrawerHeader>
             <DrawerTitle>
               <h3 className="mx-auto max-w-lg px-8 pb-4 text-2xl font-semibold text-primary">

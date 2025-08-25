@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-// import { dashboardLink, navigationLinks, signupLink } from "@/data/links";
+import {
+  // dashboardLink,
+  navigationLinks,
+  // signupLink
+} from "@/data/links";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 // import Sidebar from "./Sidebar";
@@ -30,7 +34,21 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link
+              {
+                /* Navigation Links */
+                navigationLinks.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className={`px-3 py-2 text-sm font-medium transition-colors hover:text-secondary ${
+                      isActive(link.href) ? "text-secondary" : ""
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))
+              }
+              {/* <Link
                 href="/"
                 className={`px-3 py-2 text-sm font-medium transition-colors hover:text-secondary ${
                   isActive("/") ? "text-secondary" : ""
@@ -69,7 +87,7 @@ const Navbar = () => {
                 }`}
               >
                 Contact
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -102,7 +120,22 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="space-y-1 border-t border-primary-foreground/20 px-2 pb-3 pt-2 sm:px-3">
-              <Link
+              {
+                /* Mobile Navigation Links */
+                navigationLinks.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className={`block px-3 py-2 text-sm font-medium transition-colors hover:text-secondary ${
+                      isActive(link.href) ? "text-secondary" : ""
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))
+              }
+              {/* <Link
                 href="/"
                 className={`block px-3 py-2 text-sm font-medium transition-colors hover:text-secondary ${
                   isActive("/") ? "text-secondary" : ""
@@ -146,7 +179,7 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
-              </Link>
+              </Link> */}
               <div className="px-3 py-2">
                 <Link href="/contact">
                   <Button

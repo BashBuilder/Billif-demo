@@ -19,7 +19,7 @@ const PurposeBuilt = () => {
             </h2>
           </Fade>
           <Fade>
-            <p className="text-primary/10">
+            <p className="text-blue-50">
               Address AP and purchasing challenges, from rogue spending and
               manual processes to uninformed purchasing decisions, that cost you
               time and money. Bill-if empowers your organization to control and

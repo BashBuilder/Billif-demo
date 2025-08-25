@@ -4,7 +4,7 @@ import { MapPinIcon } from "lucide-react";
 
 const page = () => {
   return (
-    <section className="bg-gradient-to-b from-primary/10 to-white pb-20 pt-32">
+    <section className="bg-gradient-to-b from-blue-50 to-white pb-20 pt-32">
       <div className="contain space-y-12">
         <div>
           <p className="text-center text-sm">How can we help you?</p>

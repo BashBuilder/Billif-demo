@@ -7,7 +7,7 @@ import React from "react";
 
 const serviceDescriptionContent = [
   {
-    image: "/assets/images/home/user writing description.png",
+    image: "/assets/images/18851.jpg",
     heading: "Simplify your purchasing",
     subHeading: "Bill-if Account payable",
     description:
@@ -20,7 +20,7 @@ const serviceDescriptionContent = [
     ],
   },
   {
-    image: "/assets/images/home/invoice image.png",
+    image: "/assets/images/122994.jpg",
     heading: "Automate payments & accounting",
     subHeading: "Bill-if Financial Operations Platform",
     description:
@@ -32,7 +32,7 @@ const serviceDescriptionContent = [
     ],
   },
   {
-    image: "/assets/images/home/clothings.png",
+    image: "/assets/images/2149149673.jpg",
     heading: "Increase profitability with spend controls",
     subHeading: "Bill-if Ease of operations",
     description:
@@ -47,7 +47,7 @@ const serviceDescriptionContent = [
 
 const Details = () => {
   return (
-    <section className="space-y-20 bg-primary/10 py-20">
+    <section className="space-y-20 bg-blue-50 py-20">
       <Fade>
         <h1 className="contain max-w-screen-2xl text-center font-heading text-4xl font-semibold text-primary">
           Maximize your savings with streamlined purchasing and payments
@@ -71,7 +71,7 @@ const Details = () => {
                   alt={details.heading}
                   width={1000}
                   height={1000}
-                  className={`h-full w-full rounded-md object-cover ${index % 2 ? "rounded-tr-[10rem]" : "rounded-tl-[10rem]"} `}
+                  className={`h-full w-full rounded-md object-cover`}
                 />
               </Fade>
               <Fade

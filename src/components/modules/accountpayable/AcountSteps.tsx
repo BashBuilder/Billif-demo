@@ -20,7 +20,7 @@ const AccountSteps = ({ title, steps }: Pageprops) => {
       <div className="flex flex-wrap items-center justify-center gap-10 pt-4">
         {steps.map((step) => (
           <Fade key={step.label} className="space-y-3">
-            <div className="mx-auto flex h-[80vw] max-h-48 w-[80vw] max-w-48 items-center justify-center rounded-md bg-primary/10 p-10 shadow-md max-[365px]:max-w-full">
+            <div className="mx-auto flex h-[80vw] max-h-48 w-[80vw] max-w-48 items-center justify-center rounded-md bg-blue-50 p-10 shadow-md max-[365px]:max-w-full">
               <Image
                 src={step.image}
                 alt={step.label}

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const IntegrationsDetails = () => {
   return (
-    <section className="bg-primary/10/50 py-20">
+    <section className="bg-blue-50/50 py-20">
       <div className="contain space-y-10">
         {integrationsData.map((item, index) => (
           <div

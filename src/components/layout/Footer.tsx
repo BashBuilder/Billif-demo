@@ -7,7 +7,7 @@ import Logo from "../global/logo";
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-primary/10 py-20">
+    <footer className="relative overflow-hidden bg-blue-50 py-20">
       <TopographySvg
         color="black"
         className="absolute -bottom-[50%] -left-[25%] rotate-90 opacity-50"

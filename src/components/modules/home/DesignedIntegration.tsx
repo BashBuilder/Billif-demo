@@ -26,7 +26,7 @@ const DesignedIntegration = () => {
           <Fade
             duration={0.5 + index * 0.3}
             key={integration.title}
-            className="flex h-40 w-80 items-center justify-center rounded-md bg-primary/10 shadow-md"
+            className="flex h-40 w-80 items-center justify-center rounded-md bg-blue-50 shadow-md"
           >
             <img
               src={integration.icon}

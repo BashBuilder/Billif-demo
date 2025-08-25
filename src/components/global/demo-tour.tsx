@@ -95,11 +95,11 @@ const DemoTour = () => {
     <div>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger>
-          <Button className="flex items-center gap-2 border border-primary bg-transparent text-primary hover:bg-primary/10">
+          <Button className="flex items-center gap-2 border border-primary bg-transparent text-primary hover:bg-blue-50">
             Get Deck <Download size={16} />
           </Button>
         </DialogTrigger>
-        <DialogContent className="bg-primary/10">
+        <DialogContent className="bg-blue-50">
           <DialogHeader>
             <DialogTitle>
               <h3 className="mx-auto max-w-lg px-8 pb-4 text-2xl font-semibold text-primary">
