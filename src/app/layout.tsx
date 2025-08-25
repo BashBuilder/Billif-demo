@@ -6,7 +6,7 @@ import Script from "next/script";
 import CookieModal from "@/components/global/cookie-modal";
 
 export const metadata: Metadata = {
-  title: "NextGen",
+  title: "Bill-if",
   description: "Revenue pament-tech by QorePay",
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
       <head>
         <meta
           name="description"
-          content="NextGen Revenue Paymentech by QorePay"
+          content="BIll Intelligent Flow Technologies by QorePay"
         />
         <link
           href="https://assets.calendly.com/assets/external/widget.css"

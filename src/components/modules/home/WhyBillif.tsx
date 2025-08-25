@@ -4,18 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const WhyNextgen = () => {
+const WhyBillif = () => {
   return (
     <section className="contain space-y-4 py-20">
       <Fade>
-        <h2 className="mx-auto max-w-lg text-center font-heading text-4xl font-medium text-orange-dark">
+        <h2 className="mx-auto max-w-2xl text-center font-heading text-4xl font-medium text-primary">
           For startups, global enterprises, and everyone in between.
         </h2>
       </Fade>
       <Fade>
         <p className="text-center">
           Simple defaults, direct integrations, and advanced customization means
-          NextGen will scale with you.
+          Bill-if will scale with you.
         </p>
       </Fade>
 
@@ -37,11 +37,11 @@ const WhyNextgen = () => {
               quality={100}
             />
           </div>
-          <h5 className="font-heading text-lg font-semibold text-orange-dark">
+          <h5 className="font-heading text-lg font-semibold text-primary">
             Integrate and stay synced
           </h5>
           <p className="text-sm text-slate-500">
-            Easily integrate NextGen with your accounting systems and streamline
+            Easily integrate Bill-if with your accounting systems and streamline
             your finances.
           </p>
         </Fade>
@@ -55,7 +55,7 @@ const WhyNextgen = () => {
               quality={100}
             />
           </div>
-          <h5 className="font-heading text-lg font-semibold text-orange-dark">
+          <h5 className="font-heading text-lg font-semibold text-primary">
             Operate globally
           </h5>
           <p className="text-sm text-slate-500">
@@ -72,11 +72,11 @@ const WhyNextgen = () => {
               quality={100}
             />
           </div>
-          <h5 className="font-heading text-lg font-semibold text-orange-dark">
+          <h5 className="font-heading text-lg font-semibold text-primary">
             Completely flexible
           </h5>
           <p className="text-sm text-slate-500">
-            Customize NextGen to fit your business and give you the controls.
+            Customize Bill-if to fit your business and give you the controls.
           </p>
         </Fade>
         <Fade duration={1.3} className="w-4/5 space-y-2 md:max-w-60">
@@ -90,7 +90,7 @@ const WhyNextgen = () => {
               className=""
             />
           </div>
-          <h5 className="font-heading text-lg font-semibold text-orange-dark">
+          <h5 className="font-heading text-lg font-semibold text-primary">
             An extension of your team
           </h5>
           <p className="text-sm text-slate-500">
@@ -111,4 +111,4 @@ const WhyNextgen = () => {
   );
 };
 
-export default WhyNextgen;
+export default WhyBillif;

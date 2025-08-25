@@ -74,9 +74,7 @@ const ContactForm = () => {
         onSubmit={form.handleSubmit(onSubmit)}
         className="w-full space-y-6 rounded-md bg-white/50 p-8 shadow-md backdrop:blur"
       >
-        <h3 className="text-2xl font-semibold text-orange-dark">
-          Reach out to us
-        </h3>
+        <h3 className="text-2xl font-semibold text-primary">Reach out to us</h3>
         <FormField
           control={form.control}
           name="firstName"

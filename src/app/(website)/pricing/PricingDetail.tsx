@@ -67,7 +67,7 @@ const pricingData = [
 
 const PricingDetail = () => {
   return (
-    <section className="space-y-16 bg-gradient-to-b from-orange-100 to-white pb-20">
+    <section className="space-y-16 bg-gradient-to-b from-primary/10 to-white pb-20">
       <div className="relative bg-white pt-20">
         <Image
           src="/assets/images/accountPayable/unsplash_ULJCBY8Tcfg.png"
@@ -77,13 +77,13 @@ const PricingDetail = () => {
           className="absolute left-0 top-0 h-full object-cover opacity-20"
         />
         <div className="contain relative z-10 space-y-8 pb-20 pt-12 text-center">
-          <h1 className="text-center font-heading text-5xl font-semibold text-orange-dark">
+          <h1 className="text-center font-heading text-5xl font-semibold text-primary">
             Plans and pricing
           </h1>
           <p className="mx-auto mt-8 max-w-screen-lg text-center">
             Spend 50% less time on AP and automate invoicing and get paid 2x
             faster. Access credit lines from Startups, established brands, and
-            accountants do more with NextGen Revenue Paymentech.
+            accountants do more with BIll Intelligent Flow Technologies.
           </p>
           <div className="flex items-center justify-center gap-8">
             <div>
@@ -94,23 +94,23 @@ const PricingDetail = () => {
       </div>
 
       <div className="contain space-y-8">
-        <h2 className="text-center font-heading text-3xl font-semibold text-orange-dark">
+        <h2 className="text-center font-heading text-3xl font-semibold text-primary">
           Account Payable and Account Receivable
         </h2>
 
         <div className="mx-auto grid max-w-screen-2xl gap-6 md:grid-cols-2">
           {/* <div className="col-span-2 w-full space-y-6 rounded-2xl bg-white p-6 shadow">
-            <h5 className="font-heading text-lg text-orange-dark">
+            <h5 className="font-heading text-lg text-primary">
               Essentials
             </h5>
             <div className="flex gap-1">
               <span>₦</span>
-              <h1 className="font-heading text-3xl text-orange-dark">29,999</h1>
+              <h1 className="font-heading text-3xl text-primary">29,999</h1>
               <p className="text-xs text-black/50">user/month</p>
             </div>
             <div className="grid justify-between gap-2 md:grid-cols-2">
               <div className="space-y-2">
-                <h6 className="font-heading text-sm font-semibold text-orange-dark">
+                <h6 className="font-heading text-sm font-semibold text-primary">
                   Payable
                 </h6>
                 <ul className="list-disc space-y-2 pl-4 text-sm text-black/70">
@@ -122,7 +122,7 @@ const PricingDetail = () => {
                 </ul>
               </div>
               <div className="space-y-2">
-                <h6 className="font-heading text-sm font-semibold text-orange-dark">
+                <h6 className="font-heading text-sm font-semibold text-primary">
                   Receivable
                 </h6>
                 <ul className="list-disc space-y-2 pl-4 text-sm text-black/70">
@@ -146,17 +146,17 @@ const PricingDetail = () => {
               key={item.title}
               className="col-span-1 h-fit w-full space-y-6 rounded-2xl bg-white p-6 shadow"
             >
-              <h5 className="font-heading text-lg text-orange-dark">
+              <h5 className="font-heading text-lg text-primary">
                 {item.title}
               </h5>
               {item.price === "Custom price" ? (
-                <h1 className="font-heading text-3xl text-orange-dark">
+                <h1 className="font-heading text-3xl text-primary">
                   Custom price
                 </h1>
               ) : (
                 <div className="flex gap-1">
                   <span>₦</span>
-                  <h1 className="font-heading text-3xl text-orange-dark">
+                  <h1 className="font-heading text-3xl text-primary">
                     {item.price}
                   </h1>
                   <p className="text-xs text-black/50">

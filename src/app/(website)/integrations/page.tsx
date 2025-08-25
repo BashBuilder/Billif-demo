@@ -12,7 +12,7 @@ const page = () => {
       <AccountHeading
         image="/assets/images/integrations/Frame 7149.png"
         title="Automation. Integration. We've got you covered."
-        subtitle="NextGen Integrations"
+        subtitle="Bill-if Integrations"
         description="Reduce manual data entry, reconcile accounts faster, and improve team productivity with automatic sync and data integration."
       />
       <Levelup />

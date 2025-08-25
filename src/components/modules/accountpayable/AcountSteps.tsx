@@ -13,14 +13,14 @@ const AccountSteps = ({ title, steps }: Pageprops) => {
   return (
     <section className="contain space-y-6 py-20">
       <Fade>
-        <h2 className="mx-auto max-w-screen-lg text-center font-heading text-4xl font-semibold text-orange-dark">
+        <h2 className="mx-auto max-w-screen-lg text-center font-heading text-4xl font-semibold text-primary">
           {title}
         </h2>
       </Fade>
       <div className="flex flex-wrap items-center justify-center gap-10 pt-4">
         {steps.map((step) => (
           <Fade key={step.label} className="space-y-3">
-            <div className="mx-auto flex h-[80vw] max-h-48 w-[80vw] max-w-48 items-center justify-center rounded-md bg-orange-100 p-10 shadow-md max-[365px]:max-w-full">
+            <div className="mx-auto flex h-[80vw] max-h-48 w-[80vw] max-w-48 items-center justify-center rounded-md bg-primary/10 p-10 shadow-md max-[365px]:max-w-full">
               <Image
                 src={step.image}
                 alt={step.label}

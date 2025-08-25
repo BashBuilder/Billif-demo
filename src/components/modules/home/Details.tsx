@@ -9,7 +9,7 @@ const serviceDescriptionContent = [
   {
     image: "/assets/images/home/user writing description.png",
     heading: "Simplify your purchasing",
-    subHeading: "NEXTGEN Account payable",
+    subHeading: "Bill-if Account payable",
     description:
       "Provide everyone in your organization with the tools to make more efficient and responsible spend decisions, saving time and money that can be reinvested into your business.",
     list: [
@@ -22,7 +22,7 @@ const serviceDescriptionContent = [
   {
     image: "/assets/images/home/invoice image.png",
     heading: "Automate payments & accounting",
-    subHeading: "NEXTGEN Financial Operations Platform",
+    subHeading: "Bill-if Financial Operations Platform",
     description:
       "Confidently automate your financial operations with simple integration into your tech stack.",
     list: [
@@ -34,7 +34,7 @@ const serviceDescriptionContent = [
   {
     image: "/assets/images/home/clothings.png",
     heading: "Increase profitability with spend controls",
-    subHeading: "NEXTGEN Ease of operations",
+    subHeading: "Bill-if Ease of operations",
     description:
       "Enhance your bottom line by controlling every purchase, eliminating unauthorized spending, and improving spend visibility.",
     list: [
@@ -47,9 +47,9 @@ const serviceDescriptionContent = [
 
 const Details = () => {
   return (
-    <section className="space-y-20 bg-orange-100/50 py-20">
+    <section className="space-y-20 bg-primary/10 py-20">
       <Fade>
-        <h1 className="contain max-w-screen-lg text-center font-heading text-4xl font-semibold text-orange-dark">
+        <h1 className="contain max-w-screen-2xl text-center font-heading text-4xl font-semibold text-primary">
           Maximize your savings with streamlined purchasing and payments
         </h1>
       </Fade>
@@ -77,13 +77,13 @@ const Details = () => {
               <Fade
                 direction={index % 2 ? "left" : "right"}
                 duration={1}
-                className={`absolute -top-10 size-40 rounded-full bg-orange-900 ${index % 2 ? "-right-10" : "-left-10"} `}
+                className={`absolute -top-10 size-40 rounded-full bg-primary/90 ${index % 2 ? "-right-10" : "-left-10"} `}
               />
 
               <Fade
                 direction={index % 2 ? "left" : "right"}
                 duration={1.3}
-                className={`absolute -bottom-10 size-20 rounded-full border-2 border-orange-700 ${index % 2 ? "-left-10" : "-right-10"} `}
+                className={`absolute -bottom-10 size-20 rounded-full border-2 border-primary/70 ${index % 2 ? "-left-10" : "-right-10"} `}
               />
             </div>
 
@@ -92,7 +92,7 @@ const Details = () => {
                 <h4>{details.subHeading}</h4>
               </Fade>
               <Fade>
-                <h3 className="font-heading text-3xl font-semibold text-orange-dark">
+                <h3 className="font-heading text-3xl font-semibold text-primary">
                   {details.heading}
                 </h3>
               </Fade>

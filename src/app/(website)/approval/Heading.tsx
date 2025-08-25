@@ -18,13 +18,13 @@ const Heading = () => {
       />
       <div className="contain relative space-y-8 text-center">
         <Fade>
-          <h1 className="text-center font-heading text-5xl font-semibold text-orange-dark">
+          <h1 className="text-center font-heading text-5xl font-semibold text-primary">
             Optimize Your Approval Process
           </h1>
         </Fade>
         <Fade>
           <p className="mt-8 text-center text-lg">
-            NextGen’s approval software provides the insights you need to make
+            Bill-if’s approval software provides the insights you need to make
             informed decisions and meet your team’s needs, all while staying
             within budget.
           </p>

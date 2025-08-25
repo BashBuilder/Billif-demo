@@ -7,7 +7,7 @@ const Features = () => {
     <section className="bg-orange-50/50 py-20">
       <div className="contain space-y-8">
         <div className="space-y-3">
-          <h2 className="text-orange-dark font-heading text-4xl font-semibold">
+          <h2 className="font-heading text-4xl font-semibold text-primary">
             Approval software features
           </h2>
           <p>
@@ -15,12 +15,12 @@ const Features = () => {
             requests to the right teams for approvals.
           </p>
         </div>
-        <ul className="*:before:bg-orange-dark flex flex-wrap items-start gap-16 *:relative *:ml-10 *:max-w-sm *:space-y-2 *:before:absolute *:before:-left-10 *:before:h-full *:before:w-px *:before:rounded-full">
+        <ul className="flex flex-wrap items-start gap-16 *:relative *:ml-10 *:max-w-sm *:space-y-2 *:before:absolute *:before:-left-10 *:before:h-full *:before:w-px *:before:rounded-full *:before:bg-primary">
           <li>
             <h3 className="font-heading text-xl font-medium">
               Unlimited approval workflows
             </h3>
-            <p className="text-orange-dark/70">
+            <p className="text-primary/70">
               Create custom approval routings that match your organization’s
               structure
             </p>
@@ -29,7 +29,7 @@ const Features = () => {
             <h3 className="font-heading text-xl font-medium">
               Approve by budget
             </h3>
-            <p className="text-orange-dark/70">
+            <p className="text-primary/70">
               Easily understand the potential impact of a purchase or expense on
               your budget
             </p>
@@ -38,7 +38,7 @@ const Features = () => {
             <h3 className="font-heading text-xl font-medium">
               Notifications and chat
             </h3>
-            <p className="text-orange-dark/70">
+            <p className="text-primary/70">
               Remove bottlenecks with configurable notifications on email,
               mobile, and in Slack
             </p>
@@ -47,7 +47,7 @@ const Features = () => {
             <h3 className="font-heading text-xl font-medium">
               Approver delegation
             </h3>
-            <p className="text-orange-dark/70">
+            <p className="text-primary/70">
               Approvers can push pending and incoming requests to a different
               approver for a set time period
             </p>

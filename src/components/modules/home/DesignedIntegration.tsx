@@ -10,13 +10,13 @@ const DesignedIntegration = () => {
   return (
     <section className="contain space-y-6 py-20 text-center">
       <Fade>
-        <h2 className="font-heading text-orange-dark mx-auto max-w-screen-md text-4xl font-semibold">
+        <h2 className="mx-auto max-w-screen-md font-heading text-4xl font-semibold text-primary">
           Designed to integrate and share data with your finance tech stack
         </h2>
       </Fade>
       <Fade>
         <p className="mx-auto max-w-2xl py-3">
-          NextGen integrates with leading accounting software and financial
+          Bill-if integrates with leading accounting software and financial
           tools to reduce manual entry, speed up reconciliation, and simplify
           your workflow.
         </p>
@@ -26,7 +26,7 @@ const DesignedIntegration = () => {
           <Fade
             duration={0.5 + index * 0.3}
             key={integration.title}
-            className="flex h-40 w-80 items-center justify-center rounded-md bg-orange-100 shadow-md"
+            className="flex h-40 w-80 items-center justify-center rounded-md bg-primary/10 shadow-md"
           >
             <img
               src={integration.icon}

@@ -5,7 +5,7 @@ import React from "react";
 
 const Support = () => {
   return (
-    <section className="bg-orange-dark py-20">
+    <section className="bg-primary py-20">
       <div className="contain space-y-4">
         <Fade>
           <h2 className="text-center font-heading text-4xl font-semibold text-white">
@@ -13,8 +13,8 @@ const Support = () => {
           </h2>
         </Fade>
         <Fade>
-          <p className="mx-auto max-w-screen-lg text-center text-orange-100">
-            NextGen’s team of in-house technical account managers and
+          <p className="mx-auto max-w-screen-lg text-center text-primary/10">
+            Bill-if’s team of in-house technical account managers and
             integration managers are dedicated to your success. From API setup
             to integration and deployment, we work with you to ensure our
             integrations unlock efficiency improvements for you.

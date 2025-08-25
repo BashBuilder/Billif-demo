@@ -9,7 +9,7 @@ import {
 const Faq = ({ faq }: { faq?: { question: string; answer: string }[] }) => {
   return (
     <section className="contain space-y-6 py-20">
-      <h1 className="text-center font-heading text-4xl font-semibold text-orange-dark">
+      <h1 className="text-center font-heading text-4xl font-semibold text-primary">
         Frequently asked questions
       </h1>
       {faq && (
@@ -22,7 +22,7 @@ const Faq = ({ faq }: { faq?: { question: string; answer: string }[] }) => {
                 className="hover:*:decoration-transparent"
               >
                 <AccordionTrigger className="">
-                  <p className="whitespace-pre-wrapf font-heading text-xl font-semibold text-orange-dark">
+                  <p className="whitespace-pre-wrapf font-heading text-xl font-semibold text-primary">
                     {faqItem.question}
                   </p>
                 </AccordionTrigger>

@@ -10,8 +10,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta
-          name="NextGen waitlist"
-          content="NextGen: Revenue pament-tech by QorePay join waitlist"
+          name="Bill-if waitlist"
+          content="Bill-if: Revenue pament-tech by QorePay join waitlist"
         />
       </head>
       <Toaster />

@@ -23,7 +23,7 @@ const AccountHeading = ({ image, title, subtitle, description }: PageProps) => {
         />
         <section className="relative z-10 flex w-full flex-col gap-5 max-lg:items-center max-lg:text-center lg:max-w-lg lg:pb-20">
           <Fade>
-            <p className="uppercase text-orange-dark"> {subtitle} </p>
+            <p className="uppercase text-primary"> {subtitle} </p>
           </Fade>
           <Fade duration={0.8}>
             <h1 className="font-heading text-4xl font-semibold">{title}</h1>

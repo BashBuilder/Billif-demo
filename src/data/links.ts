@@ -1,5 +1,5 @@
-export const dashboardLink = "https://app.getnextgen.io";
-export const signupLink = "https://app.getnextgen.io/register";
+export const dashboardLink = "https://app.getBill-if.io";
+export const signupLink = "https://app.getBill-if.io/register";
 
 export const navigationLinks: NavigationLinksTypes[] = [
   {

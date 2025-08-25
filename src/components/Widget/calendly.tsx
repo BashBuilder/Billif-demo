@@ -32,7 +32,7 @@ const CalendlyWidget: React.FC = () => {
     event.preventDefault();
     if (window.Calendly) {
       window.Calendly.initPopupWidget({
-        url: "https://calendly.com/getnextgen/30min?primary_color=f57c00",
+        url: "https://calendly.com/getBill-if/30min?primary_color=f57c00",
       });
     }
   };

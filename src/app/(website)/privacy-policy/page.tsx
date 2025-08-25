@@ -5,18 +5,18 @@ const PrivacyPolicy = () => {
     <main className="space-y-12 pb-20">
       <section className="bg-orange-50 pb-40 pt-52">
         <div className="contain space-y-10">
-          <h1 className="mx-auto max-w-screen-md text-center font-heading text-4xl text-orange-dark">
+          <h1 className="mx-auto max-w-screen-md text-center font-heading text-4xl text-primary">
             PRIVACY POLICY
           </h1>
         </div>
       </section>
 
       <section className="contain space-y-6">
-        <h2 className="font-heading text-3xl font-semibold text-orange-dark">
+        <h2 className="font-heading text-3xl font-semibold text-primary">
           INTRODUCTION
         </h2>
         <p>
-          This Privacy Notice applies to NextGen Revenue Paymentech
+          This Privacy Notice applies to BIll Intelligent Flow Technologies
           (&quot;NGRPay&quot;), along with its affiliates, successors, and
           assigns (collectively referred to as “NGRPay,” “We,” “Us,” or “Our”).
           It governs Our collection, use, and handling of personal information
@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
           the Services (collectively referred to as “Marketing”).
           <br />
           <br />
-          This Privacy Notice applies to NextGen Revenue Paymentech
+          This Privacy Notice applies to BIll Intelligent Flow Technologies
           (&quot;NGRPay&quot;), along with its affiliates, successors, and
           assigns (collectively referred to as “NGRPay,” “We,” “Us,” or “Our”).
           It governs Our collection, use, and handling of personal information
@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
 
         {privacyData.map((item, index) => (
           <div key={item.title} className="space-y-4">
-            <h3 className="whitespace-pre-wrap font-heading text-2xl text-orange-dark">
+            <h3 className="whitespace-pre-wrap font-heading text-2xl text-primary">
               <span> {index + 1}. </span> {item.title}
             </h3>
             {item.detail && (

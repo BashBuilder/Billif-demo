@@ -43,7 +43,7 @@ const AccountReceivableDetail = () => {
               className={`space-y-4 md:max-w-md ${index % 2 && "md:order-2"} `}
             >
               <Fade>
-                <h3 className="font-heading text-3xl font-semibold text-orange-dark">
+                <h3 className="font-heading text-3xl font-semibold text-primary">
                   {item.heading}
                 </h3>
               </Fade>

@@ -9,14 +9,14 @@ const Sync = () => {
       <div className="contain mx-auto flex flex-wrap items-center justify-center gap-8 py-20 lg:gap-16">
         <div className="max-w-md space-y-4">
           <Fade>
-            <h3 className="text-orange-dark text-3xl font-semibold">
+            <h3 className="text-3xl font-semibold text-primary">
               Sync more to save time
             </h3>
           </Fade>
           <Fade>
             <p>
               Integrate with popular accounting and ERP solutions to auto-sync
-              NextGen pay transactions and pull-in your amortization schedules,
+              Bill-if pay transactions and pull-in your amortization schedules,
               accelerating your accounts payable workflow.
             </p>
           </Fade>

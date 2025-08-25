@@ -3,10 +3,11 @@ import Link from "next/link";
 import React from "react";
 import TopographySvg from "../global/TopographySvg";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import Logo from "../global/logo";
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-orange-100 py-20">
+    <footer className="relative overflow-hidden bg-primary/10 py-20">
       <TopographySvg
         color="black"
         className="absolute -bottom-[50%] -left-[25%] rotate-90 opacity-50"
@@ -18,17 +19,8 @@ const Footer = () => {
       <div className="contain relative z-10 space-y-20">
         <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 lg:justify-items-center">
           <div className="space-y-6">
-            <div className="h-12">
-              <Image
-                src="/assets/images/nextgen resized.png"
-                alt="NextGen Revenue Paymentech"
-                width={150}
-                height={150}
-                quality={100}
-                className="h-full object-contain"
-              />
-            </div>
-            <ul className="space-y-4 font-semibold text-orange-dark">
+            <Logo />
+            <ul className="space-y-4 font-semibold text-primary">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link href="/terms">Terms and Condition</Link>
               </li>
@@ -41,7 +33,7 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Solutions</h3>
             </div>
-            <ul className="space-y-4 font-semibold text-orange-dark">
+            <ul className="space-y-4 font-semibold text-primary">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link href="/account-payable">Account Payable</Link>
               </li>
@@ -60,7 +52,7 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Resources</h3>
             </div>
-            <ul className="space-y-4 font-semibold text-orange-dark">
+            <ul className="space-y-4 font-semibold text-primary">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link href="/contact">Contact</Link>
               </li>
@@ -76,7 +68,7 @@ const Footer = () => {
             <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Socials</h3>
             </div>
-            <ul className="flex flex-wrap items-center gap-4 font-semibold text-orange-dark max-md:gap-8">
+            <ul className="flex flex-wrap items-center gap-4 font-semibold text-primary max-md:gap-8">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"
@@ -88,7 +80,7 @@ const Footer = () => {
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/nextgen_revenue?igsh=MWY2Mzd2b3V2NHdoag%3D%3D&utm_source=qr "
+                  href="https://www.instagram.com/Bill-if_revenue?igsh=MWY2Mzd2b3V2NHdoag%3D%3D&utm_source=qr "
                 >
                   <Instagram />
                 </Link>
@@ -100,14 +92,14 @@ const Footer = () => {
                     alt="Twitter"
                     width={20}
                     height={10}
-                    className="fill-orange-dark"
+                    className="fill-primary"
                   />
                 </Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"
-                  href="https://www.linkedin.com/company/nextgen-revenue-paymentech/"
+                  href="https://www.linkedin.com/company/Bill-if-revenue-paymentech/"
                 >
                   <Linkedin />
                 </Link>
@@ -116,8 +108,8 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-center font-semibold text-slate-950/50">
-          © {new Date().getFullYear()} NextGen Revenue Paymentech. All rights
-          reserved.
+          © {new Date().getFullYear()} BIll Intelligent Flow Technologies. All
+          rights reserved.
         </p>
       </div>
     </footer>

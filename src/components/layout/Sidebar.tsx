@@ -26,7 +26,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: PropType) => {
 
       <section className="relative z-[101] w-4/5 space-y-10 bg-orange-50 px-20 py-32">
         <button
-          className="absolute right-20 top-20 text-orange-dark"
+          className="absolute right-20 top-20 text-primary"
           onClick={() => setIsSidebarOpen(false)}
         >
           <X />

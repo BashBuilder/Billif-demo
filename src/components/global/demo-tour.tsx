@@ -95,14 +95,14 @@ const DemoTour = () => {
     <div>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger>
-          <Button className="flex items-center gap-2 border border-primary bg-transparent text-primary hover:bg-orange-100">
+          <Button className="flex items-center gap-2 border border-primary bg-transparent text-primary hover:bg-primary/10">
             Get Deck <Download size={16} />
           </Button>
         </DialogTrigger>
-        <DialogContent className="bg-orange-100">
+        <DialogContent className="bg-primary/10">
           <DialogHeader>
             <DialogTitle>
-              <h3 className="mx-auto max-w-lg px-8 pb-4 text-2xl font-semibold text-orange-dark">
+              <h3 className="mx-auto max-w-lg px-8 pb-4 text-2xl font-semibold text-primary">
                 Get Deck
               </h3>
             </DialogTitle>
@@ -186,7 +186,7 @@ const DemoTour = () => {
                 </form>
               </Form>
               <Link
-                href="/file/GetNextGen Pitch Deck.pdf"
+                href="/file/GetBill-if Pitch Deck.pdf"
                 download={true}
                 className="hidden"
                 target="_blank"

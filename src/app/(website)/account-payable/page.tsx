@@ -14,9 +14,9 @@ const page = () => {
     <main>
       <AccountHeading
         image="/assets/images/home/clothings.png"
-        title="Speed up accounts payable with NextGen."
+        title="Speed up accounts payable with Bill-if."
         subtitle="Account payable"
-        description="NextGen automates your entire accounts payable process, ensuring every bill is recorded, approved, and paid without any data entry or repetitive tasks"
+        description="Bill-if automates your entire accounts payable process, ensuring every bill is recorded, approved, and paid without any data entry or repetitive tasks"
       />
       <AccountSteps
         title="Make business payments in four easy steps"

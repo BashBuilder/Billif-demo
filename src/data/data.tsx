@@ -1,5 +1,3 @@
-
-
 export const accountPayableSteps = [
   {
     label: "Create",
@@ -46,7 +44,7 @@ export const integrationsData = [
     title: "Automation for QuickBooks",
     icon: "/assets/Svg/quickbooks.svg",
     description:
-      "NextGen integrates seamlessly with QuickBooks Online and Desktop to automate the accounts payable process from purchase orders to payments. We take care of the data entry and offer SmartCoding technology that helps your team code and approve invoices faster than ever. Our reporting gives your team insight into the entire AP workflow, and helps you identify and remove any bottlenecks in the process.",
+      "Bill-if integrates seamlessly with QuickBooks Online and Desktop to automate the accounts payable process from purchase orders to payments. We take care of the data entry and offer SmartCoding technology that helps your team code and approve invoices faster than ever. Our reporting gives your team insight into the entire AP workflow, and helps you identify and remove any bottlenecks in the process.",
     image: "/assets/images/integrations/unsplash_744oGeqpxPQ.png",
   },
   {
@@ -60,7 +58,7 @@ export const integrationsData = [
     title: "Xero AP Automation",
     icon: "/assets/Svg/xerologo.svg",
     description:
-      "NextGen AP provides accounts payable (AP) automation services to help Xero users incorporate a fast and easy way to manage their AP workflow. The software offers AP teams a simple, streamlined and secure way to process invoices and make payments through multiple channels. NextGen AP’s integration supports a touchless experience with two and three-way PO matching capabilities, providing customized approvals and enhanced internal controls.",
+      "Bill-if AP provides accounts payable (AP) automation services to help Xero users incorporate a fast and easy way to manage their AP workflow. The software offers AP teams a simple, streamlined and secure way to process invoices and make payments through multiple channels. Bill-if AP’s integration supports a touchless experience with two and three-way PO matching capabilities, providing customized approvals and enhanced internal controls.",
     image: "/assets/images/integrations/Dashboard-hero.1646877532037 1.png",
   },
 ];

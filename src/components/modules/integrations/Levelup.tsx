@@ -8,8 +8,8 @@ const Levelup = () => {
   return (
     <section className="contain space-y-6 py-20">
       <Fade>
-        <h2 className="text-orange-dark font-heading text-center text-4xl font-semibold">
-          Level up with NextGen Integrations
+        <h2 className="text-center font-heading text-4xl font-semibold text-primary">
+          Level up with Bill-if Integrations
         </h2>
       </Fade>
       <div className="flex flex-wrap items-center justify-center gap-10">

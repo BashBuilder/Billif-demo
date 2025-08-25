@@ -73,9 +73,7 @@ const WaitListForm = () => {
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-2 rounded-md bg-white/50"
       >
-        <h3 className="text-2xl font-semibold text-orange-dark">
-          Join waitlist
-        </h3>
+        <h3 className="text-2xl font-semibold text-primary">Join waitlist</h3>
         <FormField
           control={form.control}
           name="firstName"

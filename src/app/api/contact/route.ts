@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
 
     const payload = {
       ...body,
-      type: "nextgen-contact",
+      type: "Bill-if-contact",
     };
 
     const baseUrl = process.env.GOOGLE_CHAT_WEBHOOK_URL || "";

@@ -10,14 +10,14 @@ const Easysetup = () => {
       <div className="contain mx-auto flex flex-wrap items-center justify-center gap-8 py-20 lg:gap-16">
         <div className="max-w-md space-y-4">
           <Fade>
-            <h3 className="text-3xl font-semibold text-orange-dark">
+            <h3 className="text-3xl font-semibold text-primary">
               Easily setup your invoice
             </h3>
           </Fade>
           <Fade>
             <p>
               There are multiple ways to quickly import your invoices into
-              NextGen, with little to no manual entry required.
+              Bill-if, with little to no manual entry required.
             </p>
           </Fade>
           <Fade className="pt-4">

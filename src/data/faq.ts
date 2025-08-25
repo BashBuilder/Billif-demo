@@ -15,9 +15,9 @@ AP automation is designed to improve the efficiencies of your AP department, app
     question: "What software is used for accounts payable?",
     answer: `Most accounts payable systems are already digitized to some degree. Business accountants use software like QuickBooks,  Sage Intacct, Xero, and other accounting tools to keep financial records. That accounting software tracks income, expenses, assets, and liabilities—invoices that have been processed, bills that have been paid, and other business transactions.
 
-Today, accounts payable automation platforms integrate with that software to take digital automation to the next level. The NextGen platform, for example, can capture information from an invoice automatically and digitize it for your review. It can automate your approval workflow. It lets you make payments by ACH, virtual card, physical check, or even international wire. It handles invoice processing, electronic documents storage, authorization, and payment, all from one convenient dashboard.
+Today, accounts payable automation platforms integrate with that software to take digital automation to the next level. The Bill-if platform, for example, can capture information from an invoice automatically and digitize it for your review. It can automate your approval workflow. It lets you make payments by ACH, virtual card, physical check, or even international wire. It handles invoice processing, electronic documents storage, authorization, and payment, all from one convenient dashboard.
 
-And because it integrates with the major accounting software platforms, it reduces the effective chance of human errors. The data entered in NextGen is automatically synced and posted to your general ledger.`,
+And because it integrates with the major accounting software platforms, it reduces the effective chance of human errors. The data entered in Bill-if is automatically synced and posted to your general ledger.`,
   },
   {
     question: "What are the benefits of AP automation?",
@@ -104,7 +104,7 @@ export const ApSolution = [
 
 export const integrationsFaq = [
   {
-    question: "Which third-party applications can I integrate with Nextgen?",
+    question: "Which third-party applications can I integrate with Bill-if?",
     answer:
       "You can integrate with various third-party applications such as QuickBooks, Xero, sage, and more.",
   },
@@ -127,7 +127,7 @@ export const integrationsFaq = [
 
 export const approvalFaq = [
   {
-    question: "How does the approval process work in Nextgen?",
+    question: "How does the approval process work in Bill-if?",
     answer:
       "The approval process is automated with customizable workflows, allowing you to set rules and permissions for invoice approvals.",
   },
@@ -140,7 +140,7 @@ export const approvalFaq = [
   {
     question: "How do approvers receive notifications?",
     answer:
-      "Approvers receive email notifications and can also review and approve invoices directly through the Nextgen dashboard.",
+      "Approvers receive email notifications and can also review and approve invoices directly through the Bill-if dashboard.",
   },
   {
     question: "Is it possible to track the status of an approval?",
@@ -156,7 +156,7 @@ export const approvalFaq = [
 
 export const pricingFaq = [
   {
-    question: "What are the pricing plans for Nextgen?",
+    question: "What are the pricing plans for Bill-if?",
     answer:
       "We offer flexible pricing plans tailored to the size and needs of your business. Please visit our pricing page for detailed information.",
   },

@@ -5,17 +5,17 @@ import React from "react";
 
 const Manage = () => {
   return (
-    <section className="bg-orange-dark py-20">
+    <section className="bg-primary py-20">
       <div className="contain flex items-center justify-center gap-8 max-md:flex-col">
         <div className="basis-3/5 space-y-8">
-          <h1 className="font-heading max-w-md text-4xl font-semibold text-white max-md:text-center">
+          <h1 className="max-w-md font-heading text-4xl font-semibold text-white max-md:text-center">
             Manage spending before it occurs.
           </h1>
           <p className="text-orange-50/90">
             Manual spend approval processes are full of errors and lengthy email
             chains, causing slow approvals and poor spending visibility.
-            NextGen’s automated approval workflows solve these problems. With
-            custom rules and budget integration, NextGen ensures purchases stay
+            Bill-if’s automated approval workflows solve these problems. With
+            custom rules and budget integration, Bill-if ensures purchases stay
             within spending limits and enables informed decision-making before
             approvals.
           </p>

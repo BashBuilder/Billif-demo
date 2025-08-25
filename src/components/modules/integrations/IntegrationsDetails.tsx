@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const IntegrationsDetails = () => {
   return (
-    <section className="bg-orange-100/50 py-20">
+    <section className="bg-primary/10/50 py-20">
       <div className="contain space-y-10">
         {integrationsData.map((item, index) => (
           <div
@@ -21,7 +21,7 @@ const IntegrationsDetails = () => {
                 className={`${index === 0 && "w-full max-w-52"}`}
               />
               <Fade className="space-y-2">
-                <h3 className="font-heading text-3xl font-semibold text-orange-dark">
+                <h3 className="font-heading text-3xl font-semibold text-primary">
                   {item.title}
                 </h3>
                 <div className="h-1 w-full rounded-full bg-primary" />

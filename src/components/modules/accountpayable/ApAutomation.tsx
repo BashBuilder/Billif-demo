@@ -9,7 +9,7 @@ const ApAutomation = () => {
   return (
     <section className="contain space-y-6 py-20">
       <Fade>
-        <h2 className="text-orange-dark font-heading mx-auto max-w-screen-lg text-center text-4xl font-semibold">
+        <h2 className="mx-auto max-w-screen-lg text-center font-heading text-4xl font-semibold text-primary">
           AP automation software that does more
         </h2>
       </Fade>
@@ -26,8 +26,8 @@ const ApAutomation = () => {
             />
           </Fade>
           <Fade>
-            <p className="text-orange-dark font-semibold">
-              With NextGen automations you can pay from anywhere.
+            <p className="font-semibold text-primary">
+              With Bill-if automations you can pay from anywhere.
             </p>
           </Fade>
           <Fade>
@@ -54,7 +54,7 @@ const ApAutomation = () => {
             />
           </Fade>
           <Fade>
-            <p className="text-orange-dark font-semibold">
+            <p className="font-semibold text-primary">
               Extend payment terms on your bills and smooth out cash flows in
               seconds.
             </p>
@@ -85,8 +85,8 @@ const ApAutomation = () => {
             f
           </Fade>
           <Fade>
-            <p className="text-orange-dark font-semibold">
-              NextGen easily monitors your transactions for ease of operations
+            <p className="font-semibold text-primary">
+              Bill-if easily monitors your transactions for ease of operations
             </p>
           </Fade>
           <Fade className="">

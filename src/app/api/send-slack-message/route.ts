@@ -8,7 +8,7 @@
 
 //     const payload = {
 //       ...body,
-//       type: "nextgen-demo-tour",
+//       type: "Bill-if-demo-tour",
 //     };
 
 //     const baseUrl = process.env.GOOGLE_CHAT_WEBHOOK_URL || "";
@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
 
     const payload = {
       ...body,
-      type: "nextgen-demo-tour",
+      type: "Bill-if-demo-tour",
     };
 
     const baseUrl = process.env.GOOGLE_CHAT_WEBHOOK_URL || "";
