@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="space-y-12 text-center">
           {/* Main Headline */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 max-md:flex-col">
             <div className="mx-auto max-w-4xl space-y-6">
               <div className="mb-6 inline-flex items-center rounded-full bg-white/80 px-4 py-2 text-sm font-medium text-secondary">
                 <CheckCircle className="mr-2 h-4 w-4" />
@@ -60,7 +60,7 @@ export function HeroSection() {
               />
 
               {/* Floating Elements */}
-              <div className="absolute -left-6 -top-6 rounded-2xl border border-border/20 bg-white p-4 shadow-lg">
+              <div className="absolute -left-4 -top-6 rounded-2xl border border-border/20 bg-white p-4 shadow-lg">
                 <div className="flex items-center space-x-3">
                   <div className="h-3 w-3 animate-pulse rounded-full bg-green-500"></div>
                   <span className="text-sm font-medium text-primary">
@@ -69,7 +69,7 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <div className="absolute -right-6 -top-6 rounded-2xl bg-secondary px-4 py-3 text-secondary-foreground shadow-lg">
+              <div className="absolute -right-4 -top-6 rounded-2xl bg-secondary px-4 py-3 text-secondary-foreground shadow-lg">
                 <div className="text-sm font-bold">99.9%</div>
                 <div className="text-xs opacity-90">Accuracy</div>
               </div>
@@ -118,7 +118,7 @@ export function HeroSection() {
           </div>
 
           {/* Key Benefits */}
-          <div className="mx-auto grid max-w-4xl gap-8 pt-12 md:grid-cols-3">
+          <div className="mx-auto grid max-w-4xl grid-cols-3 gap-8 pt-12">
             <div className="space-y-3 text-center">
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-secondary/10">
                 <CheckCircle className="h-8 w-8 text-secondary" />

@@ -13,14 +13,15 @@ const Logo = ({ variant }: Props) => {
       : "/assets/bif/Logo-Transparent Color-Black.png";
 
   return (
-    <div>
-      <Link href="/">
+    <div className="flex items-start">
+      <Link href="/" className="">
         <Image
           src={src}
           alt="Bill-if logo"
           width={150}
           height={50}
           quality={100}
+          className="max-h-12 object-contain"
         />
       </Link>
     </div>
