@@ -20,3 +20,9 @@ declare interface WaitlistDataType {
   businessName: string;
   phoneNumber: string;
 }
+
+declare interface NavbarLink {
+  label: string;
+  href?: string;
+  dropdown?: { href: string; title: string; description: string }[];
+}

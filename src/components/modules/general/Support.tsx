@@ -23,7 +23,7 @@ const Support = () => {
         <Fade className="flex items-center justify-center pt-4">
           <Link
             href={dashboardLink}
-            className="rounded-full bg-primary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
+            className="rounded-full bg-secondary px-5 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80"
           >
             Get Started
           </Link>

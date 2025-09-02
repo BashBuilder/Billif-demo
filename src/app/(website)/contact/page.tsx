@@ -1,37 +1,54 @@
 /* eslint-disable @next/next/no-img-element */
 import ContactForm from "./ContactForm";
-import { MapPinIcon } from "lucide-react";
+import ContactInfo from "./contactInfo";
+import ContactFaq from "./contact-faq";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 const page = () => {
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white pb-20 pt-32">
+    <section className="bg-gradient-to-b from-blue-50 to-white pb-20 pt-20">
       <div className="contain space-y-12">
-        <div>
+        <section className="rounded-lg bg-gradient-to-br from-primary to-primary/80 py-20 text-primary-foreground">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-4xl text-center">
+              <Badge variant="secondary" className="mb-6">
+                Get In Touch
+              </Badge>
+              <h1 className="mb-6 text-4xl font-bold md:text-5xl">
+                Ready to Transform Your Financial Operations?
+              </h1>
+              <p className="mb-8 text-xl leading-relaxed opacity-90">
+                Connect with our experts to discover how Bill Intelligent Flow
+                Technologies can streamline your financial processes and drive
+                efficiency across your organization.
+              </p>
+              <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                <Button size="lg" variant="secondary">
+                  Schedule Free Demo
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
+                >
+                  Start Free Trial
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <div>
           <p className="text-center text-sm">How can we help you?</p>
           <h1 className="text-center text-4xl font-semibold text-primary">
             Get in touch
           </h1>
-        </div>
+        </div> */}
         <section className="relative grid gap-8 md:grid-cols-2">
-          <article className="space-y-6 overflow-hidden rounded-md bg-white/50 pt-6 shadow-md">
-            <div className="space-y-4 px-6">
-              <h3 className="text-2xl font-semibold text-primary">
-                Contact Information
-              </h3>
-              <div />
-              <p className="flex max-w-lg items-center gap-2">
-                <MapPinIcon className="size-4 text-primary" />
-                Plot 5 Chief Yesufu Abiodun Oniru Road. Victoria Island.
-              </p>
-            </div>
-            <img
-              src="/assets/images/1967.jpg"
-              alt="Bill-if contact support"
-              className="h-full w-full rounded-md object-cover shadow-sm"
-            />
-          </article>
+          <ContactInfo />
           <ContactForm />
         </section>
+        <ContactFaq />
       </div>
     </section>
   );

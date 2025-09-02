@@ -62,3 +62,89 @@ export const integrationsData = [
     image: "/assets/images/integrations/Dashboard-hero.1646877532037 1.png",
   },
 ];
+
+export const navbarLinks: NavbarLink[] = [
+  {
+    label: "Products",
+    dropdown: [
+      {
+        href: "/products/automation",
+        title: "Workflow Automation",
+        description: "Automate your financial processes end-to-end",
+      },
+      {
+        href: "/products/intelligence",
+        title: "AI Intelligence",
+        description: "Smart validation and error detection",
+      },
+      {
+        href: "/products/analytics",
+        title: "Analytics & Reporting",
+        description: "Real-time insights and comprehensive reports",
+      },
+      {
+        href: "/products/integrations",
+        title: "Integrations",
+        description: "Connect with your existing financial systems",
+      },
+    ],
+  },
+  {
+    label: "Solutions",
+    dropdown: [
+      {
+        href: "/pricing",
+        title: "Enterprise",
+        description: "Large-scale financial operations",
+      },
+      {
+        href: "/pricing",
+        title: "Mid-Market",
+        description: "Growing businesses with complex needs",
+      },
+      {
+        href: "/pricing",
+        title: "Startups",
+        description: "Fast-growing companies scaling operations",
+      },
+      {
+        href: "/pricing",
+        title: "Accounting Firms",
+        description: "Professional services and client management",
+      },
+    ],
+  },
+  {
+    label: "Resources",
+    dropdown: [
+      {
+        href: "/resources/blog",
+        title: "Blog",
+        description: "Latest insights on financial automation",
+      },
+      {
+        href: "/resources/case-studies",
+        title: "Case Studies",
+        description: "Success stories from our clients",
+      },
+      {
+        href: "/resources/whitepapers",
+        title: "Whitepapers",
+        description: "In-depth research and analysis",
+      },
+      {
+        href: "/resources/webinars",
+        title: "Webinars",
+        description: "Educational sessions and demos",
+      },
+    ],
+  },
+  {
+    label: "About",
+    href: "/about",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+];
