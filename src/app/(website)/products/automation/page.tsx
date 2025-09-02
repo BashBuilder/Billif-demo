@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-// import { Navigation } from "@/components/navigation";
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -8,7 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   CheckCircle,
   Zap,
@@ -18,21 +18,99 @@ import {
   Users,
   Workflow,
   Database,
+  Play,
+  ArrowRight,
 } from "lucide-react";
-import Link from "next/link";
+import { useEffect, useState } from "react";
+import CtaAction from "@/components/global/cta-action";
 
 export default function ServicesPage() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
     <main className="min-h-screen">
-      {/* <Navigation /> */}
+      {/* Subtle Background Elements */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute left-10 top-20 h-72 w-72 animate-pulse rounded-full bg-blue-100/30 blur-3xl"></div>
+        <div className="absolute right-20 top-40 h-96 w-96 animate-pulse rounded-full bg-teal-100/20 blur-3xl delay-1000"></div>
+        <div className="delay-2000 absolute bottom-20 left-1/3 h-80 w-80 animate-pulse rounded-full bg-slate-100/40 blur-3xl"></div>
+      </div>
+
+      {/* Hero Section */}
+      <section className="relative z-10 pt-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center">
+            {/* <Badge className="mb-6 bg-teal-100 text-teal-800 transition-colors hover:bg-teal-200">
+              <Zap className="mr-2 h-4 w-4" />
+              AI-Powered Automation
+            </Badge> */}
+
+            <h1
+              className={`mb-6 text-5xl font-bold text-slate-900 transition-all duration-1000 md:text-6xl ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+            >
+              Streamline your financial workflows with{" "}
+              <span className="bg-gradient-to-r from-primary to-teal-600 bg-clip-text text-transparent">
+                intelligent automation
+              </span>
+            </h1>
+
+            <p
+              className={`mb-8 text-xl leading-relaxed text-slate-600 transition-all delay-200 duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+            >
+              Keep your clients&apos; businesses healthy by staying on top of
+              their payables and receivables. Eleven&apos;s AI-powered automated
+              workflows and data recognition will help you manage cash flow
+              without the manual effort.
+            </p>
+
+            <div
+              className={`delay-400 flex flex-col justify-center gap-4 transition-all duration-1000 sm:flex-row ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+            >
+              <Button
+                size="lg"
+                className="bg-primary px-8 py-4 text-lg text-white hover:bg-primary/90"
+              >
+                Start Free Trial
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-2 bg-transparent px-8 py-4 text-lg hover:bg-slate-50"
+              >
+                <Play className="mr-2 h-5 w-5" />
+                Watch Demo
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video/Demo Section */}
+      <section className="relative z-10 py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden rounded-2xl bg-white shadow-2xl">
+            <div className="flex aspect-video items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
+              <div className="text-center">
+                <div className="mx-auto mb-4 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-primary transition-transform hover:scale-110">
+                  <Play className="ml-1 h-8 w-8 text-white" />
+                </div>
+                <p className="font-medium text-slate-600">
+                  Watch: Introduction to BILL Automation
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary to-primary/80 py-20 text-primary-foreground">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto flex px-4 max-md:flex-col">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge variant="secondary" className="mb-6">
-              Our Services
-            </Badge>
             <h1 className="mb-6 text-4xl font-bold md:text-5xl">
               Comprehensive Financial Automation Solutions
             </h1>
@@ -41,12 +119,12 @@ export default function ServicesPage() {
               automation platform. From invoice processing to cash flow
               management, we deliver fast, accurate, and effortless solutions.
             </p>
-            <img
-              src="/assets/images/Screenshot 2025-09-02 124718.png"
-              alt="Financial automation services overview"
-              className="mx-auto w-full max-w-3xl rounded-lg shadow-2xl"
-            />
           </div>
+          <img
+            src="/assets/images/Screenshot 2025-09-02 124718.png"
+            alt="Financial automation services overview"
+            className="mx-auto w-full max-w-3xl rounded-lg shadow-2xl"
+          />
         </div>
       </section>
 
@@ -240,7 +318,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Features */}
-      <section className="bg-muted/30 py-20">
+      <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
             <div className="mb-16 text-center">
@@ -367,151 +445,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Pricing Preview */}
-      <section className="bg-muted/30 py-20">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mb-6 text-3xl font-bold text-primary">
-              Flexible Pricing for Every Business
-            </h2>
-            <p className="mb-8 text-lg text-muted-foreground">
-              From startups to enterprise, we have a solution that scales with
-              your needs
-            </p>
-
-            <div className="grid gap-6 md:grid-cols-3">
-              <Card>
-                <CardHeader className="text-center">
-                  <CardTitle className="text-xl">Starter</CardTitle>
-                  <CardDescription>
-                    Perfect for small businesses
-                  </CardDescription>
-                  <div className="mt-4 text-3xl font-bold text-primary">
-                    $299<span className="text-base font-normal">/month</span>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-secondary" />
-                      Up to 500 invoices/month
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-secondary" />
-                      Basic workflow automation
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-secondary" />
-                      Email support
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="relative border-2 border-secondary">
-                <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 transform bg-secondary">
-                  Most Popular
-                </Badge>
-                <CardHeader className="text-center">
-                  <CardTitle className="text-xl">Professional</CardTitle>
-                  <CardDescription>Ideal for growing companies</CardDescription>
-                  <div className="mt-4 text-3xl font-bold text-primary">
-                    $799<span className="text-base font-normal">/month</span>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-secondary" />
-                      Up to 2,000 invoices/month
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-secondary" />
-                      Advanced automation & analytics
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-secondary" />
-                      Priority support
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader className="text-center">
-                  <CardTitle className="text-xl">Enterprise</CardTitle>
-                  <CardDescription>For large organizations</CardDescription>
-                  <div className="mt-4 text-3xl font-bold text-primary">
-                    Custom
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-secondary" />
-                      Unlimited processing
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-secondary" />
-                      Custom integrations
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-secondary" />
-                      Dedicated support team
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="mt-8">
-              <Link href="/contact">
-                <Button
-                  size="lg"
-                  className="bg-secondary hover:bg-secondary/90"
-                >
-                  Get Custom Quote
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="bg-primary py-20 text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="mb-6 text-3xl font-bold">
-              Ready to Transform Your Financial Operations?
-            </h2>
-            <p className="mb-8 text-lg opacity-90">
-              Join hundreds of companies who&apos;ve streamlined their processes
-              with our intelligent automation platform
-            </p>
-            <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Link href="/contact">
-                <Button size="lg" variant="secondary">
-                  Start Free Trial
-                </Button>
-              </Link>
-              <Link href="/solutions">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
-                >
-                  View Solutions
-                </Button>
-              </Link>
-            </div>
-            <div className="mt-6 flex items-center justify-center text-sm opacity-80">
-              <CheckCircle className="mr-2 h-4 w-4" />
-              30-day free trial • No setup fees • Cancel anytime
-            </div>
-          </div>
-        </div>
-      </section>
+      <CtaAction />
     </main>
   );
 }
