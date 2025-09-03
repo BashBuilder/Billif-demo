@@ -93,51 +93,52 @@ export const navbarLinks: NavbarLink[] = [
     label: "Solutions",
     dropdown: [
       {
-        href: "/pricing",
-        title: "Enterprise",
-        description: "Large-scale financial operations",
-      },
-      {
-        href: "/pricing",
-        title: "Mid-Market",
-        description: "Growing businesses with complex needs",
-      },
-      {
-        href: "/pricing",
+        href: "/solutions/startup",
         title: "Startups",
         description: "Fast-growing companies scaling operations",
       },
       {
+        href: "/solutions/enterprise",
+        title: "Enterprise",
+        description: "Large-scale financial operations",
+      },
+      {
+        href: "/solutions/security",
+        title: "Security",
+        description: "Growing businesses with complex needs",
+      },
+      {
         href: "/pricing",
-        title: "Accounting Firms",
+        title: "Pricing",
         description: "Professional services and client management",
       },
     ],
   },
   {
     label: "Resources",
-    dropdown: [
-      {
-        href: "/resources/blog",
-        title: "Blog",
-        description: "Latest insights on financial automation",
-      },
-      {
-        href: "/resources/case-studies",
-        title: "Case Studies",
-        description: "Success stories from our clients",
-      },
-      {
-        href: "/resources/whitepapers",
-        title: "Whitepapers",
-        description: "In-depth research and analysis",
-      },
-      {
-        href: "/resources/webinars",
-        title: "Webinars",
-        description: "Educational sessions and demos",
-      },
-    ],
+    href: "/resources",
+    // dropdown: [
+    //   {
+    //     href: "/resources/blog",
+    //     title: "Blog",
+    //     description: "Latest insights on financial automation",
+    //   },
+    //   {
+    //     href: "/resources/case-studies",
+    //     title: "Case Studies",
+    //     description: "Success stories from our clients",
+    //   },
+    //   {
+    //     href: "/resources/whitepapers",
+    //     title: "Whitepapers",
+    //     description: "In-depth research and analysis",
+    //   },
+    //   {
+    //     href: "/resources/webinars",
+    //     title: "Webinars",
+    //     description: "Educational sessions and demos",
+    //   },
+    // ],
   },
   {
     label: "About",
