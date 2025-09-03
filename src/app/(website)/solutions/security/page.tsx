@@ -14,7 +14,7 @@ export default function SecurityPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary to-[#04A2B2] py-20 text-white lg:py-32">
+      <section className="bg-gradient-to-br from-primary via-primary to-secondary py-20 text-white lg:py-32">
         <div className="container mx-auto px-4 text-center">
           <div className="mx-auto max-w-4xl space-y-8">
             <h1 className="text-4xl font-bold lg:text-6xl">
@@ -30,14 +30,14 @@ export default function SecurityPage() {
                 size="lg"
                 className="bg-teal-600 px-8 text-white hover:bg-teal-700"
               >
-                Contact us
+                Contact sales
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="border-white bg-transparent text-white hover:bg-white/10 hover:text-primary"
               >
-                Download security overview
+                Book a demo
               </Button>
             </div>
           </div>

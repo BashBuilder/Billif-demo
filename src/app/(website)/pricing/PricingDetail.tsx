@@ -1,7 +1,7 @@
 import Demo from "@/components/global/demo";
 import { Button } from "@/components/ui/button";
 import { signupLink } from "@/data/links";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -68,7 +68,33 @@ const pricingData = [
 const PricingDetail = () => {
   return (
     <section className="space-y-16 bg-gradient-to-b from-blue-50 to-white pb-20">
-      <div className="relative bg-white pt-20">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-primary via-primary to-secondary py-20 text-white lg:py-32">
+        <div className="container mx-auto px-4 text-center">
+          <div className="mx-auto max-w-4xl space-y-8">
+            <h1 className="text-4xl font-bold lg:text-6xl">
+              Plans and pricing
+              {/* <span className="text-secondary">at every step</span> */}
+            </h1>
+            <p className="mx-auto max-w-3xl text-slate-300">
+              Spend 50% less time on AP and automate invoicing and get paid 2x
+              faster. Access credit lines from Startups, established brands, and
+              accountants do more with BIll Intelligent Flow Technologies.
+            </p>
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+              <Button className="bg-teal-600 px-8 text-white hover:bg-teal-700">
+                Contact sales
+              </Button>
+              <div className="flex items-center justify-center gap-8">
+                <div>
+                  <Demo />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <div className="relative bg-white pt-20">
         <Image
           src="/assets/images/18851.jpg"
           alt="Approval software"
@@ -91,7 +117,7 @@ const PricingDetail = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="contain space-y-8">
         <h2 className="text-center font-heading text-3xl font-semibold text-primary">

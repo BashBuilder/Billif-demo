@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Building, Globe, Users, Shield } from "lucide-react";
 import Image from "next/image";
+import CtaAction from "@/components/global/cta-action";
 
 export default function EnterprisePage() {
   return (
@@ -55,7 +56,7 @@ export default function EnterprisePage() {
             <div className="relative">
               <div className="relative rounded-2xl bg-white p-8 shadow-2xl">
                 <Image
-                  src="/enterprise-automation-platform.png"
+                  src="/assets/images/120214.jpg"
                   alt="Enterprise Automation Platform"
                   width={600}
                   height={400}
@@ -81,7 +82,7 @@ export default function EnterprisePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20">
+      <section className="py-32">
         <div className="container mx-auto px-4">
           <div className="mb-20 grid items-center gap-16 lg:grid-cols-2">
             <div className="space-y-6">
@@ -176,9 +177,7 @@ export default function EnterprisePage() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="h-5 w-5 text-teal-600" />
-                  <span className="text-slate-700">
-                    SOC 2 Type II certified
-                  </span>
+                  <span className="text-slate-700">NDPR compliant</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="h-5 w-5 text-teal-600" />
@@ -229,7 +228,8 @@ export default function EnterprisePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary py-20 text-white">
+      <CtaAction />
+      {/* <section className="bg-primary py-20 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="mx-auto max-w-3xl space-y-8">
             <h2 className="text-3xl font-bold lg:text-5xl">
@@ -256,7 +256,7 @@ export default function EnterprisePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

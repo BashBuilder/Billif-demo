@@ -31,7 +31,7 @@ export default function IntelligencePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Hero Section - Same style as analytics */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#1B3057] via-[#1B3057] to-[#04A2B2] text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#1B3057] via-[#1B3057] to-secondary text-white">
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -45,7 +45,7 @@ export default function IntelligencePage() {
                 </Badge>
                 <h1 className="text-balance text-5xl font-bold leading-tight">
                   AI that thinks ahead.
-                  <span className="text-[#04A2B2]">
+                  <span className="text-secondary">
                     {" "}
                     Decisions made simple.
                   </span>
@@ -60,7 +60,7 @@ export default function IntelligencePage() {
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Button
                   size="lg"
-                  className="bg-[#04A2B2] text-white hover:bg-[#04A2B2]/90"
+                  className="bg-secondary text-white hover:bg-secondary/90"
                 >
                   Experience AI Intelligence
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -70,22 +70,22 @@ export default function IntelligencePage() {
                   variant="outline"
                   className="border-white/20 bg-transparent text-white hover:bg-white/10"
                 >
-                  Watch AI Demo
+                  Watch Demo
                 </Button>
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#04A2B2]">95%</div>
+                  <div className="text-3xl font-bold text-secondary">95%</div>
                   <div className="text-sm text-blue-200">Fraud Detection</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#04A2B2]">3x</div>
+                  <div className="text-3xl font-bold text-secondary">3x</div>
                   <div className="text-sm text-blue-200">Faster Decisions</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#04A2B2]">24/7</div>
+                  <div className="text-3xl font-bold text-secondary">24/7</div>
                   <div className="text-sm text-blue-200">AI Monitoring</div>
                 </div>
               </div>
@@ -165,11 +165,11 @@ export default function IntelligencePage() {
 
           <div className="mb-16 grid gap-8 lg:grid-cols-3">
             <Card
-              className={`cursor-pointer transition-all ${activeFeature === "detection" ? "shadow-lg ring-2 ring-[#04A2B2]" : "hover:shadow-md"}`}
+              className={`cursor-pointer transition-all ${activeFeature === "detection" ? "shadow-lg ring-2 ring-secondary" : "hover:shadow-md"}`}
               onClick={() => setActiveFeature("detection")}
             >
               <CardHeader>
-                <Eye className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <Eye className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Smart Detection</CardTitle>
                 <CardDescription>
                   AI identifies anomalies, fraud patterns, and compliance issues
@@ -179,11 +179,11 @@ export default function IntelligencePage() {
             </Card>
 
             <Card
-              className={`cursor-pointer transition-all ${activeFeature === "prediction" ? "shadow-lg ring-2 ring-[#04A2B2]" : "hover:shadow-md"}`}
+              className={`cursor-pointer transition-all ${activeFeature === "prediction" ? "shadow-lg ring-2 ring-secondary" : "hover:shadow-md"}`}
               onClick={() => setActiveFeature("prediction")}
             >
               <CardHeader>
-                <TrendingUp className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <TrendingUp className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Predictive Insights</CardTitle>
                 <CardDescription>
                   Forecast cash flow, predict payment delays, and anticipate
@@ -193,11 +193,11 @@ export default function IntelligencePage() {
             </Card>
 
             <Card
-              className={`cursor-pointer transition-all ${activeFeature === "automation" ? "shadow-lg ring-2 ring-[#04A2B2]" : "hover:shadow-md"}`}
+              className={`cursor-pointer transition-all ${activeFeature === "automation" ? "shadow-lg ring-2 ring-secondary" : "hover:shadow-md"}`}
               onClick={() => setActiveFeature("automation")}
             >
               <CardHeader>
-                <Zap className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <Zap className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Intelligent Automation</CardTitle>
                 <CardDescription>
                   Automate complex decisions based on learned patterns and
@@ -253,13 +253,13 @@ export default function IntelligencePage() {
                       <span className="text-sm font-medium">
                         Fraud Detection Rate
                       </span>
-                      <span className="text-2xl font-bold text-[#04A2B2]">
+                      <span className="text-2xl font-bold text-secondary">
                         95.2%
                       </span>
                     </div>
                     <div className="h-2 w-full rounded-full bg-gray-200">
                       <div
-                        className="h-2 rounded-full bg-[#04A2B2]"
+                        className="h-2 rounded-full bg-secondary"
                         style={{ width: "95.2%" }}
                       ></div>
                     </div>
@@ -438,7 +438,7 @@ export default function IntelligencePage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
-                <Lightbulb className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <Lightbulb className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Continuous Learning</CardTitle>
               </CardHeader>
               <CardContent>
@@ -451,7 +451,7 @@ export default function IntelligencePage() {
 
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
-                <Shield className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <Shield className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Enterprise Security</CardTitle>
               </CardHeader>
               <CardContent>
@@ -464,7 +464,7 @@ export default function IntelligencePage() {
 
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
-                <Users className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <Users className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Human-AI Collaboration</CardTitle>
               </CardHeader>
               <CardContent>
@@ -479,7 +479,7 @@ export default function IntelligencePage() {
       </section>
 
       {/* CTA Section - Same style as analytics */}
-      <section className="bg-gradient-to-r from-[#1B3057] to-[#04A2B2] py-20 text-white">
+      <section className="bg-gradient-to-r from-[#1B3057] to-secondary py-20 text-white">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="mb-6 text-4xl font-bold">
             Ready to Experience AI-Powered Finance?

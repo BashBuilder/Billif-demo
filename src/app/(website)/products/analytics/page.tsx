@@ -31,7 +31,7 @@ export default function AnalyticsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#1B3057] via-[#1B3057] to-[#04A2B2] text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#1B3057] via-[#1B3057] to-secondary text-white">
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -45,7 +45,7 @@ export default function AnalyticsPage() {
                 </Badge>
                 <h1 className="text-balance text-5xl font-bold leading-tight">
                   Instant answers.
-                  <span className="text-[#04A2B2]"> Zero blind spots.</span>
+                  <span className="text-secondary"> Zero blind spots.</span>
                 </h1>
                 <p className="text-pretty text-xl leading-relaxed text-blue-100">
                   See & control it. Get real-time visibility into every dollar
@@ -57,7 +57,7 @@ export default function AnalyticsPage() {
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Button
                   size="lg"
-                  className="bg-[#04A2B2] text-white hover:bg-[#04A2B2]/90"
+                  className="bg-secondary text-white hover:bg-secondary/90"
                 >
                   Get Started for Free
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -74,15 +74,15 @@ export default function AnalyticsPage() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#04A2B2]">99.9%</div>
+                  <div className="text-3xl font-bold text-secondary">99.9%</div>
                   <div className="text-sm text-blue-200">Accuracy Rate</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#04A2B2]">24/7</div>
+                  <div className="text-3xl font-bold text-secondary">24/7</div>
                   <div className="text-sm text-blue-200">Real-time Updates</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#04A2B2]">85%</div>
+                  <div className="text-3xl font-bold text-secondary">85%</div>
                   <div className="text-sm text-blue-200">Time Saved</div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function AnalyticsPage() {
             <div className="relative">
               <div className="relative rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-sm">
                 <Image
-                  src="/assets/images/approvalImage.png"
+                  src="/assets/images/1311213_313.jpg"
                   alt="Business Analytics Dashboard"
                   width={600}
                   height={400}
@@ -330,7 +330,7 @@ export default function AnalyticsPage() {
                     <div className="space-y-4">
                       <div className="flex items-center justify-between rounded-lg bg-gray-50 p-4">
                         <div className="flex items-center gap-3">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#04A2B2] font-bold text-white">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary font-bold text-white">
                             C
                           </div>
                           <div>
@@ -373,7 +373,7 @@ export default function AnalyticsPage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
-                <BarChart3 className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <BarChart3 className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Real-time Reporting</CardTitle>
               </CardHeader>
               <CardContent>
@@ -386,7 +386,7 @@ export default function AnalyticsPage() {
 
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
-                <TrendingUp className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <TrendingUp className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Predictive Analytics</CardTitle>
               </CardHeader>
               <CardContent>
@@ -399,7 +399,7 @@ export default function AnalyticsPage() {
 
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
-                <Target className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <Target className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Custom KPIs</CardTitle>
               </CardHeader>
               <CardContent>
@@ -412,7 +412,7 @@ export default function AnalyticsPage() {
 
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
-                <Users className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <Users className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Client Analytics</CardTitle>
               </CardHeader>
               <CardContent>
@@ -425,7 +425,7 @@ export default function AnalyticsPage() {
 
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
-                <FileText className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <FileText className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Automated Reports</CardTitle>
               </CardHeader>
               <CardContent>
@@ -438,7 +438,7 @@ export default function AnalyticsPage() {
 
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
-                <AlertTriangle className="mb-4 h-12 w-12 text-[#04A2B2]" />
+                <AlertTriangle className="mb-4 h-12 w-12 text-secondary" />
                 <CardTitle>Smart Alerts</CardTitle>
               </CardHeader>
               <CardContent>
@@ -453,7 +453,7 @@ export default function AnalyticsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-[#1B3057] to-[#04A2B2] py-20 text-white">
+      <section className="bg-gradient-to-r from-[#1B3057] to-secondary py-20 text-white">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="mb-6 text-4xl font-bold">
             Ready to Transform Your Financial Analytics?

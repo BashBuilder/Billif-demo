@@ -86,7 +86,7 @@ export default function StartupsPage() {
       </section>
 
       {/* Value Proposition */}
-      <section className="bg-gradient-to-br from-primary via-primary to-[#04A2B2] py-32 text-white">
+      <section className="bg-gradient-to-br from-primary via-primary to-secondary py-32 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-6 text-2xl font-bold lg:text-4xl">
             Get startup financial automation that scales with you
@@ -118,7 +118,7 @@ export default function StartupsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/assets/images/13420.jpg"
+                src="public/assets/images/13420.jpg"
                 alt="Startup Growth Metrics"
                 width={500}
                 height={350}
