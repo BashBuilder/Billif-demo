@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Zap, Shield, Clock } from "lucide-react";
 import Image from "next/image";
 import CtaAction from "@/components/global/cta-action";
-import Demo from "@/components/global/demo";
+import CalendlyWidget from "@/components/Widget/calendly";
 
 export default function StartupsPage() {
   return (
@@ -42,9 +42,7 @@ export default function StartupsPage() {
                 <Button size="lg" variant="outline">
                   Get started for free
                 </Button>
-                <Button>
-                  <Demo />
-                </Button>
+                <CalendlyWidget />
 
                 {/* <Button
                   variant="outline"
