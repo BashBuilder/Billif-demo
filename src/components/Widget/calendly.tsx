@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { Button } from "../ui/button";
 
 declare global {
   interface Window {
@@ -16,7 +17,21 @@ declare global {
   }
 }
 
-const CalendlyWidget: React.FC = () => {
+interface CalendlyWidgetProps {
+  variant?:
+    | "default"
+    | "outline"
+    | "ghost"
+    | "link"
+    | "destructive"
+    | "secondary";
+  size?: "default" | "sm" | "lg" | "icon" | null | undefined;
+}
+
+const CalendlyWidget: React.FC = ({
+  variant = "default",
+  size = "default",
+}: CalendlyWidgetProps) => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://assets.calendly.com/assets/external/widget.js";
@@ -38,13 +53,15 @@ const CalendlyWidget: React.FC = () => {
   };
 
   return (
-    <a
-      href="#"
-      onClick={handleDemoRequest}
-      className="rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-primary/80"
-    >
-      Request Demo
-    </a>
+    <Button variant={variant || "default"} size={size || "default"}>
+      <a
+        href="#"
+        onClick={handleDemoRequest}
+        // className="rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-primary/80"
+      >
+        Request Demo
+      </a>
+    </Button>
   );
 };
 

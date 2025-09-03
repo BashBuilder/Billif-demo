@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Zap, Shield, Clock } from "lucide-react";
 import Image from "next/image";
 import CtaAction from "@/components/global/cta-action";
+import Demo from "@/components/global/demo";
 
 export default function StartupsPage() {
   return (
@@ -38,14 +39,20 @@ export default function StartupsPage() {
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button size="lg">Get started for free</Button>
-                <Button
+                <Button size="lg" variant="outline">
+                  Get started for free
+                </Button>
+                <Button>
+                  <Demo />
+                </Button>
+
+                {/* <Button
                   variant="outline"
                   size="lg"
                   className="border-navy-200 text-navy-700 bg-transparent"
                 >
                   Schedule a demo
-                </Button>
+                </Button> */}
               </div>
 
               {/* Trust Indicators */}
@@ -118,7 +125,7 @@ export default function StartupsPage() {
             </div>
             <div className="relative">
               <Image
-                src="public/assets/images/13420.jpg"
+                src="/assets/images/13420.jpg"
                 alt="Startup Growth Metrics"
                 width={500}
                 height={350}
