@@ -1,3 +1,4 @@
+import CtaAction from "@/components/global/cta-action";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -13,11 +14,12 @@ export default function SecurityPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="from-navy-900 to-navy-800 bg-gradient-to-br py-20 text-white lg:py-32">
+      <section className="bg-gradient-to-br from-primary via-primary to-[#04A2B2] py-20 text-white lg:py-32">
         <div className="container mx-auto px-4 text-center">
           <div className="mx-auto max-w-4xl space-y-8">
             <h1 className="text-4xl font-bold lg:text-6xl">
-              Peace of mind <span className="text-teal-400">at every step</span>
+              Peace of mind{" "}
+              <span className="text-secondary">at every step</span>
             </h1>
             <p className="mx-auto max-w-3xl text-xl text-slate-300">
               From onboarding to ongoing operations and managing financial data,
@@ -43,7 +45,7 @@ export default function SecurityPage() {
       </section>
 
       {/* Security Features */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="mb-20 grid items-center gap-16 lg:grid-cols-2">
             <div className="space-y-6">
@@ -98,7 +100,6 @@ export default function SecurityPage() {
             </div>
           </div>
 
-          {/* Fraud Protection */}
           <div className="mb-20 grid items-center gap-16 lg:grid-cols-2">
             <div className="rounded-2xl bg-slate-50 p-8">
               <div className="rounded-lg bg-white p-6 shadow-sm">
@@ -140,7 +141,6 @@ export default function SecurityPage() {
             </div>
           </div>
 
-          {/* 24/7 Monitoring */}
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div className="space-y-6">
               <h2 className="text-navy-900 text-3xl font-bold">
@@ -166,7 +166,7 @@ export default function SecurityPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Data Encryption */}
       <section className="bg-slate-50 py-20">
@@ -241,13 +241,13 @@ export default function SecurityPage() {
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-teal-100">
                   <Shield className="h-8 w-8 text-teal-600" />
                 </div>
-                <CardTitle className="text-navy-900">SOC 2 Type II</CardTitle>
+                <CardTitle className="text-navy-900">NDPR</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-600">
                   Demonstrates our systems are designed to ensure your data is
-                  always secure, available, and confidential according to SOC 2
-                  Type II standards.
+                  always secure, available, and confidential according to
+                  Nigeria Data Protection Regulation standards.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -272,7 +272,8 @@ export default function SecurityPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-navy-900 py-20 text-white">
+      <CtaAction />
+      {/* <section className="bg-navy-900 py-20 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="mx-auto max-w-3xl space-y-8">
             <h2 className="text-3xl font-bold lg:text-5xl">
@@ -299,7 +300,7 @@ export default function SecurityPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
