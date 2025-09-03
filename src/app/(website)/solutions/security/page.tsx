@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Shield, Lock, Eye, Users, CheckCircle, Globe } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function SecurityPage() {
   return (
@@ -30,12 +30,12 @@ export default function SecurityPage() {
                 size="lg"
                 className="bg-teal-600 px-8 text-white hover:bg-teal-700"
               >
-                Get contact for free
+                Contact us
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                className="hover:text-navy-900 border-white bg-transparent text-white hover:bg-white"
+                className="border-white bg-transparent text-white hover:bg-white/10 hover:text-primary"
               >
                 Download security overview
               </Button>
@@ -49,7 +49,7 @@ export default function SecurityPage() {
         <div className="container mx-auto px-4">
           <div className="mb-20 grid items-center gap-16 lg:grid-cols-2">
             <div className="space-y-6">
-              <h2 className="text-navy-900 text-3xl font-bold">
+              <h2 className="text-primary text-3xl font-bold">
                 Secure logins with SSO
               </h2>
               <p className="text-lg text-slate-600">
@@ -104,7 +104,7 @@ export default function SecurityPage() {
             <div className="rounded-2xl bg-slate-50 p-8">
               <div className="rounded-lg bg-white p-6 shadow-sm">
                 <div className="space-y-4 text-center">
-                  <h4 className="text-navy-900 text-lg font-bold">
+                  <h4 className="text-primary text-lg font-bold">
                     Hardware Purchases
                   </h4>
                   <div className="text-sm text-slate-600">
@@ -113,7 +113,7 @@ export default function SecurityPage() {
                   <div className="text-sm text-slate-600">
                     Office Supplies Electronics
                   </div>
-                  <div className="text-navy-900 text-3xl font-bold">
+                  <div className="text-primary text-3xl font-bold">
                     $1,235.00
                   </div>
                   <div className="h-2 w-full rounded-full bg-slate-200">
@@ -127,7 +127,7 @@ export default function SecurityPage() {
               </div>
             </div>
             <div className="space-y-6">
-              <h2 className="text-navy-900 text-3xl font-bold">
+              <h2 className="text-primary text-3xl font-bold">
                 Block fraudulent charges with controls
               </h2>
               <p className="text-lg text-slate-600">
@@ -143,7 +143,7 @@ export default function SecurityPage() {
 
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div className="space-y-6">
-              <h2 className="text-navy-900 text-3xl font-bold">
+              <h2 className="text-primary text-3xl font-bold">
                 Never worry with 24/7 monitoring
               </h2>
               <p className="text-lg text-slate-600">
@@ -196,7 +196,7 @@ export default function SecurityPage() {
               </div>
             </div>
             <div className="space-y-6">
-              <h2 className="text-navy-900 text-3xl font-bold">
+              <h2 className="text-3xl font-bold text-primary">
                 Rest easy with data encryption
               </h2>
               <p className="text-lg text-slate-600">
@@ -226,7 +226,7 @@ export default function SecurityPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
-            <h2 className="text-navy-900 mb-4 text-3xl font-bold lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Compliant software you can trust
             </h2>
             <p className="mx-auto max-w-3xl text-xl text-slate-600">
@@ -241,7 +241,7 @@ export default function SecurityPage() {
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-teal-100">
                   <Shield className="h-8 w-8 text-teal-600" />
                 </div>
-                <CardTitle className="text-navy-900">NDPR</CardTitle>
+                <CardTitle className="text-primary">NDPR</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-600">
@@ -257,7 +257,7 @@ export default function SecurityPage() {
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-teal-100">
                   <Lock className="h-8 w-8 text-teal-600" />
                 </div>
-                <CardTitle className="text-navy-900">PCI</CardTitle>
+                <CardTitle className="text-primary">PCI</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-600">
@@ -273,7 +273,7 @@ export default function SecurityPage() {
 
       {/* CTA Section */}
       <CtaAction />
-      {/* <section className="bg-navy-900 py-20 text-white">
+      {/* <section className="bg-primary py-20 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="mx-auto max-w-3xl space-y-8">
             <h2 className="text-3xl font-bold lg:text-5xl">
@@ -293,7 +293,7 @@ export default function SecurityPage() {
               <Button
                 variant="outline"
                 size="lg"
-                className="hover:text-navy-900 border-white bg-transparent text-white hover:bg-white"
+                className="hover:text-primary border-white bg-transparent text-white hover:bg-white"
               >
                 Download security guide
               </Button>

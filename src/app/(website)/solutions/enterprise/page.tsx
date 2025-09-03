@@ -18,7 +18,7 @@ export default function EnterprisePage() {
                 >
                   Enterprise Ready
                 </Badge>
-                <h1 className="text-navy-900 text-4xl font-bold leading-tight lg:text-6xl">
+                <h1 className="text-4xl font-bold leading-tight text-primary lg:text-6xl">
                   Advanced automation for your{" "}
                   <span className="text-teal-600">enterprise</span>
                 </h1>
@@ -68,7 +68,7 @@ export default function EnterprisePage() {
       </section>
 
       {/* Value Proposition */}
-      <section className="bg-navy-900 py-20 text-white">
+      <section className="bg-primary py-20 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-6 text-3xl font-bold lg:text-5xl">
             Finance automation at enterprise scale
@@ -85,7 +85,7 @@ export default function EnterprisePage() {
         <div className="container mx-auto px-4">
           <div className="mb-20 grid items-center gap-16 lg:grid-cols-2">
             <div className="space-y-6">
-              <h3 className="text-navy-900 text-3xl font-bold">
+              <h3 className="text-3xl font-bold text-primary">
                 Supporting you globally, in office and on the go
               </h3>
               <p className="text-lg text-slate-600">
@@ -144,7 +144,7 @@ export default function EnterprisePage() {
               </div>
             </div>
             <div className="space-y-6">
-              <h3 className="text-navy-900 text-3xl font-bold">
+              <h3 className="text-3xl font-bold text-primary">
                 Connectivity from email to ERP
               </h3>
               <p className="text-lg text-slate-600">
@@ -165,7 +165,7 @@ export default function EnterprisePage() {
         <div className="container mx-auto px-4">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div className="space-y-6">
-              <h3 className="text-navy-900 text-3xl font-bold">
+              <h3 className="text-3xl font-bold text-primary">
                 Security and compliance peace of mind
               </h3>
               <p className="text-lg text-slate-600">
@@ -196,7 +196,7 @@ export default function EnterprisePage() {
             <div className="rounded-2xl bg-white p-8 shadow-lg">
               <div className="space-y-6">
                 <div className="text-center">
-                  <h4 className="text-navy-900 mb-4 text-xl font-bold">
+                  <h4 className="mb-4 text-xl font-bold text-primary">
                     Enterprise team offsite
                   </h4>
                 </div>
@@ -229,7 +229,7 @@ export default function EnterprisePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-navy-900 py-20 text-white">
+      <section className="bg-primary py-20 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="mx-auto max-w-3xl space-y-8">
             <h2 className="text-3xl font-bold lg:text-5xl">
@@ -249,7 +249,7 @@ export default function EnterprisePage() {
               <Button
                 variant="outline"
                 size="lg"
-                className="hover:text-navy-900 border-white bg-transparent text-white hover:bg-white"
+                className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
               >
                 Schedule demo
               </Button>

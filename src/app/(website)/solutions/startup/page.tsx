@@ -9,6 +9,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Zap, Shield, Clock } from "lucide-react";
 import Image from "next/image";
+import CtaAction from "@/components/global/cta-action";
 
 export default function StartupsPage() {
   return (
@@ -25,7 +26,7 @@ export default function StartupsPage() {
                 >
                   Built for Growth
                 </Badge>
-                <h1 className="text-navy-900 text-4xl font-bold leading-tight lg:text-6xl">
+                <h1 className="text-4xl font-bold leading-tight text-primary lg:text-6xl">
                   Finally, financial automation built for{" "}
                   <span className="text-teal-600">high-growth startups</span>
                 </h1>
@@ -37,12 +38,7 @@ export default function StartupsPage() {
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button
-                  size="lg"
-                  className="bg-teal-600 px-8 text-white hover:bg-teal-700"
-                >
-                  Get started for free
-                </Button>
+                <Button size="lg">Get started for free</Button>
                 <Button
                   variant="outline"
                   size="lg"
@@ -77,7 +73,7 @@ export default function StartupsPage() {
             <div className="relative">
               <div className="relative rounded-2xl bg-white p-8 shadow-2xl">
                 <Image
-                  src="/startup-dashboard-interface.png"
+                  src="/assets/images/5129994_20063.jpg"
                   alt="Startup Dashboard Interface"
                   width={600}
                   height={400}
@@ -90,9 +86,9 @@ export default function StartupsPage() {
       </section>
 
       {/* Value Proposition */}
-      <section className="bg-navy-900 py-20 text-white">
+      <section className="bg-gradient-to-br from-primary via-primary to-[#04A2B2] py-32 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-6 text-3xl font-bold lg:text-5xl">
+          <h2 className="mb-6 text-2xl font-bold lg:text-4xl">
             Get startup financial automation that scales with you
           </h2>
           <p className="mx-auto max-w-3xl text-xl text-slate-300">
@@ -107,7 +103,7 @@ export default function StartupsPage() {
         <div className="container mx-auto px-4">
           <div className="mb-20 grid items-center gap-16 lg:grid-cols-2">
             <div className="space-y-6">
-              <h3 className="text-navy-900 text-3xl font-bold">
+              <h3 className="text-3xl font-bold text-primary">
                 A single platform for your startup
               </h3>
               <p className="text-lg text-slate-600">
@@ -122,7 +118,7 @@ export default function StartupsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/startup-growth-metrics.png"
+                src="/assets/images/13420.jpg"
                 alt="Startup Growth Metrics"
                 width={500}
                 height={350}
@@ -138,7 +134,7 @@ export default function StartupsPage() {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-teal-100">
                   <Zap className="h-6 w-6 text-teal-600" />
                 </div>
-                <CardTitle className="text-navy-900">
+                <CardTitle className="text-primary">
                   Cut burn, not corners
                 </CardTitle>
               </CardHeader>
@@ -156,15 +152,15 @@ export default function StartupsPage() {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-teal-100">
                   <Shield className="h-6 w-6 text-teal-600" />
                 </div>
-                <CardTitle className="text-navy-900">
+                <CardTitle className="text-primary">
                   No personal guarantee, built for startups
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-600">
-                  Bill's business credit cards for startups don't require a
-                  personal guarantee. We evaluate your business on its own
-                  financial merit.
+                  Bill&apos;s business credit cards for startups don&apos;t
+                  require a personal guarantee. We evaluate your business on its
+                  own financial merit.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -174,7 +170,7 @@ export default function StartupsPage() {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-teal-100">
                   <Clock className="h-6 w-6 text-teal-600" />
                 </div>
-                <CardTitle className="text-navy-900">
+                <CardTitle className="text-primary">
                   Saves you time so you can build
                 </CardTitle>
               </CardHeader>
@@ -194,13 +190,13 @@ export default function StartupsPage() {
       <section className="bg-slate-50 py-20">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
-            <h2 className="text-navy-900 mb-4 text-3xl font-bold lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Close your books on time, every time
             </h2>
             <p className="mx-auto max-w-3xl text-xl text-slate-600">
               Bill integrates seamlessly with QuickBooks, Xero, and NetSuite.
-              Your startup's financial data flows directly into your accounting
-              software.
+              Your startup&apos;s financial data flows directly into your
+              accounting software.
             </p>
           </div>
 
@@ -228,34 +224,7 @@ export default function StartupsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-navy-900 py-20 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mx-auto max-w-3xl space-y-8">
-            <h2 className="text-3xl font-bold lg:text-5xl">
-              Ready to scale your startup's finances?
-            </h2>
-            <p className="text-xl text-slate-300">
-              Join thousands of startups that trust Bill Intelligent Flow
-              Technologies for their financial automation.
-            </p>
-            <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Button
-                size="lg"
-                className="bg-teal-600 px-8 text-white hover:bg-teal-700"
-              >
-                Start free trial
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="hover:text-navy-900 border-white bg-transparent text-white hover:bg-white"
-              >
-                Schedule demo
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CtaAction />
     </div>
   );
 }
