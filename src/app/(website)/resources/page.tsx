@@ -56,7 +56,7 @@ export default function ResourcesPage() {
                 </CardTitle>
                 <CardDescription className="text-lg">
                   Discover the key trends shaping financial automation and how
-                  to prepare your business for what's next.
+                  to prepare your business for what&apos;s next.
                 </CardDescription>
               </CardHeader>
               <CardContent>
