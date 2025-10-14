@@ -22,7 +22,7 @@ const ContactInfo = () => {
                 </p>
               </div>
             </div>
-            <p className="text-lg font-semibold">+123 (456) 789</p>
+            <p className="text-lg font-semibold">0201 3306 099</p>
             <p className="text-sm text-muted-foreground">
               Monday - Friday, 8 AM - 6 PM WAT
             </p>

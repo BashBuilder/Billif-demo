@@ -99,7 +99,9 @@ export default function IntelligencePage() {
                       AI Intelligence Dashboard
                     </h3>
                     <div className="flex items-center gap-2">
-                      <div className="h-2 w-2 animate-pulse rounded-full bg-green-500"></div>
+                      <div className="animate-pulse rounded-full border-2 border-green-500 p-1">
+                        <div className="h-2 w-2 animate-pulse rounded-full bg-green-500"></div>
+                      </div>
                       <span className="text-sm text-gray-600">
                         Live AI Analysis
                       </span>

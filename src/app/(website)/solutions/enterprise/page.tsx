@@ -75,8 +75,7 @@ export default function EnterprisePage() {
             Finance automation at enterprise scale
           </h2>
           <p className="mx-auto max-w-3xl text-xl text-slate-300">
-            Powerful financial controls and intelligent automation that deploys
-            companywide and saves time.
+            Ready to Transform Your Financial Operations?
           </p>
         </div>
       </section>

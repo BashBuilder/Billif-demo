@@ -1,5 +1,5 @@
 import { CheckCircle } from "lucide-react";
-import Link from "next/link";
+// import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
 
@@ -16,20 +16,20 @@ const CtaAction = () => {
             with our intelligent automation platform
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Link href="/contact">
-              <Button size="lg" variant="secondary">
-                Start Free Trial
-              </Button>
-            </Link>
-            <Link href="/solutions">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
-              >
-                View Solutions
-              </Button>
-            </Link>
+            {/* <Link href=""> */}
+            <Button size="lg" variant="secondary">
+              Start Free Trial
+            </Button>
+            {/* </Link> */}
+            {/* <Link href="/solutions"> */}
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
+            >
+              View Solutions
+            </Button>
+            {/* </Link> */}
           </div>
           <div className="mt-6 flex items-center justify-center text-sm opacity-80">
             <CheckCircle className="mr-2 h-4 w-4" />

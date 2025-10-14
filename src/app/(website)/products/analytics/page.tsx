@@ -213,7 +213,7 @@ export default function AnalyticsPage() {
                     </CardHeader>
                     <CardContent>
                       <Image
-                        src="/assets/images/Artboard_1-removebg-preview.png"
+                        src="/assets/images/home/Screenshot 2025-10-14 105826.png"
                         alt="Revenue vs Expenses Chart"
                         width={500}
                         height={300}
@@ -231,7 +231,7 @@ export default function AnalyticsPage() {
                     </CardHeader>
                     <CardContent>
                       <Image
-                        src="/assets/images/image-control_spending_before_it_happens.png.png"
+                        src="/assets/images/home/Screenshot 2025-10-14 105848.png"
                         alt="Invoice Status Chart"
                         width={500}
                         height={300}
@@ -252,7 +252,7 @@ export default function AnalyticsPage() {
                   </CardHeader>
                   <CardContent>
                     <Image
-                      src="/assets/images/9245942 1.png"
+                      src="/assets/images/home/Screenshot 2025-10-14 105921.png"
                       alt="Monthly Cash Flow Analysis"
                       width={800}
                       height={400}

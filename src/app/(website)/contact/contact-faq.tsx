@@ -29,7 +29,7 @@ const ContactFaq = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Most clients are up and running within 4-6 weeks. We provide
+                  Most clients are up and running within minutes. We provide
                   dedicated implementation support and pre-configured industry
                   templates to accelerate deployment.
                 </CardDescription>
@@ -87,9 +87,8 @@ const ContactFaq = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Yes, we offer a 30-day free trial with full platform access.
-                  We&apos;ll also provide a custom demo using your actual data
-                  to show real-world results.
+                  Yes, you get a few credits to access the platform with full
+                  functionality
                 </CardDescription>
               </CardContent>
             </Card>

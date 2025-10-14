@@ -68,9 +68,7 @@ export default function StartupsPage() {
                       </div>
                     ))}
                   </div>
-                  <span className="text-sm text-slate-600">
-                    2,000+ startups
-                  </span>
+                  <span className="text-sm text-slate-600">500+ startups</span>
                 </div>
               </div>
             </div>
