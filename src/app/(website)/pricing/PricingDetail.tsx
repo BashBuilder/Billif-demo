@@ -8,7 +8,7 @@ import React from "react";
 const pricingData = [
   {
     title: "Basic",
-    price: "15,000",
+    price: "100",
     users: 1,
     description: [
       "Create professional, custom invoices",
@@ -21,7 +21,7 @@ const pricingData = [
   },
   {
     title: "Standard",
-    price: "30,000",
+    price: "200",
     users: 2,
     description: [
       "Easily enter bills",
@@ -39,7 +39,7 @@ const pricingData = [
   },
   {
     title: "Premium",
-    price: "50,000",
+    price: "500",
     users: 4,
     description: [
       "Everything in Standard Package",
@@ -181,13 +181,11 @@ const PricingDetail = () => {
                 </h1>
               ) : (
                 <div className="flex gap-1">
-                  <span>₦</span>
+                  {/* <span>₦</span> */}
                   <h1 className="font-heading text-3xl text-primary">
                     {item.price}
                   </h1>
-                  <p className="text-xs text-black/50">
-                    Up to {item.users} user/month
-                  </p>
+                  <p className="text-xs text-black/50">💳</p>
                 </div>
               )}
 
