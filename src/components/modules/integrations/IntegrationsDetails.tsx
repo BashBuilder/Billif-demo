@@ -31,7 +31,7 @@ const IntegrationsDetails = () => {
                 <Demo />
               </Fade>
             </div>
-            <div className="flex items-center justify-center">
+            {/* <div className="flex items-center justify-center">
               <Fade className="flex items-center justify-center rounded-full bg-orange-200 p-4 lg:h-[20vw] lg:w-[20vw]">
                 <Image
                   src={item.image}
@@ -42,7 +42,7 @@ const IntegrationsDetails = () => {
                   className="h-full w-full rounded-md object-cover"
                 />
               </Fade>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

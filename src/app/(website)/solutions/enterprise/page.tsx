@@ -72,10 +72,12 @@ export default function EnterprisePage() {
       <section className="bg-primary py-20 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-6 text-3xl font-bold lg:text-5xl">
-            Finance automation at enterprise scale
+            {/* Finance automation at enterprise scale */}
+            Ready to Transform Your Financial Operations?
           </h2>
           <p className="mx-auto max-w-3xl text-xl text-slate-300">
-            Ready to Transform Your Financial Operations?
+            Powerful financial controls and intelligent automation that deploys
+            companywide and saves time.
           </p>
         </div>
       </section>
