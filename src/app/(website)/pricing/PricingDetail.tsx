@@ -1,85 +1,67 @@
-import Demo from "@/components/global/demo";
 import { Button } from "@/components/ui/button";
-import { signupLink } from "@/data/links";
-// import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { CheckCircle, X } from "lucide-react";
+import Demo from "@/components/global/demo";
 
-const pricingData = [
-  {
-    title: "Basic",
-    price: "100",
-    users: 1,
-    description: [
-      "Create professional, custom invoices",
-      "Send invoices flexibly",
-      "Track invoices flexibly",
-      "Automate payment reminders",
-      "Get paid through payment link",
-      "Create recurring invoices",
-    ],
-  },
-  {
-    title: "Standard",
-    price: "200",
-    users: 2,
-    description: [
-      "Easily enter bills",
-      "Automate approval workflows",
-      "Pay by Bank Transfer",
-      "Manage bills from a centralized inbox",
-      "Set standard approval policies",
-      "Create professional, custom invoices",
-      "Send invoices flexibly",
-      "Track invoices flexibly",
-      "Automate payment reminders",
-      "Get paid through payment link",
-      "Create recurring invoices",
-    ],
-  },
-  {
-    title: "Premium",
-    price: "500",
-    users: 4,
-    description: [
-      "Everything in Standard Package",
-      "Automate 2-way sync with accounting software; QuickBooks and Xero",
-      "Bespoke support",
-      "Advanced analytics and reporting",
-      "Priority customer support",
-    ],
-  },
-  {
-    title: "Enterprise",
-    price: "Custom price",
-    description: [
-      "Everything in Premium Package",
-      "Custom integration and setup",
-      "Custom reconciliation",
-      "White label solutions",
-      "Dedicated account manager",
-      "Custom requirements and features",
-      "Unlimited users",
-      "API access and custom development",
-    ],
-  },
-];
+export default function PricingPage() {
+  const pricingTiers = [
+    {
+      name: "Starter Pack",
+      description: "Perfect for small businesses",
+      price: 8000,
+      originalPrice: null,
+      credits: 250,
+      perCredit: 32.0,
+      savings: null,
+      popular: false,
+    },
+    {
+      name: "Professional Pack",
+      description: "Most popular for growing businesses",
+      price: 20000,
+      originalPrice: 24000,
+      credits: 750,
+      perCredit: 26.67,
+      savings: 17,
+      popular: true,
+    },
+    {
+      name: "Enterprise Pack",
+      description: "Best value for large operations",
+      price: 30000,
+      originalPrice: 40000,
+      credits: 1250,
+      perCredit: 24.0,
+      savings: 25,
+      popular: false,
+    },
+  ];
 
-const PricingDetail = () => {
   return (
-    <section className="space-y-16 bg-gradient-to-b from-blue-50 to-white pb-20">
-      {/* Hero Section */}
+    <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-br from-primary via-primary to-secondary py-20 text-white lg:py-32">
         <div className="container mx-auto px-4 text-center">
           <div className="mx-auto max-w-4xl space-y-8">
-            <h1 className="text-4xl font-bold lg:text-6xl">
-              Plans and pricing
-              {/* <span className="text-secondary">at every step</span> */}
+            <h1 className="text-navy-900 text-4xl font-bold lg:text-6xl">
+              Purchase Credits.{" "}
+              <span className="text-teal-600">Unlock Efficiency.</span>
             </h1>
+            {/* <h1 className="text-4xl font-bold lg:text-6xl">
+              Plans and pricing
+            </h1> */}
             <p className="mx-auto max-w-3xl text-slate-300">
-              Spend 50% less time on AP and automate invoicing and get paid 2x
+              Choose the perfect credit package for your business needs. More
+              credits mean greater savings per unit.
+              {/* Spend 50% less time on AP and automate invoicing and get paid 2x
               faster. Access credit lines from Startups, established brands, and
-              accountants do more with BIll Intelligent Flow Technologies.
+              accountants do more with BIll Intelligent Flow Technologies. */}
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <Button className="bg-teal-600 px-8 text-white hover:bg-teal-700">
@@ -94,123 +76,175 @@ const PricingDetail = () => {
           </div>
         </div>
       </section>
-      {/* <div className="relative bg-white pt-20">
-        <Image
-          src="/assets/images/18851.jpg"
-          alt="Approval software"
-          width={2000}
-          height={2000}
-          className="absolute left-0 top-0 h-full object-cover opacity-20"
-        />
-        <div className="contain relative z-10 space-y-8 pb-20 pt-12 text-center">
-          <h1 className="text-center font-heading text-5xl font-semibold text-primary">
-            Plans and pricing
-          </h1>
-          <p className="mx-auto mt-8 max-w-screen-lg text-center">
-            Spend 50% less time on AP and automate invoicing and get paid 2x
-            faster. Access credit lines from Startups, established brands, and
-            accountants do more with BIll Intelligent Flow Technologies.
-          </p>
-          <div className="flex items-center justify-center gap-8">
-            <div>
-              <Demo />
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="mb-12">
+            <h2 className="text-navy-900 mb-2 text-3xl font-bold">
+              Purchase Credits
+            </h2>
+          </div>
+
+          <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
+            {pricingTiers.map((tier, index) => (
+              <div key={index} className="relative">
+                {tier.popular && (
+                  <div className="absolute -top-4 left-1/2 z-10 -translate-x-1/2 transform">
+                    <Badge>Most Popular</Badge>
+                  </div>
+                )}
+
+                <Card
+                  className={`flex h-full flex-col ${
+                    tier.popular
+                      ? "border-navy-900 border-2 shadow-lg"
+                      : "border border-slate-200"
+                  }`}
+                >
+                  <CardHeader className="flex flex-row justify-between pb-6">
+                    <div>
+                      <CardTitle className="text-navy-900 text-xl font-bold">
+                        {tier.name}
+                      </CardTitle>
+                      <CardDescription className="mt-1 text-xs text-slate-600">
+                        {tier.description}
+                      </CardDescription>
+                    </div>
+
+                    <div className="mt-6 space-y-2">
+                      <div className="flex flex-col items-baseline">
+                        {tier.originalPrice && (
+                          <span className="text-xs text-slate-400 line-through">
+                            ₦{tier.originalPrice.toLocaleString()}
+                          </span>
+                        )}
+                        <span className="text-navy-900 text-xl font-bold">
+                          ₦{tier.price.toLocaleString()}
+                        </span>
+                      </div>
+                    </div>
+                  </CardHeader>
+
+                  <CardContent className="flex flex-1 flex-col space-y-6">
+                    <div className="border-y border-slate-200 py-2 text-center">
+                      <div className="text-navy-900 text-xl font-bold">
+                        {tier.credits.toLocaleString()}
+                      </div>
+                      <div className="mt-1 text-xs text-slate-600">credits</div>
+                    </div>
+
+                    <Button>Purchase Now</Button>
+
+                    <div className="space-y-2 text-center">
+                      <div className="text-sm text-slate-600">
+                        ₦{tier.perCredit.toFixed(2)} per credit
+                      </div>
+                      {tier.savings && (
+                        <div className="text-sm font-semibold text-teal-600">
+                          Save {tier.savings}%
+                        </div>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Feature Comparison */}
+      <section className="bg-slate-50 py-20">
+        <div className="container mx-auto px-4">
+          <div className="mb-16 text-center">
+            <h2 className="text-navy-900 mb-4 text-3xl font-bold lg:text-4xl">
+              Compare Features
+            </h2>
+            <p className="text-xl text-slate-600">
+              See what&apos;s included in each plan
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-6xl">
+            <div className="overflow-hidden rounded-2xl bg-white shadow-lg">
+              <div className="grid grid-cols-4 gap-4 border-b bg-slate-50 p-6">
+                <div className="text-navy-900 font-semibold">Features</div>
+                <div className="text-navy-900 text-center font-semibold">
+                  Starter
+                </div>
+                <div className="text-navy-900 text-center font-semibold">
+                  Professional
+                </div>
+                <div className="text-navy-900 text-center font-semibold">
+                  Enterprise
+                </div>
+              </div>
+
+              {/* Corporate Card */}
+              <div className="grid grid-cols-4 gap-4 border-b p-6">
+                <div className="font-medium text-slate-900">Corporate Card</div>
+                <div className="text-center">
+                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
+                </div>
+                <div className="text-center">
+                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
+                </div>
+                <div className="text-center">
+                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
+                </div>
+              </div>
+
+              {/* Expense Management */}
+              <div className="grid grid-cols-4 gap-4 border-b p-6">
+                <div className="font-medium text-slate-900">
+                  Expense Management
+                </div>
+                <div className="text-center">
+                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
+                </div>
+                <div className="text-center">
+                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
+                </div>
+                <div className="text-center">
+                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
+                </div>
+              </div>
+
+              {/* Advanced Analytics */}
+              <div className="grid grid-cols-4 gap-4 border-b p-6">
+                <div className="font-medium text-slate-900">
+                  Advanced Analytics
+                </div>
+                <div className="text-center">
+                  <X className="mx-auto h-5 w-5 text-slate-400" />
+                </div>
+                <div className="text-center">
+                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
+                </div>
+                <div className="text-center">
+                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
+                </div>
+              </div>
+
+              {/* Custom Integrations */}
+              <div className="grid grid-cols-4 gap-4 p-6">
+                <div className="font-medium text-slate-900">
+                  Custom Integrations
+                </div>
+                <div className="text-center">
+                  <X className="mx-auto h-5 w-5 text-slate-400" />
+                </div>
+                <div className="text-center">
+                  <X className="mx-auto h-5 w-5 text-slate-400" />
+                </div>
+                <div className="text-center">
+                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div> */}
-
-      <div className="contain space-y-8">
-        <h2 className="text-center font-heading text-3xl font-semibold text-primary">
-          Account Payable and Account Receivable
-        </h2>
-
-        <div className="mx-auto grid max-w-screen-2xl gap-6 md:grid-cols-2">
-          {/* <div className="col-span-2 w-full space-y-6 rounded-2xl bg-white p-6 shadow">
-            <h5 className="font-heading text-lg text-primary">
-              Essentials
-            </h5>
-            <div className="flex gap-1">
-              <span>₦</span>
-              <h1 className="font-heading text-3xl text-primary">29,999</h1>
-              <p className="text-xs text-black/50">user/month</p>
-            </div>
-            <div className="grid justify-between gap-2 md:grid-cols-2">
-              <div className="space-y-2">
-                <h6 className="font-heading text-sm font-semibold text-primary">
-                  Payable
-                </h6>
-                <ul className="list-disc space-y-2 pl-4 text-sm text-black/70">
-                  <li>Easily enter bills</li>
-                  <li>Automate approval workflows</li>
-                  <li>Pay by Bank Transfer</li>
-                  <li>Manage bills from a centralized inbox</li>
-                  <li>Set standard approval policies</li>
-                </ul>
-              </div>
-              <div className="space-y-2">
-                <h6 className="font-heading text-sm font-semibold text-primary">
-                  Receivable
-                </h6>
-                <ul className="list-disc space-y-2 pl-4 text-sm text-black/70">
-                  <li>Create professional, custom invoices</li>
-                  <li>Send invoices flexibly</li>
-                  <li>Track invoices flexibly</li>
-                  <li>Automate payment reminders</li>
-                  <li>Get paid through payment link</li>
-                  <li>Create recurring invoices</li>
-                </ul>
-              </div>
-            </div>
-            <div>
-              <Link href={signupLink}>
-                <Button size="sm">Try for free</Button>
-              </Link>
-            </div>
-          </div> */}
-          {pricingData.map((item) => (
-            <div
-              key={item.title}
-              className="col-span-1 h-fit w-full space-y-6 rounded-2xl bg-white p-6 shadow"
-            >
-              <h5 className="font-heading text-lg text-primary">
-                {item.title}
-              </h5>
-              {item.price === "Custom price" ? (
-                <h1 className="font-heading text-3xl text-primary">
-                  Custom price
-                </h1>
-              ) : (
-                <div className="flex gap-1">
-                  {/* <span>₦</span> */}
-                  <h1 className="font-heading text-3xl text-primary">
-                    {item.price}
-                  </h1>
-                  <p className="text-xs text-black/50">💳</p>
-                </div>
-              )}
-
-              <ul className="list-disc space-y-2 pl-4 text-sm text-black/70">
-                {item.description?.map((item, index) => (
-                  <li key={index} className="text-sm text-black/70">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="">
-                {item.price === "Custom price" ? (
-                  <Demo />
-                ) : (
-                  <Link href={signupLink}>
-                    <Button size="sm">Try for free</Button>
-                  </Link>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
-};
-
-export default PricingDetail;
+}
