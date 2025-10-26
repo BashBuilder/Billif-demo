@@ -171,8 +171,8 @@ export const pricingFaq = [
       "Yes, you can upgrade or downgrade your plan at any time to better suit your business needs.",
   },
   {
-    question: "Do you offer discounts for annual subscriptions?",
+    question: "Do you offer discounts?",
     answer:
-      "Yes, we offer discounts for annual subscriptions, allowing you to save money while enjoying uninterrupted service.",
+      "Yes, we offer discounts for when you purchase the enterprise or proffesional parks.",
   },
 ];
