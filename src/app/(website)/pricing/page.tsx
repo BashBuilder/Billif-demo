@@ -9,8 +9,8 @@ const page = () => {
   return (
     <main>
       <PricingDetail />
-      <Support />
       <Faq faq={pricingFaq} />
+      <Support />
       <GetStarted />
     </main>
   );
