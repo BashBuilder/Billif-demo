@@ -7,7 +7,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, X } from "lucide-react";
 import Demo from "@/components/global/demo";
 
 export default function PricingPage() {
@@ -149,99 +148,6 @@ export default function PricingPage() {
                 </Card>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Feature Comparison */}
-      <section className="bg-slate-50 py-20">
-        <div className="container mx-auto px-4">
-          <div className="mb-16 text-center">
-            <h2 className="text-navy-900 mb-4 text-3xl font-bold lg:text-4xl">
-              Compare Features
-            </h2>
-            <p className="text-xl text-slate-600">
-              See what&apos;s included in each plan
-            </p>
-          </div>
-
-          <div className="mx-auto max-w-6xl">
-            <div className="overflow-hidden rounded-2xl bg-white shadow-lg">
-              <div className="grid grid-cols-4 gap-4 border-b bg-slate-50 p-6">
-                <div className="text-navy-900 font-semibold">Features</div>
-                <div className="text-navy-900 text-center font-semibold">
-                  Starter
-                </div>
-                <div className="text-navy-900 text-center font-semibold">
-                  Professional
-                </div>
-                <div className="text-navy-900 text-center font-semibold">
-                  Enterprise
-                </div>
-              </div>
-
-              {/* Corporate Card */}
-              <div className="grid grid-cols-4 gap-4 border-b p-6">
-                <div className="font-medium text-slate-900">Corporate Card</div>
-                <div className="text-center">
-                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
-                </div>
-                <div className="text-center">
-                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
-                </div>
-                <div className="text-center">
-                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
-                </div>
-              </div>
-
-              {/* Expense Management */}
-              <div className="grid grid-cols-4 gap-4 border-b p-6">
-                <div className="font-medium text-slate-900">
-                  Expense Management
-                </div>
-                <div className="text-center">
-                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
-                </div>
-                <div className="text-center">
-                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
-                </div>
-                <div className="text-center">
-                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
-                </div>
-              </div>
-
-              {/* Advanced Analytics */}
-              <div className="grid grid-cols-4 gap-4 border-b p-6">
-                <div className="font-medium text-slate-900">
-                  Advanced Analytics
-                </div>
-                <div className="text-center">
-                  <X className="mx-auto h-5 w-5 text-slate-400" />
-                </div>
-                <div className="text-center">
-                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
-                </div>
-                <div className="text-center">
-                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
-                </div>
-              </div>
-
-              {/* Custom Integrations */}
-              <div className="grid grid-cols-4 gap-4 p-6">
-                <div className="font-medium text-slate-900">
-                  Custom Integrations
-                </div>
-                <div className="text-center">
-                  <X className="mx-auto h-5 w-5 text-slate-400" />
-                </div>
-                <div className="text-center">
-                  <X className="mx-auto h-5 w-5 text-slate-400" />
-                </div>
-                <div className="text-center">
-                  <CheckCircle className="mx-auto h-5 w-5 text-teal-600" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
