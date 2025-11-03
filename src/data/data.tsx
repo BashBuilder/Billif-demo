@@ -107,11 +107,6 @@ export const navbarLinks: NavbarLink[] = [
         title: "Security",
         description: "Growing businesses with complex needs",
       },
-      {
-        href: "/pricing",
-        title: "Pricing",
-        description: "Professional services and client management",
-      },
     ],
   },
   {
@@ -141,9 +136,13 @@ export const navbarLinks: NavbarLink[] = [
     // ],
   },
   {
-    label: "About",
-    href: "/about",
+    label: "Pricing",
+    href: "/pricing",
   },
+  // {
+  //   label: "About",
+  //   href: "/about",
+  // },
   {
     label: "Contact",
     href: "/contact",
