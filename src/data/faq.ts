@@ -173,6 +173,6 @@ export const pricingFaq = [
   {
     question: "Do you offer discounts?",
     answer:
-      "Yes, we offer discounts for when you purchase the enterprise or proffesional parks.",
+      "Yes, we offer discounts for when you purchase the enterprise or professional parks.",
   },
 ];
