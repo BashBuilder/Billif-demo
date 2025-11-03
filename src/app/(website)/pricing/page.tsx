@@ -9,7 +9,7 @@ const page = () => {
   return (
     <main>
       <PricingDetail />
-      <Faq faq={pricingFaq} />
+      {/* <Faq faq={pricingFaq} /> */}
       <Support />
       <GetStarted />
     </main>
