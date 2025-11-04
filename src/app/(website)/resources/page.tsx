@@ -11,8 +11,8 @@ import { Badge } from "@/components/ui/badge";
 import {
   ArrowRight,
   BookOpen,
-  Users,
-  FileText,
+  // Users,
+  // FileText,
   Video,
   Calendar,
   TrendingUp,
@@ -78,21 +78,21 @@ export default function ResourcesPage() {
             {/* Quick Stats */}
             <div className="space-y-6">
               <Card className="p-6 text-center">
-                <div className="mb-2 text-3xl font-bold text-primary">500+</div>
+                <div className="mb-2 text-3xl font-bold text-primary">5+</div>
                 <div className="text-sm text-muted-foreground">
                   Articles & Guides
                 </div>
               </Card>
-              <Card className="p-6 text-center">
+              {/* <Card className="p-6 text-center">
                 <div className="mb-2 text-3xl font-bold text-secondary">
                   50+
                 </div>
                 <div className="text-sm text-muted-foreground">
                   Case Studies
                 </div>
-              </Card>
+              </Card> */}
               <Card className="p-6 text-center">
-                <div className="mb-2 text-3xl font-bold text-primary">100+</div>
+                <div className="mb-2 text-3xl font-bold text-primary">2+</div>
                 <div className="text-sm text-muted-foreground">
                   Video Tutorials
                 </div>
@@ -142,7 +142,7 @@ export default function ResourcesPage() {
             </Card>
 
             {/* Case Studies */}
-            <Card className="group border-2 transition-all duration-300 hover:border-secondary/20 hover:shadow-xl">
+            {/* <Card className="group border-2 transition-all duration-300 hover:border-secondary/20 hover:shadow-xl">
               <CardHeader className="pb-4 text-center">
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
                   <Users className="h-8 w-8 text-secondary" />
@@ -177,10 +177,10 @@ export default function ResourcesPage() {
                   </Button>
                 </Link>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Whitepapers */}
-            <Card className="group border-2 transition-all duration-300 hover:border-primary/20 hover:shadow-xl">
+            {/* <Card className="group border-2 transition-all duration-300 hover:border-primary/20 hover:shadow-xl">
               <CardHeader className="pb-4 text-center">
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                   <FileText className="h-8 w-8 text-primary" />
@@ -212,7 +212,7 @@ export default function ResourcesPage() {
                   </Button>
                 </Link>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Webinars */}
             <Card className="group border-2 transition-all duration-300 hover:border-secondary/20 hover:shadow-xl md:col-span-2 lg:col-span-1">
