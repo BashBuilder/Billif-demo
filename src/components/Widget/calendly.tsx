@@ -34,7 +34,7 @@ const CalendlyWidget: React.FC = ({
 }: CalendlyWidgetProps) => {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.src = "https://assets.calendly.com/assets/external/widget.css";
     script.async = true;
     document.body.appendChild(script);
 
@@ -47,7 +47,7 @@ const CalendlyWidget: React.FC = ({
     event.preventDefault();
     if (window.Calendly) {
       window.Calendly.initPopupWidget({
-        url: "https://calendly.com/getBill-if/30min?primary_color=f57c00",
+        url: "'https://calendly.com/getnextgen/billif-demo/30min?primary_color=#1a345c",
       });
     }
   };
