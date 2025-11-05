@@ -1,5 +1,5 @@
-export const dashboardLink = "https://app.getBill-if.io";
-export const signupLink = "https://app.getBill-if.io/register";
+export const dashboardLink = "http://app.billif.com/";
+export const signupLink = "http://app.billif.com/";
 
 export const navigationLinks: NavigationLinksTypes[] = [
   {
