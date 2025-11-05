@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useEffect } from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 declare global {
   interface Window {
@@ -54,9 +56,16 @@ const CalendlyWidget: React.FC = ({
 
   return (
     <Button variant={variant || "default"} size={size || "default"}>
-      <a href="#" onClick={handleDemoRequest}>
+      <Link
+        href="https://calendly.com/getnextgen/billif-demo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Request Demo
-      </a>
+      </Link>
+      {/* <a href="#" onClick={handleDemoRequest}>
+        Request Demo
+      </a> */}
     </Button>
   );
 };
