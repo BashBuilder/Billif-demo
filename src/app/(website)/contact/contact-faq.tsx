@@ -92,21 +92,6 @@ const ContactFaq = () => {
                 </CardDescription>
               </CardContent>
             </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">
-                  What kind of ROI can we expect?
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Our clients typically see 300% ROI within the first year
-                  through reduced processing time, fewer errors, and improved
-                  cash flow management.
-                </CardDescription>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

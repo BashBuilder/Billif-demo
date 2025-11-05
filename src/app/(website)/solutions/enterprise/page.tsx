@@ -3,6 +3,9 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Building, Globe, Users, Shield } from "lucide-react";
 import Image from "next/image";
 import CtaAction from "@/components/global/cta-action";
+import Link from "next/link";
+import CalendlyWidget from "@/components/Widget/calendly";
+import { signupLink } from "@/data/links";
 
 export default function EnterprisePage() {
   return (
@@ -30,26 +33,15 @@ export default function EnterprisePage() {
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button
-                  size="lg"
-                  className="bg-teal-600 px-8 text-white hover:bg-teal-700"
-                >
-                  Contact sales
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-navy-200 text-navy-700 bg-transparent"
-                >
-                  Schedule demo
-                </Button>
-              </div>
-
-              {/* Trust Indicators */}
-              <div className="flex items-center gap-6 pt-4">
-                <div className="text-sm text-slate-600">
-                  Trusted by Fortune 500 companies
-                </div>
+                <Link href="/contact">
+                  <Button
+                    size="lg"
+                    className="bg-teal-600 px-8 text-white hover:bg-teal-700"
+                  >
+                    Contact sales
+                  </Button>
+                </Link>
+                <CalendlyWidget />
               </div>
             </div>
 
@@ -90,14 +82,16 @@ export default function EnterprisePage() {
               <h3 className="text-3xl font-bold text-primary">
                 Supporting you globally, in office and on the go
               </h3>
-              <p className="text-lg text-slate-600">
+              <p className="pb-4 text-lg text-slate-600">
                 Bill supports teams and remote workers with reimbursements in
                 more than 100 countries, providing a truly global platform for
                 your business needs.
               </p>
-              <Button className="bg-teal-600 text-white hover:bg-teal-700">
-                Explore global →
-              </Button>
+              <Link href={signupLink}>
+                <Button className="bg-teal-600 text-white hover:bg-teal-700">
+                  Explore global →
+                </Button>
+              </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
@@ -149,14 +143,16 @@ export default function EnterprisePage() {
               <h3 className="text-3xl font-bold text-primary">
                 Connectivity from email to ERP
               </h3>
-              <p className="text-lg text-slate-600">
+              <p className="pb-4 text-lg text-slate-600">
                 Connect your ecosystem to automate management and reduce manual
                 work. From email to ERP, for accounting, HRIS, and
                 manufacturing.
               </p>
-              <Button className="bg-teal-600 text-white hover:bg-teal-700">
-                Integrate easily →
-              </Button>
+              <Link href={signupLink}>
+                <Button className="bg-teal-600 text-white hover:bg-teal-700">
+                  Integrate easily →
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -175,7 +171,7 @@ export default function EnterprisePage() {
                 enterprise-grade security, compliance standards, and 24/7
                 monitoring.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-4 pb-4">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="h-5 w-5 text-teal-600" />
                   <span className="text-slate-700">NDPR compliant</span>
@@ -189,9 +185,11 @@ export default function EnterprisePage() {
                   <span className="text-slate-700">256-bit encryption</span>
                 </div>
               </div>
-              <Button className="bg-teal-600 text-white hover:bg-teal-700">
-                Request security →
-              </Button>
+              <Link href={signupLink}>
+                <Button className="bg-teal-600 text-white hover:bg-teal-700">
+                  Request security →
+                </Button>
+              </Link>
             </div>
             <div className="rounded-2xl bg-white p-8 shadow-lg">
               <div className="space-y-6">
@@ -230,7 +228,6 @@ export default function EnterprisePage() {
 
       {/* CTA Section */}
       <CtaAction />
-
     </div>
   );
 }

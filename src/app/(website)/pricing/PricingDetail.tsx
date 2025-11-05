@@ -7,7 +7,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import Demo from "@/components/global/demo";
+import CalendlyWidget from "@/components/Widget/calendly";
+import Link from "next/link";
+import { dashboardLink } from "@/data/links";
 
 export default function PricingPage() {
   const pricingTiers = [
@@ -52,25 +54,19 @@ export default function PricingPage() {
               Purchase Credits.{" "}
               <span className="text-teal-600">Unlock Efficiency.</span>
             </h1>
-            {/* <h1 className="text-4xl font-bold lg:text-6xl">
-              Plans and pricing
-            </h1> */}
+
             <p className="mx-auto max-w-3xl text-slate-300">
               Choose the perfect credit package for your business needs. More
               credits mean greater savings per unit.
-              {/* Spend 50% less time on AP and automate invoicing and get paid 2x
-              faster. Access credit lines from Startups, established brands, and
-              accountants do more with BIll Intelligent Flow Technologies. */}
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Button className="bg-teal-600 px-8 text-white hover:bg-teal-700">
-                Contact sales
-              </Button>
-              <div className="flex items-center justify-center gap-8">
-                <div>
-                  <Demo />
-                </div>
-              </div>
+              <Link href="/contact">
+                <Button className="bg-teal-600 px-8 text-white hover:bg-teal-700">
+                  Contact sales
+                </Button>
+              </Link>
+
+              <CalendlyWidget />
             </div>
           </div>
         </div>
@@ -131,8 +127,9 @@ export default function PricingPage() {
                       </div>
                       <div className="mt-1 text-xs text-slate-600">credits</div>
                     </div>
-
-                    <Button>Purchase Now</Button>
+                    <Link href={dashboardLink} className="w-full">
+                      <Button className="w-full">Purchase Now</Button>
+                    </Link>
 
                     <div className="space-y-2 text-center">
                       <div className="text-sm text-slate-600">

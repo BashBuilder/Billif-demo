@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Button } from "../ui/button";
 import Logo from "../global/logo";
 import { navbarLinks } from "@/data/data";
+import { dashboardLink } from "@/data/links";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -85,7 +86,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link href="/contact">
+            <Link href={dashboardLink}>
               <Button variant="secondary" className="font-medium">
                 Get Started
               </Button>

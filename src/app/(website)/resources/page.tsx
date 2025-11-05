@@ -11,8 +11,6 @@ import { Badge } from "@/components/ui/badge";
 import {
   ArrowRight,
   BookOpen,
-  // Users,
-  // FileText,
   Video,
   Calendar,
   TrendingUp,
@@ -22,8 +20,6 @@ import Link from "next/link";
 export default function ResourcesPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* <Navigation /> */}
-
       {/* Hero Section */}
       <section className="px-4 py-20 pt-32">
         <div className="mx-auto max-w-7xl text-center">
@@ -156,7 +152,7 @@ export default function ResourcesPage() {
                 <div className="mb-6 space-y-3 text-left">
                   <div className="flex items-center gap-3">
                     <TrendingUp className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">ROI and efficiency gains</span>
+                    <span className="text-sm">Efficiency gains</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <TrendingUp className="h-4 w-4 text-secondary" />

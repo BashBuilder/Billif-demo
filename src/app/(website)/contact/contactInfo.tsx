@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import CalendlyWidget from "@/components/Widget/calendly";
 import { Phone, Mail, MapPin, Calendar } from "lucide-react";
 
 const ContactInfo = () => {
@@ -78,9 +78,7 @@ const ContactInfo = () => {
                 </p>
               </div>
             </div>
-            <Button variant="secondary" className="w-full">
-              Book 30-Minute Demo
-            </Button>
+            <CalendlyWidget />
           </CardContent>
         </Card>
       </div>

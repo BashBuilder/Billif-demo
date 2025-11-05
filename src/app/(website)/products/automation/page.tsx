@@ -412,19 +412,6 @@ export default function ServicesPage() {
                   smooth operations
                 </p>
               </div>
-
-              <div className="text-center">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-xl font-bold text-secondary-foreground">
-                  4
-                </div>
-                <h3 className="mb-2 text-lg font-semibold">
-                  Go Live & Support
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  Full deployment with ongoing support and optimization for
-                  maximum ROI
-                </p>
-              </div>
             </div>
           </div>
         </div>

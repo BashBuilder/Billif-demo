@@ -11,6 +11,8 @@ import { Zap, Shield, Clock } from "lucide-react";
 import Image from "next/image";
 import CtaAction from "@/components/global/cta-action";
 import CalendlyWidget from "@/components/Widget/calendly";
+import Link from "next/link";
+import { dashboardLink, signupLink } from "@/data/links";
 
 export default function StartupsPage() {
   return (
@@ -39,18 +41,12 @@ export default function StartupsPage() {
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button size="lg" variant="outline">
-                  Get started for free
-                </Button>
+                <Link href={signupLink}>
+                  <Button size="lg" variant="outline">
+                    Get started for free
+                  </Button>
+                </Link>
                 <CalendlyWidget />
-
-                {/* <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-navy-200 text-navy-700 bg-transparent"
-                >
-                  Schedule a demo
-                </Button> */}
               </div>
 
               {/* Trust Indicators */}
@@ -109,15 +105,17 @@ export default function StartupsPage() {
               <h3 className="text-3xl font-bold text-primary">
                 A single platform for your startup
               </h3>
-              <p className="text-lg text-slate-600">
+              <p className="pb-4 text-lg text-slate-600">
                 Bill combines cards, payments, bill pay, and accounting
                 integrations into one platform built for startups. Migration
                 from your current setup is seamless—and grows with you at every
                 stage.
               </p>
-              <Button className="bg-teal-600 text-white hover:bg-teal-700">
-                Complete setup →
-              </Button>
+              <Link href={dashboardLink} className="pt-4">
+                <Button className="bg-teal-600 text-white hover:bg-teal-700">
+                  Complete setup →
+                </Button>
+              </Link>
             </div>
             <div className="relative">
               <Image
@@ -197,7 +195,7 @@ export default function StartupsPage() {
               Close your books on time, every time
             </h2>
             <p className="mx-auto max-w-3xl text-xl text-slate-600">
-              Bill integrates seamlessly with QuickBooks, Xero, and NetSuite.
+              Bill integrates seamlessly with QuickBooks, Xero, and Zoho Books.
               Your startup&apos;s financial data flows directly into your
               accounting software.
             </p>
@@ -214,7 +212,7 @@ export default function StartupsPage() {
             </div>
             <div className="rounded-lg bg-white p-6 text-center shadow-sm">
               <div className="mb-2 text-2xl font-bold text-orange-600">
-                NetSuite
+                Zoho Books
               </div>
             </div>
             <div className="rounded-lg bg-white p-6 text-center shadow-sm">
