@@ -111,7 +111,7 @@ const Details = () => {
               </ul>
               <Fade className="pt-4">
                 <Link href={signupLink}>
-                  <Button>Buy Now, 14 days free trial</Button>
+                  <Button>Get started</Button>
                 </Link>
               </Fade>
             </div>

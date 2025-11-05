@@ -115,7 +115,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
 
             {/* <div className="mt-6 border-t border-border/50 pt-6">
               <p className="text-center text-xs text-muted-foreground">
-                Bill-if
+                Billif
               </p>
             </div> */}
           </CardContent>

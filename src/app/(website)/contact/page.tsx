@@ -2,14 +2,14 @@
 import ContactForm from "./ContactForm";
 import ContactInfo from "./contactInfo";
 import ContactFaq from "./contact-faq";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+// import { Button } from "@/components/ui/button";
+// import { Badge } from "@/components/ui/badge";
 
 const page = () => {
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white pb-20 pt-20">
       <div className="contain space-y-12">
-        <section className="rounded-lg bg-gradient-to-br from-primary to-primary/80 py-20 text-primary-foreground">
+        {/* <section className="rounded-lg bg-gradient-to-br from-primary to-primary/80 py-20 text-primary-foreground">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl text-center">
               <Badge variant="secondary" className="mb-6">
@@ -37,7 +37,7 @@ const page = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <div>
           <p className="text-center text-sm">How can we help you?</p>
           <h1 className="text-center text-4xl font-semibold text-primary">

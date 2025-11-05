@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import Link from "next/link";
+import GetStartedBtn from "../general/get-started-btn";
 
 export function HeroSection() {
   return (
@@ -31,13 +32,8 @@ export function HeroSection() {
                 with intelligent financial process management.
               </p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <GetStartedBtn />
                 <Link href="/contact">
-                  <Button className="bg-secondary">
-                    Start Free Trial
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </Button>
-                </Link>
-                <Link href="/services">
                   <Button variant="outline">Contact Sales</Button>
                 </Link>
               </div>
