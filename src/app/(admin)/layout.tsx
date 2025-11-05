@@ -1,17 +1,17 @@
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <head>
-        <meta
-          name="Bill-if waitlist"
-          content="Bill-if: Revenue pament-tech by QorePay join waitlist"
-        />
-      </head>
-      <body>{children}</body>
-    </html>
-  );
-}
+// export default function RootLayout({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode;
+// }>) {
+//   return (
+//     <html lang="en">
+//       <head>
+//         <meta
+//           name="Bill-if waitlist"
+//           content="Bill-if: Revenue pament-tech by QorePay join waitlist"
+//         />
+//       </head>
+//       <body>{children}</body>
+//     </html>
+//   );
+// }
