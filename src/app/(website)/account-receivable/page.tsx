@@ -2,7 +2,7 @@ import Faq from "@/components/global/Faq";
 import AccountHeading from "@/components/modules/accountpayable/AccountHeading";
 import AccountSteps from "@/components/modules/accountpayable/AcountSteps";
 import AccountReceivableDetail from "@/components/modules/accountreceivable/AccountReceivableDetail";
-import GetStarted from "@/components/modules/general/GetStarted";
+import ContactUs from "@/components/modules/general/GetStarted";
 import DesignedIntegration from "@/components/modules/home/DesignedIntegration";
 import { accountReceivableSteps } from "@/data/data";
 import { ArSolution } from "@/data/faq";
@@ -23,7 +23,7 @@ const page = () => {
       <AccountReceivableDetail />
       <DesignedIntegration />
       <Faq faq={ArSolution} />
-      <GetStarted />
+      <ContactUs />
     </main>
   );
 };

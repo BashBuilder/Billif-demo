@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -19,10 +18,11 @@ import {
   Workflow,
   Database,
   Play,
-  ArrowRight,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import CtaAction from "@/components/global/cta-action";
+import GetStartedBtn from "@/components/general/get-started-btn";
+import Demo from "@/components/global/demo";
 
 export default function ServicesPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,11 +43,6 @@ export default function ServicesPage() {
       <section className="relative z-10 pt-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            {/* <Badge className="mb-6 bg-teal-100 text-teal-800 transition-colors hover:bg-teal-200">
-              <Zap className="mr-2 h-4 w-4" />
-              AI-Powered Automation
-            </Badge> */}
-
             <h1
               className={`mb-6 text-5xl font-bold text-slate-900 transition-all duration-1000 md:text-6xl ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
@@ -56,7 +51,6 @@ export default function ServicesPage() {
                 intelligent automation
               </span>
             </h1>
-
             <p
               className={`mb-8 text-xl leading-relaxed text-slate-600 transition-all delay-200 duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
@@ -69,21 +63,8 @@ export default function ServicesPage() {
             <div
               className={`delay-400 flex flex-col justify-center gap-4 transition-all duration-1000 sm:flex-row ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
-              <Button
-                size="lg"
-                className="bg-primary px-8 py-4 text-lg text-white hover:bg-primary/90"
-              >
-                Start Free Trial
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 bg-transparent px-8 py-4 text-lg hover:bg-slate-50"
-              >
-                <Play className="mr-2 h-5 w-5" />
-                Watch Demo
-              </Button>
+              <GetStartedBtn />
+              <Demo />
             </div>
           </div>
         </div>
@@ -119,6 +100,7 @@ export default function ServicesPage() {
               automation platform. From invoice processing to cash flow
               management, we deliver fast, accurate, and effortless solutions.
             </p>
+            <GetStartedBtn />
           </div>
           <img
             src="/assets/images/Screenshot 2025-09-02 124718.png"
@@ -371,6 +353,9 @@ export default function ServicesPage() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+          <div className="mt-12 flex items-center justify-center text-center">
+            <GetStartedBtn />
           </div>
         </div>
       </section>

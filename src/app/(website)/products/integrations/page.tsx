@@ -1,7 +1,7 @@
 import Demo from "@/components/global/demo";
 import Faq from "@/components/global/Faq";
 // import AccountHeading from "@/components/modules/accountpayable/AccountHeading";
-import GetStarted from "@/components/modules/general/GetStarted";
+import ContactUs from "@/components/modules/general/GetStarted";
 import Support from "@/components/modules/general/Support";
 import IntegrationsDetails from "@/components/modules/integrations/IntegrationsDetails";
 import Levelup from "@/components/modules/integrations/Levelup";
@@ -99,7 +99,7 @@ const page = () => {
       <IntegrationsDetails />
       <Support />
       <Faq faq={integrationsFaq} />
-      <GetStarted />
+      <ContactUs />
     </main>
   );
 };

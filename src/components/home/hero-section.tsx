@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
-import Link from "next/link";
 import GetStartedBtn from "../general/get-started-btn";
+import Demo from "../global/demo";
 
 export function HeroSection() {
   return (
@@ -33,9 +32,7 @@ export function HeroSection() {
               </p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <GetStartedBtn />
-                <Link href="/contact">
-                  <Button variant="outline">Contact Sales</Button>
-                </Link>
+                <Demo />
               </div>
             </div>
 
@@ -120,9 +117,6 @@ export function HeroSection() {
                 <CheckCircle className="h-8 w-8 text-secondary" />
               </div>
               <h3 className="font-bold text-primary">Fast Implementation</h3>
-              {/* <p className="text-sm text-muted-foreground">
-                Deploy in days, not months
-              </p> */}
             </div>
             <div className="space-y-3 text-center">
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50">

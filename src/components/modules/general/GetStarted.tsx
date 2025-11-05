@@ -2,7 +2,7 @@ import Fade from "@/components/global/fade";
 import SubmitEmailForm from "@/components/global/SubmitEmailForm";
 import React from "react";
 
-const GetStarted = () => {
+const ContactUs = () => {
   return (
     <section className="bg-primary py-20">
       <div className="contain">
@@ -19,4 +19,4 @@ const GetStarted = () => {
   );
 };
 
-export default GetStarted;
+export default ContactUs;

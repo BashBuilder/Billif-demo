@@ -24,6 +24,8 @@ import {
   Target,
 } from "lucide-react";
 import Image from "next/image";
+import GetStartedBtn from "@/components/general/get-started-btn";
+import Demo from "@/components/global/demo";
 
 export default function AnalyticsPage() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -463,20 +465,8 @@ export default function AnalyticsPage() {
             Technologies for their financial intelligence needs.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Button
-              size="lg"
-              className="bg-white text-[#1B3057] hover:bg-gray-100"
-            >
-              Start Free Trial
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white bg-transparent text-white hover:bg-white/10"
-            >
-              Schedule Demo
-            </Button>
+            <GetStartedBtn />
+            <Demo />
           </div>
         </div>
       </section>
