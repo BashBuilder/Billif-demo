@@ -7,7 +7,7 @@ const TermOfUse = () => {
       <section className="bg-orange-50 pb-20 pt-32">
         <div className="contain space-y-10">
           <h1 className="mx-auto max-w-screen-md text-center font-heading text-4xl text-primary">
-            BIll Intelligent Flow Technologies (Bill-if) <br /> Terms of Service
+            BIll Intelligent Flow Technologies (Billif) <br /> Terms of Service
           </h1>
           <p className="text-center"> Effective Date: </p>
         </div>
@@ -69,18 +69,18 @@ const TermOfUse = () => {
             <span>Email : </span>
             <Link
               target="_blank"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@getBill-if.io"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@getBillif.io"
               className="underline"
             >
-              hello@getBill-if.io
+              hello@getBillif.io
             </Link>
             <span>,</span>
             <Link
               target="_blank"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=support@getBill-if.io"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=support@getBillif.io"
               className="underline"
             >
-              support@getBill-if.io
+              support@getBillif.io
             </Link>
           </li>
         </ul>

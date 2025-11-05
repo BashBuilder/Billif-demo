@@ -9,7 +9,7 @@ const serviceDescriptionContent = [
   {
     image: "/assets/images/18851.jpg",
     heading: "Simplify your purchasing",
-    subHeading: "Bill-if Account payable",
+    subHeading: "Billif Account payable",
     description:
       "Provide everyone in your organization with the tools to make more efficient and responsible spend decisions, saving time and money that can be reinvested into your business.",
     list: [
@@ -22,7 +22,7 @@ const serviceDescriptionContent = [
   {
     image: "/assets/images/122994.jpg",
     heading: "Automate payments & accounting",
-    subHeading: "Bill-if Financial Operations Platform",
+    subHeading: "Billif Financial Operations Platform",
     description:
       "Confidently automate your financial operations with simple integration into your tech stack.",
     list: [
@@ -34,7 +34,7 @@ const serviceDescriptionContent = [
   {
     image: "/assets/images/2149149673.jpg",
     heading: "Increase profitability with spend controls",
-    subHeading: "Bill-if Ease of operations",
+    subHeading: "Billif Ease of operations",
     description:
       "Enhance your bottom line by controlling every purchase, eliminating unauthorized spending, and improving spend visibility.",
     list: [

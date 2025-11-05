@@ -16,7 +16,7 @@ const Sync = () => {
           <Fade>
             <p>
               Integrate with popular accounting and ERP solutions to auto-sync
-              Bill-if pay transactions and pull-in your amortization schedules,
+              Billif pay transactions and pull-in your amortization schedules,
               accelerating your accounts payable workflow.
             </p>
           </Fade>

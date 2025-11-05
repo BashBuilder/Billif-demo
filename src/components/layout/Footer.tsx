@@ -96,7 +96,7 @@ const Footer = () => {
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/Bill-if_revenue?igsh=MWY2Mzd2b3V2NHdoag%3D%3D&utm_source=qr "
+                  href="https://www.instagram.com/Billif_revenue?igsh=MWY2Mzd2b3V2NHdoag%3D%3D&utm_source=qr "
                 >
                   <Instagram />
                 </Link>
@@ -115,7 +115,7 @@ const Footer = () => {
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"
-                  href="https://www.linkedin.com/company/Bill-if-revenue-paymentech/"
+                  href="https://www.linkedin.com/company/Billif-revenue-paymentech/"
                 >
                   <Linkedin />
                 </Link>

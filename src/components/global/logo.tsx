@@ -17,7 +17,7 @@ const Logo = ({ variant }: Props) => {
       <Link href="/" className="">
         <Image
           src={src}
-          alt="Bill-if logo"
+          alt="Billif logo"
           width={150}
           height={50}
           quality={100}

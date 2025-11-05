@@ -16,9 +16,9 @@ const DesignedIntegration = () => {
       </Fade>
       <Fade>
         <p className="mx-auto max-w-2xl py-3">
-          Bill-if integrates with leading accounting software and financial
-          tools to reduce manual entry, speed up reconciliation, and simplify
-          your workflow.
+          Billif integrates with leading accounting software and financial tools
+          to reduce manual entry, speed up reconciliation, and simplify your
+          workflow.
         </p>
       </Fade>
       <div className="flex items-center justify-center gap-8 pt-8">

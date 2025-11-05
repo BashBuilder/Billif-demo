@@ -31,7 +31,7 @@ const CookieModal = () => {
           <CookingPot className="mx-auto size-16" />
           <h2 className="mb-2 text-lg font-semibold">We use cookies</h2>
           <p className="mb-4 text-center text-sm text-gray-600">
-            Bill-if uses cookies to enhance your experience, analyze site usage,
+            Billif uses cookies to enhance your experience, analyze site usage,
             and assist in our marketing efforts. By clicking &apos;Accept&apos;,
             you consent to our use of cookies.
           </p>

@@ -22,7 +22,7 @@ const PurposeBuilt = () => {
             <p className="text-blue-50">
               Address AP and purchasing challenges, from rogue spending and
               manual processes to uninformed purchasing decisions, that cost you
-              time and money. Bill-if empowers your organization to control and
+              time and money. Billif empowers your organization to control and
               reduce costs while enhancing operational efficiencies, freeing up
               time to focus on higher-value initiatives.
             </p>

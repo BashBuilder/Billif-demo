@@ -15,7 +15,7 @@ const WhyBillif = () => {
       <Fade>
         <p className="text-center">
           Simple defaults, direct integrations, and advanced customization means
-          Bill-if will scale with you.
+          Billif will scale with you.
         </p>
       </Fade>
 
@@ -41,7 +41,7 @@ const WhyBillif = () => {
             Integrate and stay synced
           </h5>
           <p className="text-sm text-slate-500">
-            Easily integrate Bill-if with your accounting systems and streamline
+            Easily integrate Billif with your accounting systems and streamline
             your finances.
           </p>
         </Fade>
@@ -76,7 +76,7 @@ const WhyBillif = () => {
             Completely flexible
           </h5>
           <p className="text-sm text-slate-500">
-            Customize Bill-if to fit your business and give you the controls.
+            Customize Billif to fit your business and give you the controls.
           </p>
         </Fade>
         <Fade duration={1.3} className="w-4/5 space-y-2 md:max-w-60">

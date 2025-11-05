@@ -186,7 +186,7 @@ const DemoTour = () => {
                 </form>
               </Form>
               <Link
-                href="/file/GetBill-if Pitch Deck.pdf"
+                href="/file/GetBillif Pitch Deck.pdf"
                 download={true}
                 className="hidden"
                 target="_blank"

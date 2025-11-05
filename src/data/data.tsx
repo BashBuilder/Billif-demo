@@ -44,14 +44,14 @@ export const integrationsData = [
     title: "Zoho Books AP Automation",
     icon: "/assets/Svg/zoho-books-logo.png",
     description:
-      "Bill-if AP integrates with Zoho Books to automate and simplify your accounts payable process. It streamlines invoice processing, approvals, and payments with two- and three-way PO matching, real-time syncing, and secure workflows for greater efficiency and control.",
+      "Billif AP integrates with Zoho Books to automate and simplify your accounts payable process. It streamlines invoice processing, approvals, and payments with two- and three-way PO matching, real-time syncing, and secure workflows for greater efficiency and control.",
     image: "/assets/images/integrations/Dashboard-hero.1646877532037 1.png",
   },
   {
     title: "Automation for QuickBooks",
     icon: "/assets/Svg/quickbooks.svg",
     description:
-      "Bill-if integrates seamlessly with QuickBooks Online and Desktop to automate the accounts payable process from purchase orders to payments. We take care of the data entry and offer SmartCoding technology that helps your team code and approve invoices faster than ever. Our reporting gives your team insight into the entire AP workflow, and helps you identify and remove any bottlenecks in the process.",
+      "Billif integrates seamlessly with QuickBooks Online and Desktop to automate the accounts payable process from purchase orders to payments. We take care of the data entry and offer SmartCoding technology that helps your team code and approve invoices faster than ever. Our reporting gives your team insight into the entire AP workflow, and helps you identify and remove any bottlenecks in the process.",
     image: "/assets/images/integrations/unsplash_744oGeqpxPQ.png",
   },
   {
@@ -65,7 +65,7 @@ export const integrationsData = [
     title: "Xero AP Automation",
     icon: "/assets/Svg/xerologo.svg",
     description:
-      "Bill-if AP provides accounts payable (AP) automation services to help Xero users incorporate a fast and easy way to manage their AP workflow. The software offers AP teams a simple, streamlined and secure way to process invoices and make payments through multiple channels. Bill-if AP’s integration supports a touchless experience with two and three-way PO matching capabilities, providing customized approvals and enhanced internal controls.",
+      "Billif AP provides accounts payable (AP) automation services to help Xero users incorporate a fast and easy way to manage their AP workflow. The software offers AP teams a simple, streamlined and secure way to process invoices and make payments through multiple channels. Billif AP’s integration supports a touchless experience with two and three-way PO matching capabilities, providing customized approvals and enhanced internal controls.",
     image: "/assets/images/integrations/Dashboard-hero.1646877532037 1.png",
   },
 ];

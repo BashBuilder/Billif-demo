@@ -17,7 +17,7 @@ const Easysetup = () => {
           <Fade>
             <p>
               There are multiple ways to quickly import your invoices into
-              Bill-if, with little to no manual entry required.
+              Billif, with little to no manual entry required.
             </p>
           </Fade>
           <Fade className="pt-4">

@@ -6,7 +6,7 @@ import Script from "next/script";
 import CookieModal from "@/components/global/cookie-modal";
 
 export const metadata: Metadata = {
-  title: "Bill-if",
+  title: "Billif",
   description: "Revenue pament-tech by QorePay",
 };
 

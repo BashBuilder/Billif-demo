@@ -51,9 +51,9 @@ const Hero = () => {
             duration={3}
           >
             <Image
-              // src="/assets/images/home/Bill-iflaptop.png"
+              // src="/assets/images/home/Billiflaptop.png"
               src="/assets/images/Untitled-1.png"
-              alt="Bill-if dashboard image"
+              alt="Billif dashboard image"
               width={1500}
               height={1500}
               quality={100}
@@ -69,7 +69,7 @@ const Hero = () => {
             <Image
               // src="/assets/images/home/blank_smartphone_mockup_isolate_on_background.png"
               src="/assets/images/Artboard_1-removebg-preview.png"
-              alt="Bill-if dashboard image"
+              alt="Billif dashboard image"
               width={350}
               height={250}
               quality={100}

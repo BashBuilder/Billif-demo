@@ -14,8 +14,8 @@ const Manage = () => {
           <p className="text-orange-50/90">
             Manual spend approval processes are full of errors and lengthy email
             chains, causing slow approvals and poor spending visibility.
-            Bill-if’s automated approval workflows solve these problems. With
-            custom rules and budget integration, Bill-if ensures purchases stay
+            Billif’s automated approval workflows solve these problems. With
+            custom rules and budget integration, Billif ensures purchases stay
             within spending limits and enables informed decision-making before
             approvals.
           </p>

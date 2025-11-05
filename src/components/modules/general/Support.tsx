@@ -14,9 +14,9 @@ const Support = () => {
         </Fade>
         <Fade>
           <p className="mx-auto max-w-screen-lg text-center text-blue-50">
-            Bill-if’s team of in-house technical account managers and
-            integration managers are dedicated to your success. From API setup
-            to integration and deployment, we work with you to ensure our
+            Billif’s team of in-house technical account managers and integration
+            managers are dedicated to your success. From API setup to
+            integration and deployment, we work with you to ensure our
             integrations unlock efficiency improvements for you.
           </p>
         </Fade>

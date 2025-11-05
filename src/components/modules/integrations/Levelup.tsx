@@ -9,7 +9,7 @@ const Levelup = () => {
     <section className="contain space-y-6 py-20">
       <Fade>
         <h2 className="text-center font-heading text-4xl font-semibold text-primary">
-          Level up with Bill-if Integrations
+          Level up with Billif Integrations
         </h2>
       </Fade>
       <div className="flex flex-wrap items-center justify-center gap-10">

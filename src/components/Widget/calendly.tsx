@@ -47,18 +47,14 @@ const CalendlyWidget: React.FC = ({
     event.preventDefault();
     if (window.Calendly) {
       window.Calendly.initPopupWidget({
-        url: "'https://calendly.com/getnextgen/billif-demo/30min?primary_color=#1a345c",
+        url: "https://calendly.com/getnextgen/billif-demo",
       });
     }
   };
 
   return (
     <Button variant={variant || "default"} size={size || "default"}>
-      <a
-        href="#"
-        onClick={handleDemoRequest}
-        // className="rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-primary/80"
-      >
+      <a href="#" onClick={handleDemoRequest}>
         Request Demo
       </a>
     </Button>

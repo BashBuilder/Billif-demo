@@ -14,9 +14,9 @@ const page = () => {
     <main>
       <AccountHeading
         image="/assets/images/home/clothings.png"
-        title="Speed up accounts payable with Bill-if."
+        title="Speed up accounts payable with Billif."
         subtitle="Account payable"
-        description="Bill-if automates your entire accounts payable process, ensuring every bill is recorded, approved, and paid without any data entry or repetitive tasks"
+        description="Billif automates your entire accounts payable process, ensuring every bill is recorded, approved, and paid without any data entry or repetitive tasks"
       />
       <AccountSteps
         title="Make business payments in four easy steps"

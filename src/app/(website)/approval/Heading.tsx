@@ -24,7 +24,7 @@ const Heading = () => {
         </Fade>
         <Fade>
           <p className="mt-8 text-center text-lg">
-            Bill-if’s approval software provides the insights you need to make
+            Billif’s approval software provides the insights you need to make
             informed decisions and meet your team’s needs, all while staying
             within budget.
           </p>

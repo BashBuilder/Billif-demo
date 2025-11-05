@@ -27,7 +27,7 @@ const ApAutomation = () => {
           </Fade>
           <Fade>
             <p className="font-semibold text-primary">
-              With Bill-if automations you can pay from anywhere.
+              With Billif automations you can pay from anywhere.
             </p>
           </Fade>
           <Fade>
@@ -86,7 +86,7 @@ const ApAutomation = () => {
           </Fade>
           <Fade>
             <p className="font-semibold text-primary">
-              Bill-if easily monitors your transactions for ease of operations
+              Billif easily monitors your transactions for ease of operations
             </p>
           </Fade>
           <Fade className="">
