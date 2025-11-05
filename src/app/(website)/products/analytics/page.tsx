@@ -8,11 +8,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  ArrowRight,
   BarChart3,
   TrendingUp,
   PieChart,
@@ -57,20 +55,8 @@ export default function AnalyticsPage() {
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button
-                  size="lg"
-                  className="bg-secondary text-white hover:bg-secondary/90"
-                >
-                  Get Started for Free
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white/20 bg-transparent text-white hover:bg-white/10"
-                >
-                  Watch Demo
-                </Button>
+                <GetStartedBtn />
+                <Demo />
               </div>
 
               {/* Stats */}

@@ -41,6 +41,13 @@ export const accountReceivableSteps = [
 
 export const integrationsData = [
   {
+    title: "Zoho Books AP Automation",
+    icon: "/assets/Svg/zoho-books-logo.png",
+    description:
+      "Bill-if AP integrates with Zoho Books to automate and simplify your accounts payable process. It streamlines invoice processing, approvals, and payments with two- and three-way PO matching, real-time syncing, and secure workflows for greater efficiency and control.",
+    image: "/assets/images/integrations/Dashboard-hero.1646877532037 1.png",
+  },
+  {
     title: "Automation for QuickBooks",
     icon: "/assets/Svg/quickbooks.svg",
     description:

@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { integrationsFaq } from "@/data/faq";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -41,15 +42,13 @@ const page = () => {
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button className="bg-secondary text-white hover:bg-secondary/90">
-                  Contact Sales
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <div className="flex items-center justify-center gap-8">
-                  <div>
-                    <Demo />
-                  </div>
-                </div>
+                <Link href="/contact">
+                  <Button className="bg-secondary text-white hover:bg-secondary/90">
+                    Contact Sales
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Demo />
               </div>
 
               {/* Stats */}
@@ -89,12 +88,6 @@ const page = () => {
           </div>
         </div>
       </section>
-      {/* <AccountHeading
-        image="/assets/images/integrations/Frame 7149.png"
-        title="Automation. Integration. We've got you covered."
-        subtitle="Bill-if Integrations"
-        description="Reduce manual data entry, reconcile accounts faster, and improve team productivity with automatic sync and data integration."
-      /> */}
       <Levelup />
       <IntegrationsDetails />
       <Support />

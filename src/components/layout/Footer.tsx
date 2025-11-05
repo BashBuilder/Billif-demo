@@ -17,7 +17,7 @@ const Footer = () => {
         className="absolute -right-[25%] -top-[50%] z-10 rotate-12 opacity-40"
       />
       <div className="contain relative z-10 space-y-20">
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 lg:justify-items-center">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 lg:justify-items-center">
           <div className="space-y-6">
             <Logo />
             <ul className="space-y-4 font-semibold text-primary">
@@ -31,20 +31,36 @@ const Footer = () => {
           </div>
           <div className="space-y-6">
             <div className="flex h-12 items-center">
+              <h3 className="font-heading text-2xl font-semibold">Products</h3>
+            </div>
+            <ul className="space-y-4 font-semibold text-primary">
+              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
+                <Link href="/products/automation">Workflow Automation</Link>
+              </li>
+              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
+                <Link href="/products/intelligence">AI Intelligence</Link>
+              </li>
+              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
+                <Link href="/products/analytics">Analytics & Reporting</Link>
+              </li>
+              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
+                <Link href="/products/integrations">Integrations</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-6">
+            <div className="flex h-12 items-center">
               <h3 className="font-heading text-2xl font-semibold">Solutions</h3>
             </div>
             <ul className="space-y-4 font-semibold text-primary">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/account-payable">Account Payable</Link>
+                <Link href="/solutions/startup">Startups</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/account-receivable">Account Receivable</Link>
+                <Link href="/solutions/enterprise">Enterprise</Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/approval">Approval Policy</Link>
-              </li>
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/integrations">Integrations</Link>
+                <Link href="/solutions/security">Security</Link>
               </li>
             </ul>
           </div>
@@ -54,13 +70,13 @@ const Footer = () => {
             </div>
             <ul className="space-y-4 font-semibold text-primary">
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="/contact">Contact</Link>
-              </li>
-              {/* <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link href="#">Blog</Link>
-              </li> */}
-              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link href="/pricing">Pricing</Link>
+              </li>
+              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
+                <Link href="/resources">Blogs</Link>
+              </li>
+              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
+                <Link href="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>

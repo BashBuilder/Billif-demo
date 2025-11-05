@@ -24,6 +24,9 @@ import {
   Clock,
   Users,
 } from "lucide-react";
+import Demo from "@/components/global/demo";
+import Link from "next/link";
+import { dashboardLink } from "@/data/links";
 
 export default function IntelligencePage() {
   const [activeFeature, setActiveFeature] = useState("detection");
@@ -58,20 +61,16 @@ export default function IntelligencePage() {
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button
-                  size="lg"
-                  className="bg-secondary text-white hover:bg-secondary/90"
-                >
-                  Experience AI Intelligence
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white/20 bg-transparent text-white hover:bg-white/10"
-                >
-                  Watch Demo
-                </Button>
+                <Link href={dashboardLink}>
+                  <Button
+                    size="lg"
+                    className="bg-secondary text-white hover:bg-secondary/90"
+                  >
+                    Experience AI Intelligence
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Demo />
               </div>
 
               {/* Stats */}
@@ -491,20 +490,24 @@ export default function IntelligencePage() {
             that learns and adapts to your business.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Button
-              size="lg"
-              className="bg-white text-[#1B3057] hover:bg-gray-100"
-            >
-              Start AI Trial
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white bg-transparent text-white hover:bg-white/10"
-            >
-              See AI in Action
-            </Button>
+            <Link href={dashboardLink}>
+              <Button
+                size="lg"
+                className="bg-white text-[#1B3057] hover:bg-gray-100"
+              >
+                Start AI Trial
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white bg-transparent text-white hover:bg-white/10"
+              >
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
