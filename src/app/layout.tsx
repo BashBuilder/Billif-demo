@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
+//eslint-disable-next-line
+// @ts-ignore: Allow side-effect import of global CSS without type declarations
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import Script from "next/script";
@@ -9,11 +10,6 @@ export const metadata: Metadata = {
   title: "Billif",
   description: "Revenue pament-tech by QorePay",
 };
-
-// const openSans = Open_Sans({
-//   subsets: ["latin"],
-//   weight: ["300", "400", "500", "600", "700", "800"],
-// });
 
 export default function RootLayout({
   children,

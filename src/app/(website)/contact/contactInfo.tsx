@@ -40,7 +40,7 @@ const ContactInfo = () => {
                 </p>
               </div>
             </div>
-            <p className="text-lg font-semibold">hello@billif.com</p>
+            <p className="text-lg font-semibold">support@billif.com</p>
             <p className="text-sm text-muted-foreground">
               Response within 24 hours
             </p>

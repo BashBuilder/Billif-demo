@@ -88,7 +88,7 @@ const Footer = () => {
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"
-                  href="https://www.facebook.com/share/UYzJkNC8VERKwCz6/?mibextid=LQQJ4d"
+                  href="https://www.facebook.com/share/1BiGehSMza/?mibextid=wwXIfr"
                 >
                   <Facebook />
                 </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/Billif_revenue?igsh=MWY2Mzd2b3V2NHdoag%3D%3D&utm_source=qr "
+                  href="https://www.instagram.com/billiftech?igsh=MThscWZ4bHpkam5rMg=="
                 >
                   <Instagram />
                 </Link>
@@ -115,7 +115,7 @@ const Footer = () => {
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link
                   target="_blank"
-                  href="https://www.linkedin.com/company/Billif-revenue-paymentech/"
+                  href="https://www.linkedin.com/company/nextgen-revenue-paymentech/"
                 >
                   <Linkedin />
                 </Link>
