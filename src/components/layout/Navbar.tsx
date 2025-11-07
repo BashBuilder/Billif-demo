@@ -88,7 +88,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <Link href={dashboardLink}>
               <Button variant="secondary" className="font-medium">
-                Get Started
+                Login
               </Button>
             </Link>
           </div>
@@ -154,7 +154,7 @@ export default function Navbar() {
                     className="w-full font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Get Started
+                    Login
                   </Button>
                 </Link>
               </div>
