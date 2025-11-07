@@ -206,7 +206,7 @@ export const privacyData: PrivacyDataType[] = [
     title: `ACCESS AND CONTROL OF INFORMATION`,
     detail: "",
     list: [
-      `You can access, edit, and delete certain information that we collect and process about you. For example, you may update personally identifiable information such as your name, email address, and phone number. We strive to ensure that your personal information is accurate and current. If your information changes, please notify us or send the correct details to hello@billif.com so we can update our records.`,
+      `You can access, edit, and delete certain information that we collect and process about you. For example, you may update personally identifiable information such as your name, email address, and phone number. We strive to ensure that your personal information is accurate and current. If your information changes, please notify us or send the correct details to support@billif.com so we can update our records.`,
       `Occasionally, we may send emails regarding Billif services, service disruptions, new products, and other updates to registered users. These emails are considered part of our services and are not subscription-based`,
     ],
   },
@@ -243,7 +243,7 @@ export const privacyData: PrivacyDataType[] = [
     title: `HOW TO CONTACT US`,
     detail: "",
     list: [
-      `If you have any questions about Billif’s privacy policy, the data we hold about you, or if you would like to exercise any of your data protection rights, please do not hesitate to contact us via email at: hello@billif.com or support@billif.com. `,
+      `If you have any questions about Billif’s privacy policy, the data we hold about you, or if you would like to exercise any of your data protection rights, please do not hesitate to contact us via email at: support@billif.com. `,
     ],
   },
 ];

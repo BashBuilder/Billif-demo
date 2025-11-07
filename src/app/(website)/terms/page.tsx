@@ -14,14 +14,6 @@ const TermOfUse = () => {
           </div>
         </div>
       </section>
-      {/* <section className="bg-orange-50 pb-20 pt-32">
-        <div className="contain space-y-10">
-          <h1 className="mx-auto max-w-screen-md text-center font-heading text-4xl text-primary">
-            BIll Intelligent Flow Technologies (Billif) <br /> Terms of Service
-          </h1>
-          <p className="text-center"> Effective Date: </p>
-        </div>
-      </section> */}
 
       <section className="contain space-y-6">
         <h2 className="font-heading text-3xl font-semibold text-primary">
