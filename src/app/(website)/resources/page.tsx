@@ -79,14 +79,7 @@ export default function ResourcesPage() {
                   Articles & Guides
                 </div>
               </Card>
-              {/* <Card className="p-6 text-center">
-                <div className="mb-2 text-3xl font-bold text-secondary">
-                  50+
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  Case Studies
-                </div>
-              </Card> */}
+
               <Card className="p-6 text-center">
                 <div className="mb-2 text-3xl font-bold text-primary">2+</div>
                 <div className="text-sm text-muted-foreground">
