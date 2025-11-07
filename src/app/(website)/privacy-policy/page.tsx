@@ -3,11 +3,14 @@ import { privacyData } from "@/data/privacy-policy";
 const PrivacyPolicy = () => {
   return (
     <main className="space-y-12 pb-20">
-      <section className="bg-orange-50 pb-40 pt-52">
-        <div className="contain space-y-10">
-          <h1 className="mx-auto max-w-screen-md text-center font-heading text-4xl text-primary">
-            PRIVACY POLICY
-          </h1>
+      <section className="bg-gradient-to-br from-primary via-primary to-secondary py-20 text-white lg:py-32">
+        <div className="container mx-auto px-4 text-center">
+          <div className="mx-auto space-y-8">
+            <h1 className="text-navy-900 text-4xl font-bold lg:text-6xl">
+              PRIVACY POLICY
+              {/* <span className="text-teal-600"> Terms of Service</span> */}
+            </h1>
+          </div>
         </div>
       </section>
 

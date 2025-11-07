@@ -4,14 +4,24 @@ import Link from "next/link";
 const TermOfUse = () => {
   return (
     <main className="space-y-12 pb-20">
-      <section className="bg-orange-50 pb-20 pt-32">
+      <section className="bg-gradient-to-br from-primary via-primary to-secondary py-20 text-white lg:py-32">
+        <div className="container mx-auto px-4 text-center">
+          <div className="mx-auto space-y-8">
+            <h1 className="text-navy-900 text-4xl font-bold lg:text-6xl">
+              BIll Intelligent Flow Technologies (Billif) <br />
+              <span className="text-teal-600"> Terms of Service</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+      {/* <section className="bg-orange-50 pb-20 pt-32">
         <div className="contain space-y-10">
           <h1 className="mx-auto max-w-screen-md text-center font-heading text-4xl text-primary">
             BIll Intelligent Flow Technologies (Billif) <br /> Terms of Service
           </h1>
           <p className="text-center"> Effective Date: </p>
         </div>
-      </section>
+      </section> */}
 
       <section className="contain space-y-6">
         <h2 className="font-heading text-3xl font-semibold text-primary">
@@ -67,20 +77,14 @@ const TermOfUse = () => {
         <ul className="ml-10 list-disc marker:text-primary">
           <li className="space-x-2">
             <span>Email : </span>
-            <Link
-              target="_blank"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@getBillif.io"
-              className="underline"
-            >
-              hello@getBillif.io
-            </Link>
+
             <span>,</span>
             <Link
               target="_blank"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=support@getBillif.io"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=support@billif.com"
               className="underline"
             >
-              support@getBillif.io
+              support@billif.com
             </Link>
           </li>
         </ul>

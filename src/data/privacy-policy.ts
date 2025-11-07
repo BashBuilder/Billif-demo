@@ -17,7 +17,7 @@ export const privacyData: PrivacyDataType[] = [
     list: [
       `<strong>Account </strong> means a BIll Intelligent Flow Technologies Account. `,
       `<strong>Personal Information/Data</strong> refers to any data that can identify a living individual, such as email address, company name, password, payment card details, financial information (e.g., bank account number), government-issued identity card, Bank Verification Number (BVN), or taxpayer identification number. It may also include anonymous information that is linked to you, such as your Internet Protocol (IP) address, log-in data, geographic location, device, or transactional data. `,
-      `<strong>BIll Intelligent Flow Technologies</strong> refers to BIll Intelligent Flow Technologies (getBillif.io) and its subsidiaries or affiliates. `,
+      `<strong>BIll Intelligent Flow Technologies</strong> refers to BIll Intelligent Flow Technologies (billif.com) and its subsidiaries or affiliates. `,
       `<strong>Billif Services</strong> pertains to providing accounts receivable/accounts payable (AR/AP) management, a virtual payment platform, and related services through its website, related sites, applications, and services. `,
       `<strong>User</strong>  refers to any individual who accesses or uses the Services provided by Billif and agrees to abide by the terms of use. `,
     ],
@@ -60,7 +60,7 @@ export const privacyData: PrivacyDataType[] = [
     detail: "",
     list: [
       `The data we collect is used to manage your account, process payments, deliver services, and improve the quality of our offerings. This includes generating reports for internal analysis, reconciling accounts, detecting fraud, and enhancing customer support. We may also share aggregate, non-personally identifiable information with our partners, including investors, sponsors, and advertisers.`,
-      `Occasionally, Billif may send you promotional offers or updates on new features and services. We may also share your information with third-party affiliates if we believe their services might interest you. If you do not wish to receive such communications, you can opt out through your account settings or by contacting us at support@getBillif.io.`,
+      `Occasionally, Billif may send you promotional offers or updates on new features and services. We may also share your information with third-party affiliates if we believe their services might interest you. If you do not wish to receive such communications, you can opt out through your account settings or by contacting us at support@billif.com.`,
       `Third-party service providers hired by Billif may perform tasks on our behalf, such as analyzing usage patterns. These providers will only have access to the personal information necessary to complete their tasks and will be prohibited from using the information for any other purposes.`,
       `Billif may disclose personal information to comply with legal requirements, respond to regulatory demands, protect against fraudulent use of our services, or safeguard the rights and property of Billif and its users. Disclosure may also be necessary in cases where we believe there is a risk of harm to individuals.`,
       `Your data will not be shared with third parties beyond what is described here unless explicitly authorized by you.`,
@@ -206,7 +206,7 @@ export const privacyData: PrivacyDataType[] = [
     title: `ACCESS AND CONTROL OF INFORMATION`,
     detail: "",
     list: [
-      `You can access, edit, and delete certain information that we collect and process about you. For example, you may update personally identifiable information such as your name, email address, and phone number. We strive to ensure that your personal information is accurate and current. If your information changes, please notify us or send the correct details to hello@getBillif.io so we can update our records.`,
+      `You can access, edit, and delete certain information that we collect and process about you. For example, you may update personally identifiable information such as your name, email address, and phone number. We strive to ensure that your personal information is accurate and current. If your information changes, please notify us or send the correct details to hello@billif.com so we can update our records.`,
       `Occasionally, we may send emails regarding Billif services, service disruptions, new products, and other updates to registered users. These emails are considered part of our services and are not subscription-based`,
     ],
   },
@@ -243,7 +243,7 @@ export const privacyData: PrivacyDataType[] = [
     title: `HOW TO CONTACT US`,
     detail: "",
     list: [
-      `If you have any questions about Billif’s privacy policy, the data we hold about you, or if you would like to exercise any of your data protection rights, please do not hesitate to contact us via email at: hello@getBillif.io or support@getBillif.io. `,
+      `If you have any questions about Billif’s privacy policy, the data we hold about you, or if you would like to exercise any of your data protection rights, please do not hesitate to contact us via email at: hello@billif.com or support@billif.com. `,
     ],
   },
 ];
