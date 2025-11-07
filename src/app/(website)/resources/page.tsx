@@ -1,3 +1,4 @@
+"use client";
 // import { Navigation } from "@/components/navigation";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,14 +11,16 @@ import {
 import { Badge } from "@/components/ui/badge";
 import {
   ArrowRight,
-  BookOpen,
-  Video,
+  // BookOpen,
+  // Video,
   Calendar,
-  TrendingUp,
+  // TrendingUp,
 } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function ResourcesPage() {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -41,7 +44,10 @@ export default function ResourcesPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 grid gap-8 md:grid-cols-3">
             {/* Featured Blog Post */}
-            <Card className="group transition-all duration-300 hover:shadow-xl md:col-span-2">
+            <Card
+              className="group cursor-pointer transition-all duration-300 hover:shadow-xl md:col-span-2"
+              onClick={() => router.push("/resources/post")}
+            >
               <div className="aspect-video rounded-t-lg bg-gradient-to-br from-primary/10 to-secondary/10"></div>
               <CardHeader>
                 <Badge variant="outline" className="mb-2 w-fit">
@@ -62,7 +68,11 @@ export default function ResourcesPage() {
                     <span>January 15, 2025</span>
                   </div>
                   <Link href="/resources/blog/future-financial-automation">
-                    <Button variant="ghost" size="sm">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => router.push("/resources/post")}
+                    >
                       Read More
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -92,7 +102,7 @@ export default function ResourcesPage() {
           {/* Resource Categories */}
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Blog */}
-            <Card className="group border-2 transition-all duration-300 hover:border-primary/20 hover:shadow-xl">
+            {/* <Card className="group border-2 transition-all duration-300 hover:border-primary/20 hover:shadow-xl">
               <CardHeader className="pb-4 text-center">
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                   <BookOpen className="h-8 w-8 text-primary" />
@@ -128,7 +138,7 @@ export default function ResourcesPage() {
                   </Button>
                 </Link>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Case Studies */}
             {/* <Card className="group border-2 transition-all duration-300 hover:border-secondary/20 hover:shadow-xl">
@@ -204,7 +214,7 @@ export default function ResourcesPage() {
             </Card> */}
 
             {/* Webinars */}
-            <Card className="group border-2 transition-all duration-300 hover:border-secondary/20 hover:shadow-xl md:col-span-2 lg:col-span-1">
+            {/* <Card className="group border-2 transition-all duration-300 hover:border-secondary/20 hover:shadow-xl md:col-span-2 lg:col-span-1">
               <CardHeader className="pb-4 text-center">
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
                   <Video className="h-8 w-8 text-secondary" />
@@ -239,7 +249,7 @@ export default function ResourcesPage() {
                   </Button>
                 </Link>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>

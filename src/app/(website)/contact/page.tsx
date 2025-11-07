@@ -1,3 +1,4 @@
+"use client";
 import ContactForm from "./ContactForm";
 import ContactInfo from "./contactInfo";
 import ContactFaq from "./contact-faq";

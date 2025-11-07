@@ -5,9 +5,9 @@ import type React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Menu, LogOut, FileText, Video, Settings } from "lucide-react";
+import { Menu, LogOut, FileText, Settings } from "lucide-react";
 import BlogManagement from "@/components/admin/blog-management";
-import VideoManagement from "@/components/admin/video-management";
+// import VideoManagement from "@/components/admin/video-management";
 
 interface AdminDashboardProps {
   // onLogout: () => void;
@@ -52,13 +52,13 @@ export default function AdminDashboard({
             onClick={() => setActiveTab("blogs")}
             collapsed={!sidebarOpen}
           />
-          <NavItem
+          {/* <NavItem
             label="Videos"
             icon={<Video className="h-5 w-5" />}
             active={activeTab === "videos"}
             onClick={() => setActiveTab("videos")}
             collapsed={!sidebarOpen}
-          />
+          /> */}
           <NavItem
             label="Settings"
             icon={<Settings className="h-5 w-5" />}
@@ -134,7 +134,7 @@ export default function AdminDashboard({
               </div>
             </>
           )}
-          {activeTab === "videos" && (
+          {/* {activeTab === "videos" && (
             <>
               <div className="p-6">
                 <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -159,7 +159,7 @@ export default function AdminDashboard({
                 <VideoManagement />
               </div>
             </>
-          )}
+          )} */}
         </main>
       </div>
     </div>
