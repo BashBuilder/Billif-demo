@@ -1,69 +1,27 @@
 "use client";
-import React, { useState } from "react";
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
-import DemoRequest from "./demo-request";
-import { z } from "zod";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  // FormLabel,
-} from "@/components/ui/form";
+import ContactForm from "@/app/(website)/contact/ContactForm";
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
-const formSchema = z.object({
-  message: z.string().min(10),
-});
+export function ContactUsDialog() {
+  const [open, setOpen] = useState(false);
 
-const SubmitEmailForm = () => {
-  const [isDemo, setIsDemo] = useState({ state: false, message: "" });
-
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      message: "",
-    },
-  });
-
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsDemo({ state: true, message: values.message });
-    form.clearErrors();
-    form.reset();
-  }
+  const closeModal = () => {
+    setOpen(false);
+  };
   return (
-    <>
-      <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className={`relative rounded-full bg-blue-50 p-2 shadow-md ${form.formState.errors.message && "border-2 border-red-500"}`}
-        >
-          <FormField
-            control={form.control}
-            name="message"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl>
-                  <Input
-                    {...field}
-                    type="text"
-                    placeholder="Leave us a message?"
-                    className="rounded-full border-none bg-transparent pr-44 outline-none ring-0 ring-transparent"
-                  />
-                </FormControl>
-              </FormItem>
-            )}
-          />
-          <Button className="absolute right-2 top-1/2 -translate-y-1/2">
-            <span>Send message</span>
+    <Dialog open={open} onOpenChange={setOpen}>
+      <form>
+        <DialogTrigger asChild>
+          <Button variant="outline" className="w-full">
+            Contact Us
           </Button>
-        </form>
-      </Form>
-      <DemoRequest isDemo={isDemo} setIsDemo={setIsDemo} />
-    </>
+        </DialogTrigger>
+        <DialogContent className="sm:max-w-[625px]">
+          <ContactForm closeDialog={closeModal} />
+        </DialogContent>
+      </form>
+    </Dialog>
   );
-};
-
-export default SubmitEmailForm;
+}

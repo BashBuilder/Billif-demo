@@ -8,7 +8,7 @@ const page = () => {
       <div className="contain space-y-12">
         <section className="relative grid gap-8 md:grid-cols-2">
           <ContactInfo />
-          <ContactForm />
+          <ContactForm closeDialog={() => {}} />
         </section>
         <ContactFaq />
       </div>
