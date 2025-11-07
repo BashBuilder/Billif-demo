@@ -26,7 +26,7 @@ export default function BlogManagement() {
     title: "",
     excerpt: "",
     author: "",
-    status: "draft" as const,
+    status: "draft" as "draft" | "published",
   });
 
   // Load from localStorage
@@ -130,7 +130,7 @@ export default function BlogManagement() {
       title: blog.title,
       excerpt: blog.excerpt,
       author: blog.author,
-      status: blog.status,
+      status: blog.status as "draft" | "published",
     });
     setEditingId(blog.id);
     setIsAddingNew(true);

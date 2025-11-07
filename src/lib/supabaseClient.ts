@@ -8,3 +8,26 @@ const supabaseAnonKey =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV4ZWx4aW5meHFvanJ2cHpibWlzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk1NTkyNDEsImV4cCI6MjA2NTEzNTI0MX0.L8xbQfwPOV5axoEYHVc71ygAzbWLwbI6_vGl3WJZZP8";
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+export function createServerSupabaseClient(accessToken: string) {
+  if (
+    !process.env.NEXT_PUBLIC_SUPABASE_URL ||
+    !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  ) {
+    throw new Error("Missing Supabase environment variables");
+  }
+
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    {
+      global: {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      },
+    },
+  );
+
+  return supabase;
+}

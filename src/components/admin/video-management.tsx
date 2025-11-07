@@ -299,6 +299,7 @@ export default function VideoManagement() {
                   <div className="group relative flex h-20 w-32 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border/50 bg-secondary/30">
                     {getThumbnailUrl(video.url) ? (
                       <>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={getThumbnailUrl(video.url) || ""}
                           alt={video.title}

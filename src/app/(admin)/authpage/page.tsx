@@ -11,6 +11,7 @@ import { supabase } from "@/lib/supabaseClient";
 import Logo from "@/components/global/logo";
 import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
+import Cookies from "js-cookie";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -44,8 +45,6 @@ export default function LoginPage() {
         password,
       });
 
-      console.log(error, data);
-
       if (error) throw error;
 
       toast({
@@ -58,6 +57,16 @@ export default function LoginPage() {
           </div>
         ),
       });
+
+      const accessToken = data.session?.access_token;
+
+      if (accessToken) {
+        // Store in cookie (expires in 1 day)
+        Cookies.set("sb-access-token", accessToken, {
+          expires: 1,
+          secure: true,
+        });
+      }
 
       router.push("/dashboard");
 
