@@ -19,6 +19,7 @@ export default function BlogManagement() {
   const [editingId, setEditingId] = useState<number | string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [image, setImage] = useState<File | null>(null);
+  const [saving, setSaving] = useState(false);
   const [formData, setFormData] = useState({
     title: "",
     excerpt: "",
@@ -84,6 +85,7 @@ export default function BlogManagement() {
     });
     setEditingId(null);
     setIsAddingNew(true);
+    setImage(null);
   };
 
   const handleSave = async () => {
@@ -91,13 +93,21 @@ export default function BlogManagement() {
       alert("Please fill all fields");
       return;
     }
+    let imageUrlToSave = formData.imageUrl;
+    setSaving(true);
 
+    // 🔹 If user selected a new image, upload it first
     if (image) {
       const uploadResult = await handleUploadImage(image);
       if (uploadResult.error) {
         console.error(uploadResult.error);
+        alert("Image upload failed");
+        setSaving(false);
         return;
       }
+
+      // ✅ Use the uploaded image URL directly
+      imageUrlToSave = uploadResult.url;
     }
 
     if (editingId) {
@@ -109,7 +119,7 @@ export default function BlogManagement() {
           excerpt: formData.excerpt,
           author: formData.author,
           status: formData.status,
-          imageUrl: formData.imageUrl || "",
+          imageUrl: imageUrlToSave || "",
           updated_at: new Date().toISOString(),
         })
         .eq("id", editingId);
@@ -123,7 +133,7 @@ export default function BlogManagement() {
           excerpt: formData.excerpt,
           author: formData.author,
           status: formData.status,
-          imageUrl: formData.imageUrl || "",
+          imageUrl: imageUrlToSave || "",
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
         },
@@ -142,6 +152,8 @@ export default function BlogManagement() {
       status: "draft",
       imageUrl: "",
     });
+    setImage(null);
+    setSaving(false);
   };
 
   const handleEdit = (blog: BlogPost) => {
@@ -157,20 +169,24 @@ export default function BlogManagement() {
   };
 
   const handleUploadImage = async (file: File) => {
-    const formData = new FormData();
-    formData.append("file", file);
+    const newData = new FormData();
+    newData.append("file", file);
 
     try {
       const res = await fetch("/api/uploadImage", {
         method: "POST",
-        body: formData,
+        body: newData,
       });
 
-      const data = await res.json();
-      if (data?.url) {
-        setFormData((prev) => ({ ...prev, imageUrl: data.url }));
+      const resData = await res.json();
+      console.log({ response: "response data" });
+      console.log({
+        ...resData,
+      });
+      if (resData?.url) {
+        setFormData((prev) => ({ ...prev, imageUrl: resData.url }));
       }
-      return { data };
+      return { ...resData };
     } catch (err) {
       return { error: err };
     }
@@ -256,10 +272,12 @@ export default function BlogManagement() {
             </div>
             {(formData.imageUrl || image) && (
               <img
-                // @ts-expect-error "type mismatch"
-                src={formData.imageUrl || image}
+                src={
+                  (image ? URL.createObjectURL(image) : undefined) ||
+                  formData.imageUrl
+                }
                 alt="Preview"
-                className="mt-2 h-24 w-full rounded-md object-cover"
+                className="mt-2 h-[400px] w-full rounded-md object-cover"
               />
             )}
             <div>
@@ -311,7 +329,10 @@ export default function BlogManagement() {
               <Button variant="outline" onClick={() => setIsAddingNew(false)}>
                 Cancel
               </Button>
-              <Button onClick={handleSave}>Save</Button>
+              <Button onClick={handleSave} disabled={saving}>
+                {" "}
+                {saving ? "Saving" : "Save"}
+              </Button>
             </div>
           </CardContent>
         </Card>

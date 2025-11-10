@@ -31,7 +31,8 @@ export default function ResourcesPage() {
       const { data, error } = await supabase
         .from("billif_blogs")
         .select("*")
-        .order("created_at", { ascending: false });
+        .eq("status", "published")
+        .order("updated_at", { ascending: false });
 
       if (error) console.error(error);
       else setBlogs(data as BlogPost[]);
