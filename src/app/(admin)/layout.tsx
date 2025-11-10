@@ -7,8 +7,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta
-          name="Billif waitlist"
-          content="Billif: Revenue pament-tech by QorePay join waitlist"
+          name="Billif Blog Admin"
+          content="Billif: Revenue pament-tech by QorePay Blog management"
         />
       </head>
       <body>{children}</body>

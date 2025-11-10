@@ -4,9 +4,10 @@ import type React from "react";
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 import { Menu, LogOut, FileText, Settings } from "lucide-react";
 import BlogManagement from "@/components/admin/blog-management";
+import Logo from "@/components/global/logo";
 // import VideoManagement from "@/components/admin/video-management";
 
 interface AdminDashboardProps {
@@ -35,12 +36,10 @@ export default function AdminDashboard({
       >
         <div className="border-b border-border/50 p-6">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary">
-              <span className="font-bold text-primary-foreground">A</span>
-            </div>
-            {sidebarOpen && (
-              <span className="font-bold text-foreground">Admin</span>
-            )}
+            <Logo />
+            {/* {sidebarOpen && (
+              <span className="font-bold text-foreground">Blogs</span>
+            )} */}
           </div>
         </div>
 
@@ -111,25 +110,6 @@ export default function AdminDashboard({
           {activeTab === "blogs" && (
             <>
               <div className="p-6">
-                <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-3">
-                  <StatsCard
-                    title="Total Posts"
-                    value="24"
-                    description="Blog posts published"
-                  />
-                  <StatsCard
-                    title="Drafts"
-                    value="3"
-                    description="Posts in progress"
-                  />
-                  <StatsCard
-                    title="Published This Month"
-                    value="8"
-                    description="New content"
-                  />
-                </div>
-              </div>
-              <div className="px-6 pb-6">
                 <BlogManagement />
               </div>
             </>
@@ -189,27 +169,5 @@ function NavItem({ label, icon, active, onClick, collapsed }: NavItemProps) {
       </div>
       {!collapsed && <span className="text-sm font-medium">{label}</span>}
     </button>
-  );
-}
-
-interface StatsCardProps {
-  title: string;
-  value: string;
-  description: string;
-}
-
-function StatsCard({ title, value, description }: StatsCardProps) {
-  return (
-    <Card className="border-border/50">
-      <CardHeader className="pb-3">
-        <CardTitle className="text-sm font-medium text-muted-foreground">
-          {title}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="mb-1 text-3xl font-bold text-foreground">{value}</div>
-        <p className="text-xs text-muted-foreground">{description}</p>
-      </CardContent>
-    </Card>
   );
 }
