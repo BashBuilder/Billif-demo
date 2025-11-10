@@ -40,7 +40,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative z-10 pt-32">
+      <section className="relative z-10 py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h1
@@ -71,7 +71,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Video/Demo Section */}
-      <section className="relative z-10 py-16">
+      {/* <section className="relative z-10 py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-2xl bg-white shadow-2xl">
             <div className="flex aspect-video items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
@@ -86,7 +86,7 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary to-primary/80 py-20 text-primary-foreground">
