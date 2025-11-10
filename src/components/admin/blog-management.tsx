@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState, useEffect } from "react";
@@ -6,37 +7,30 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Trash2, Edit2, Plus, Search, Eye, Calendar } from "lucide-react";
+import { Trash2, Edit2, Plus, Search, Calendar } from "lucide-react";
 import ReactQuill from "react-quill";
 //@ts-expect-error "module not available"
 import "react-quill/dist/quill.snow.css";
-
-interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  author: string;
-  created_at: string;
-  status: "draft" | "published";
-  views?: number;
-}
+// import { useToast } from "@/hooks/use-toast";
 
 export default function BlogManagement() {
   const [blogs, setBlogs] = useState<BlogPost[]>([]);
   const [isAddingNew, setIsAddingNew] = useState(false);
-  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editingId, setEditingId] = useState<number | string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [image, setImage] = useState<File | null>(null);
   const [formData, setFormData] = useState({
     title: "",
     excerpt: "",
     author: "",
     status: "draft" as "draft" | "published",
+    imageUrl: "",
   });
+  // const { toast } = useToast();
 
   // 🔹 Fetch blogs initially
   useEffect(() => {
     fetchBlogs();
-
     // 🔹 Real-time subscription
     const channel = supabase
       .channel("blogs-changes")
@@ -61,12 +55,33 @@ export default function BlogManagement() {
       .select("*")
       .order("created_at", { ascending: false });
 
-    if (error) console.error(error);
-    else setBlogs(data as BlogPost[]);
+    if (error) {
+      //   toast({
+      //     error:
+      //   });
+      //   console.error(error);
+      //   toast({
+      //     error: (
+      //       <div className="space-y-2">
+      //         <h2 className="font-heading text-2xl font-semibold text-emerald-500">
+      //           Success
+      //         </h2>
+      //         <p>Login successful</p>
+      //       </div>
+      //     ),
+      //   });
+      console.error(error);
+    } else setBlogs(data as BlogPost[]);
   }
 
   const handleAddNew = () => {
-    setFormData({ title: "", excerpt: "", author: "", status: "draft" });
+    setFormData({
+      title: "",
+      excerpt: "",
+      author: "",
+      status: "draft",
+      imageUrl: "",
+    });
     setEditingId(null);
     setIsAddingNew(true);
   };
@@ -77,15 +92,24 @@ export default function BlogManagement() {
       return;
     }
 
+    if (image) {
+      const uploadResult = await handleUploadImage(image);
+      if (uploadResult.error) {
+        console.error(uploadResult.error);
+        return;
+      }
+    }
+
     if (editingId) {
       // Update existing post
       const { error } = await supabase
-        .from("blogs")
+        .from("billif_blogs")
         .update({
           title: formData.title,
           excerpt: formData.excerpt,
           author: formData.author,
           status: formData.status,
+          imageUrl: formData.imageUrl || "",
           updated_at: new Date().toISOString(),
         })
         .eq("id", editingId);
@@ -93,24 +117,31 @@ export default function BlogManagement() {
       if (error) console.error(error);
     } else {
       // Add new post
-      const { error } = await supabase.from("blogs").insert([
+      const { error } = await supabase.from("billif_blogs").insert([
         {
           title: formData.title,
           excerpt: formData.excerpt,
           author: formData.author,
           status: formData.status,
-          imageUrl:
-            "https://www.stampli.com/wp-content/uploads/2024/07/01-financial-automation_hero-1024x545.png",
+          imageUrl: formData.imageUrl || "",
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
         },
       ]);
 
-      if (error) console.error(error);
+      if (error) {
+        console.error(error);
+      }
     }
 
     setIsAddingNew(false);
-    setFormData({ title: "", excerpt: "", author: "", status: "draft" });
+    setFormData({
+      title: "",
+      excerpt: "",
+      author: "",
+      status: "draft",
+      imageUrl: "",
+    });
   };
 
   const handleEdit = (blog: BlogPost) => {
@@ -119,12 +150,33 @@ export default function BlogManagement() {
       excerpt: blog.excerpt,
       author: blog.author,
       status: blog.status,
+      imageUrl: blog.imageUrl || "",
     });
     setEditingId(blog.id);
     setIsAddingNew(true);
   };
 
-  const handleDelete = async (id: string) => {
+  const handleUploadImage = async (file: File) => {
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+      const res = await fetch("/api/uploadImage", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await res.json();
+      if (data?.url) {
+        setFormData((prev) => ({ ...prev, imageUrl: data.url }));
+      }
+      return { data };
+    } catch (err) {
+      return { error: err };
+    }
+  };
+
+  const handleDelete = async (id: number) => {
     const { error } = await supabase.from("blogs").delete().eq("id", id);
     if (error) console.error(error);
   };
@@ -194,22 +246,31 @@ export default function BlogManagement() {
               />
             </div>
             <div>
-              <Label>Excerpt</Label>
+              <Label>Display Image</Label>
+              <Input
+                type="file"
+                accept="image/*"
+                onChange={(e) => setImage(e.target.files?.[0] || null)}
+                placeholder="Post Image"
+              />
+            </div>
+            {(formData.imageUrl || image) && (
+              <img
+                // @ts-expect-error "type mismatch"
+                src={formData.imageUrl || image}
+                alt="Preview"
+                className="mt-2 h-24 w-full rounded-md object-cover"
+              />
+            )}
+            <div>
+              <Label>Content</Label>
               <ReactQuill
                 theme="snow"
                 value={formData.excerpt}
                 className="overflow-hidden rounded-md bg-white"
                 onChange={(e) => setFormData({ ...formData, excerpt: e })}
-                // onChange={setValue}
                 placeholder="Write your blog content here..."
               />
-              {/* <Input
-                value={formData.excerpt}
-                onChange={(e) =>
-                  setFormData({ ...formData, excerpt: e.target.value })
-                }
-                placeholder="Brief description"
-              /> */}
             </div>
             <div>
               <Label>Author</Label>
@@ -283,21 +344,18 @@ export default function BlogManagement() {
                       {blog.status}
                     </span>
                   </div>
-                  <p className="mb-2 text-sm text-muted-foreground">
-                    {blog.excerpt}
-                  </p>
+                  <div
+                    className="mb-2 text-sm text-muted-foreground"
+                    dangerouslySetInnerHTML={{
+                      __html: `${blog?.excerpt?.split("</p>")[0]}...`,
+                    }}
+                  />
                   <div className="flex flex-wrap gap-4 text-xs text-muted-foreground">
                     <span>By {blog.author}</span>
                     <span className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
-                      {new Date(blog.created_at).toLocaleDateString()}
+                      {new Date(blog.updated_at).toLocaleDateString()}
                     </span>
-                    {blog.status === "published" && (
-                      <span className="flex items-center gap-1">
-                        <Eye className="h-3 w-3" />
-                        {blog.views ?? 0} views
-                      </span>
-                    )}
                   </div>
                 </div>
                 <div className="ml-4 flex gap-2">
