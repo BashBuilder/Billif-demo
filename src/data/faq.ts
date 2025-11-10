@@ -176,3 +176,106 @@ export const pricingFaq = [
       "Yes, we offer discounts for when you purchase the enterprise or professional parks.",
   },
 ];
+
+export const billifFaq = [
+  {
+    question: "What is BILLIF?",
+    answer:
+      "BILLIF (Bill Intelligent Flow Technologies) is a financial automation platform that helps businesses manage AR/AP, payments, purchasing, and approvals with zero errors and faster processing.",
+  },
+  {
+    question: "Who can use BILLIF?",
+    answer:
+      "It is built for startups, enterprises, and financial teams looking to automate workflows and control spending.",
+  },
+  {
+    question: "How does BILLIF save time and money?",
+    answer:
+      "By automating manual tasks, BILLIF reduces errors, speeds up approvals, and gives teams more time for strategic work.",
+  },
+  {
+    question: "What makes BILLIF different?",
+    answer:
+      "BILLIF offers 99.9% accuracy, real-time processing, AI-powered automation, and full integration with leading accounting tools.",
+  },
+  {
+    question: "Can BILLIF handle payments and purchasing?",
+    answer:
+      "Yes. BILLIF manages everything from purchase orders to payment reconciliation in one platform.",
+  },
+  {
+    question: "Does BILLIF provide analytics and reporting?",
+    answer:
+      "Yes. You get real-time spend insights, reports, and dashboards for better financial decisions.",
+  },
+  {
+    question: "Can I customize approval workflows and budgets?",
+    answer:
+      "Yes. You can set approval policies, create custom workflows, and manage budgets to fit your business.",
+  },
+  {
+    question: "Which tools does BILLIF integrate with?",
+    answer:
+      "BILLIF connects with QuickBooks, Xero, Zoho Books, Sage, and other accounting systems.",
+  },
+  {
+    question: "Can I create and manage credit notes on BILLIF?",
+    answer:
+      "Yes. BILLIF allows you to create, apply, and track credit notes easily. You can link them to invoices or vendors and automatically update your financial records.",
+  },
+  {
+    question: "Does BILLIF support purchase orders (POs)?",
+    answer:
+      "Absolutely. You can generate, approve, and track purchase orders directly on BILLIF. The system helps automate order management, vendor tracking, and spend control.",
+  },
+  {
+    question: "How does the approval request process work?",
+    answer:
+      "When a transaction or payment request is made, BILLIF automatically routes it to the right approvers based on your company’s workflow. Approvers can review, approve, or decline requests in real time.",
+  },
+  {
+    question: "Can we set our own approval policies?",
+    answer:
+      "Yes. BILLIF allows you to define approval policies that fit your organization’s structure — such as amount-based limits, department rules, or multi-level approvals — ensuring every transaction follows the proper process.",
+  },
+  {
+    question: "Is setup difficult?",
+    answer:
+      "No. BILLIF offers guided onboarding so your team can go live in days.",
+  },
+  {
+    question: "Is my data safe on BILLIF?",
+    answer:
+      "Yes. BILLIF uses encryption, access control, and regular security audits to protect your data.",
+  },
+  {
+    question: "Who can access our financial information?",
+    answer:
+      "Only authorized users in your organization, managed through role-based permissions.",
+  },
+  {
+    question: "How much does BILLIF cost?",
+    answer:
+      "BILLIF uses a credit-based pricing system. You purchase credit points for a set amount, and credits are deducted based on your usage. It’s a flexible pay-as-you-go model, so you only pay for what you use.",
+  },
+  {
+    question: "Is there a free trial?",
+    answer:
+      "Yes. As a first-time user, you will receive bonus credit points when you sign up. This lets you explore BILLIF’s features and experience the platform before purchasing more credits.",
+  },
+  {
+    question: "Can I request a demo?",
+    answer:
+      "Of course. Click Request Demo to schedule a personalized walkthrough.",
+  },
+  {
+    question: "Do you provide onboarding or training?",
+    answer:
+      "Yes. We offer setup guides, tutorials, and live onboarding sessions.",
+  },
+  {
+    question: "How can I contact BILLIF?",
+    answer:
+      "Reach us through the Contact Us page or send a message directly on the website. You can also contact us via:<br/><br/>📞 Phone: 02013306099, 09132778473<br/>💬 WhatsApp: 07048222353<br/>📧 Email: support@billif.com<br/><br/>We offer 24/7 support via chat, email, and phone to help with setup, issues, or training.",
+  },
+];

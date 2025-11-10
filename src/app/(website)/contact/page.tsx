@@ -1,7 +1,8 @@
 "use client";
 import ContactForm from "./ContactForm";
 import ContactInfo from "./contactInfo";
-import ContactFaq from "./contact-faq";
+import { billifFaq } from "@/data/faq";
+import Faq from "@/components/global/Faq";
 
 const page = () => {
   return (
@@ -11,7 +12,7 @@ const page = () => {
           <ContactInfo />
           <ContactForm closeDialog={() => {}} />
         </section>
-        <ContactFaq />
+        <Faq faq={billifFaq} />
       </div>
     </section>
   );
