@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Trash2, Edit2, Plus, Search, Eye, Calendar } from "lucide-react";
+import ReactQuill from "react-quill";
+//@ts-expect-error "module not available"
+import "react-quill/dist/quill.snow.css";
 
 interface BlogPost {
   id: string;
@@ -39,7 +42,7 @@ export default function BlogManagement() {
       .channel("blogs-changes")
       .on(
         "postgres_changes",
-        { event: "*", schema: "public", table: "blogs" },
+        { event: "*", schema: "public", table: "billif_blogs" },
         (payload) => {
           console.log("Realtime change:", payload);
           fetchBlogs();
@@ -54,7 +57,7 @@ export default function BlogManagement() {
 
   async function fetchBlogs() {
     const { data, error } = await supabase
-      .from("blogs")
+      .from("billif_blogs")
       .select("*")
       .order("created_at", { ascending: false });
 
@@ -96,7 +99,10 @@ export default function BlogManagement() {
           excerpt: formData.excerpt,
           author: formData.author,
           status: formData.status,
-          views: 0,
+          imageUrl:
+            "https://www.stampli.com/wp-content/uploads/2024/07/01-financial-automation_hero-1024x545.png",
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
         },
       ]);
 
@@ -189,13 +195,21 @@ export default function BlogManagement() {
             </div>
             <div>
               <Label>Excerpt</Label>
-              <Input
+              <ReactQuill
+                theme="snow"
+                value={formData.excerpt}
+                className="overflow-hidden rounded-md bg-white"
+                onChange={(e) => setFormData({ ...formData, excerpt: e })}
+                // onChange={setValue}
+                placeholder="Write your blog content here..."
+              />
+              {/* <Input
                 value={formData.excerpt}
                 onChange={(e) =>
                   setFormData({ ...formData, excerpt: e.target.value })
                 }
                 placeholder="Brief description"
-              />
+              /> */}
             </div>
             <div>
               <Label>Author</Label>

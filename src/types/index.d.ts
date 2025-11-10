@@ -26,3 +26,14 @@ declare interface NavbarLink {
   href?: string;
   dropdown?: { href: string; title: string; description: string }[];
 }
+
+declare interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  status: "draft" | "published";
+  imageUrl?: string;
+  author: string;
+  created_at: string;
+  updated_at: string;
+}
