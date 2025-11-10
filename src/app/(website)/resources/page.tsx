@@ -171,7 +171,6 @@ export default function ResourcesPage() {
         </section>
       )}
 
-      {/* Newsletter Signup */}
       <ContactUs />
       {/* <section className="bg-gradient-to-br from-primary/5 to-secondary/5 px-4 py-20">
         <div className="mx-auto max-w-4xl text-center">
