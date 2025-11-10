@@ -8,7 +8,7 @@ const TermOfUse = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="mx-auto space-y-8">
             <h1 className="text-navy-900 text-4xl font-bold lg:text-6xl">
-              BIll Intelligent Flow Technologies (Billif) <br />
+              Bill Intelligent Flow Technologies (Billif) <br />
               <span className="text-teal-600"> Terms of Service</span>
             </h1>
           </div>
