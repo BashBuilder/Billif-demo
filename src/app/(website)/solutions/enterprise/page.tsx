@@ -96,21 +96,21 @@ export default function EnterprisePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="rounded-lg bg-slate-100 p-4 text-center">
-                  <Globe className="mx-auto mb-2 h-8 w-8 text-teal-600" />
+                  <Globe className="mx-auto h-8 w-8 text-teal-600" />
                   <div className="text-sm font-medium">Global Coverage</div>
                 </div>
                 <div className="rounded-lg bg-slate-100 p-4 text-center">
-                  <Users className="mx-auto mb-2 h-8 w-8 text-teal-600" />
+                  <Users className="mx-auto h-8 w-8 text-teal-600" />
                   <div className="text-sm font-medium">Team Management</div>
                 </div>
               </div>
-              <div className="mt-8 space-y-4">
+              <div className="space-y-4">
                 <div className="rounded-lg bg-slate-100 p-4 text-center">
-                  <Shield className="mx-auto mb-2 h-8 w-8 text-teal-600" />
+                  <Shield className="mx-auto h-8 w-8 text-teal-600" />
                   <div className="text-sm font-medium">Enterprise Security</div>
                 </div>
                 <div className="rounded-lg bg-slate-100 p-4 text-center">
-                  <Building className="mx-auto mb-2 h-8 w-8 text-teal-600" />
+                  <Building className="mx-auto h-8 w-8 text-teal-600" />
                   <div className="text-sm font-medium">
                     Multi-Entity Support
                   </div>

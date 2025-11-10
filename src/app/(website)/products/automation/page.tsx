@@ -17,7 +17,7 @@ import {
   Users,
   Workflow,
   Database,
-  Play,
+  // Play,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import CtaAction from "@/components/global/cta-action";

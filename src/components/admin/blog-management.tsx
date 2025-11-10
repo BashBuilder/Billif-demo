@@ -9,9 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Trash2, Edit2, Plus, Search, Calendar } from "lucide-react";
 import ReactQuill from "react-quill";
-//@ts-expect-error "module not available"
 import "react-quill/dist/quill.snow.css";
-// import { useToast } from "@/hooks/use-toast";
 
 export default function BlogManagement() {
   const [blogs, setBlogs] = useState<BlogPost[]>([]);
