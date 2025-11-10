@@ -102,7 +102,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
-                <Link target="_blank" href="https://x.com/ngrpay?s=21">
+                <Link target="_blank" href="https://x.com/Billif?s=21">
                   <Image
                     src="/assets/Svg/X_logo_2023_original.svg"
                     alt="Twitter"

@@ -19,29 +19,29 @@ const PrivacyPolicy = () => {
           INTRODUCTION
         </h2>
         <p>
-          This Privacy Notice applies to BIll Intelligent Flow Technologies
-          (&quot;NGRPay&quot;), along with its affiliates, successors, and
-          assigns (collectively referred to as “NGRPay,” “We,” “Us,” or “Our”).
+          This Privacy Notice applies to Bill Intelligent Flow Technologies
+          (&quot;Billif&quot;), along with its affiliates, successors, and
+          assigns (collectively referred to as “Billif,” “We,” “Us,” or “Our”).
           It governs Our collection, use, and handling of personal information
           about you (“You,” “Your,” or “Yourself”) when you interact with Us
           through any websites, applications, promotions, products, and services
-          offered by NGRPay (collectively referred to as the “Services”). This
+          offered by Billif (collectively referred to as the “Services”). This
           includes all services that link to this Privacy Notice, as well as any
           surveys, rewards, promotions, sweepstakes, contests, referrals, or
-          other marketing activities conducted by NGRPay or in connection with
+          other marketing activities conducted by Billif or in connection with
           the Services (collectively referred to as “Marketing”).
           <br />
           <br />
           This Privacy Notice applies to BIll Intelligent Flow Technologies
-          (&quot;NGRPay&quot;), along with its affiliates, successors, and
-          assigns (collectively referred to as “NGRPay,” “We,” “Us,” or “Our”).
+          (&quot;Billif&quot;), along with its affiliates, successors, and
+          assigns (collectively referred to as “Billif,” “We,” “Us,” or “Our”).
           It governs Our collection, use, and handling of personal information
           about you (“You,” “Your,” or “Yourself”) when you interact with Us
           through any websites, applications, promotions, products, and services
-          offered by NGRPay (collectively referred to as the “Services”). This
+          offered by Billif (collectively referred to as the “Services”). This
           includes all services that link to this Privacy Notice, as well as any
           surveys, rewards, promotions, sweepstakes, contests, referrals, or
-          other marketing activities conducted by NGRPay or in connection with
+          other marketing activities conducted by Billif or in connection with
           the Services (collectively referred to as “Marketing”).
           <br />
           <br />
@@ -51,14 +51,14 @@ const PrivacyPolicy = () => {
           handle your personal information.
           <br />
           <br />
-          NGRPay will share your information only as described in this Privacy
+          Billif will share your information only as described in this Privacy
           Notice or as permitted by law. We will not sell, lease, rent, or trade
           your personal information to any third party for that party&apos;s
           marketing or promotional purposes, unless you provide your consent.
           <br />
           <br />
           By continuing to use the Services or participating in Marketing after
-          being provided with this Privacy Notice, you consent to NGRPay&apos;s
+          being provided with this Privacy Notice, you consent to Billif&apos;s
           policies and practices as described herein.
           <br />
         </p>
