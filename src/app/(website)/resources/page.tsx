@@ -14,6 +14,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import ContactUs from "@/components/modules/general/GetStarted";
+import Link from "next/link";
+import CalendlyWidget from "@/components/Widget/calendly";
 
 export default function ResourcesPage() {
   const [blogs, setBlogs] = useState<BlogPost[]>([]);
@@ -41,8 +43,32 @@ export default function ResourcesPage() {
   }
   return (
     <div className="min-h-screen bg-background">
+      <section className="bg-gradient-to-br from-primary via-primary to-secondary py-20 text-white lg:py-32">
+        <div className="container mx-auto px-4 text-center">
+          <div className="mx-auto max-w-4xl space-y-8">
+            <h1 className="text-navy-900 text-4xl font-bold lg:text-6xl">
+              Learn, Grow,
+              <span className="text-teal-600"> and Optimize</span>
+            </h1>
+
+            <p className="mx-auto max-w-3xl text-slate-300">
+              Access our comprehensive library of resources to master financial
+              automation and drive your business forward.
+            </p>
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+              <Link href="/contact">
+                <Button className="bg-teal-600 px-8 text-white hover:bg-teal-700">
+                  Contact sales
+                </Button>
+              </Link>
+
+              <CalendlyWidget />
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Hero Section */}
-      <section className="px-4 py-20 pt-32">
+      {/* <section className="px-4 py-20 pt-32">
         <div className="mx-auto max-w-7xl text-center">
           <Badge variant="secondary" className="mb-6">
             Resources
@@ -55,7 +81,7 @@ export default function ResourcesPage() {
             automation and drive your business forward.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {loading && (
         <div className="flex w-full items-center justify-center py-20">
@@ -130,10 +156,9 @@ export default function ResourcesPage() {
               </div>
             </div>
 
-            {blogs.length > 0 && (
+            {blogs.length > 1 && (
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {/* {blogs.slice(1).map((blog) => ( */}
-                {blogs.map((blog) => (
+                {blogs.slice(1).map((blog) => (
                   <Card
                     key={blog.id}
                     className="group border-2 transition-all duration-300 hover:border-primary/20 hover:shadow-xl"
