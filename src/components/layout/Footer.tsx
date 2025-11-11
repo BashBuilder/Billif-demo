@@ -78,6 +78,9 @@ const Footer = () => {
               <li className="*:transition-colors *:duration-300 *:hover:text-primary">
                 <Link href="/contact">Contact Us</Link>
               </li>
+              <li className="*:transition-colors *:duration-300 *:hover:text-primary">
+                <Link href="/faq">FAQ</Link>
+              </li>
             </ul>
           </div>
           <div className="space-y-6 max-md:col-span-2">

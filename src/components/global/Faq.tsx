@@ -6,10 +6,17 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 
-const Faq = ({ faq }: { faq?: { question: string; answer: string }[] }) => {
+interface FaqType {
+  faq?: { question: string; answer: string }[];
+  lightMode?: boolean;
+}
+
+const Faq = ({ faq, lightMode }: FaqType) => {
   return (
     <section className="contain space-y-6 py-20">
-      <h1 className="text-center font-heading text-4xl font-semibold text-primary">
+      <h1
+        className={`text-center font-heading text-4xl font-semibold ${lightMode ? "text-white" : "text-primary"} `}
+      >
         Frequently asked questions
       </h1>
       {faq && (
@@ -22,7 +29,9 @@ const Faq = ({ faq }: { faq?: { question: string; answer: string }[] }) => {
                 className="hover:*:decoration-transparent"
               >
                 <AccordionTrigger className="">
-                  <p className="whitespace-pre-wrapf font-heading text-xl font-semibold text-primary">
+                  <p
+                    className={`whitespace-pre-wrap font-heading text-xl font-semibold text-primary ${lightMode ? "text-white" : "text-primary"} `}
+                  >
                     {faqItem.question}
                   </p>
                 </AccordionTrigger>
