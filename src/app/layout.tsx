@@ -47,6 +47,42 @@ export default function RootLayout({
       </head>
       <body>
         <Script
+          id="cuoral-inline-script"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+          (function () {
+            const s = document.createElement('script');
+            s.src = 'https://js.cuoral.com/inline.js';
+            s.defer = true;
+
+            // Required widget key
+            s.dataset.cuoralKey = "e7e3bc9f-eae4-42d1-b39b-aa968c26cbb8";
+
+            // Pass User Details (if available)
+            try {
+              const tm = {
+                first_name: "Anthony",
+                last_name: "Adelowotan",
+                email: "aadelowotan@qorepay.com"
+              }
+
+              if (tm.email) {
+                s.dataset.email = tm.email;
+                s.dataset.first_name = tm.first_name || "";
+                s.dataset.last_name = tm.last_name || "";
+              }
+            } catch (e) {
+              // Fail silently
+            }
+
+            document.head.appendChild(s);
+          })();
+        `,
+          }}
+        />
+
+        {/* <Script
           id="brevo-conversations"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -63,7 +99,7 @@ export default function RootLayout({
             })(document, window, 'BrevoConversations');
           `,
           }}
-        />
+        /> */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2ZTXVB19FL"
           strategy="afterInteractive"
