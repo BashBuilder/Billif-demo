@@ -46,7 +46,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Script
+        {/* <Script
           id="cuoral-inline-script"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -80,9 +80,9 @@ export default function RootLayout({
           })();
         `,
           }}
-        />
+        /> */}
 
-        {/* <Script
+        <Script
           id="brevo-conversations"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -99,7 +99,7 @@ export default function RootLayout({
             })(document, window, 'BrevoConversations');
           `,
           }}
-        /> */}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2ZTXVB19FL"
           strategy="afterInteractive"
