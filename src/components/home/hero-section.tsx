@@ -3,6 +3,11 @@ import { CheckCircle } from "lucide-react";
 import GetStartedBtn from "../general/get-started-btn";
 import Demo from "../global/demo";
 
+const trustedBrands = [
+  { name: "Qorepay", logo: "/assets/Svg/qoreLogo.svg" },
+  // { name: "Qore Insure", logo: "/assets/logos/brand-1.svg" },
+];
+
 export function HeroSection() {
   return (
     <section
@@ -123,18 +128,36 @@ export function HeroSection() {
                 <CheckCircle className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-bold text-primary">Zero Errors</h3>
-              {/* <p className="text-sm text-muted-foreground">
-                AI-powered validation
-              </p> */}
             </div>
             <div className="space-y-3 text-center">
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-secondary/10">
                 <CheckCircle className="h-8 w-8 text-secondary" />
               </div>
               <h3 className="font-bold text-primary">Full Integration</h3>
-              {/* <p className="text-sm text-muted-foreground">
-                Works with existing systems
-              </p> */}
+            </div>
+          </div>
+
+          {/* Sponsored Brands Banner */}
+          <div className="pt-12">
+            <p className="mb-8 text-sm font-medium text-muted-foreground">
+              Trusted by leading brands worldwide
+            </p>
+            <div className="overflow-hidden rounded-2xl bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5 p-8">
+              <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+                {/* Replace with actual brand logos */}
+                {trustedBrands.map((brand) => (
+                  <div
+                    key={brand.name}
+                    className="flex h-16 items-center justify-center"
+                  >
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="max-h-12 w-auto opacity-70 transition-opacity hover:opacity-100"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
