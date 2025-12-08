@@ -5,6 +5,8 @@ import Demo from "../global/demo";
 
 const trustedBrands = [
   { name: "Qorepay", logo: "/assets/Svg/qoreLogo.svg" },
+  { name: "AgroCourt", logo: "" },
+  { name: "QoreInsure", logo: "" },
   // { name: "Qore Insure", logo: "/assets/logos/brand-1.svg" },
 ];
 
@@ -150,11 +152,17 @@ export function HeroSection() {
                     key={brand.name}
                     className="flex h-16 items-center justify-center"
                   >
-                    <img
-                      src={brand.logo}
-                      alt={brand.name}
-                      className="max-h-12 w-auto opacity-70 transition-opacity hover:opacity-100"
-                    />
+                    {brand.logo ? (
+                      <img
+                        src={brand.logo}
+                        alt={brand.name}
+                        className="max-h-12 w-auto opacity-70 transition-opacity hover:opacity-100"
+                      />
+                    ) : (
+                      <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-secondary text-sm font-bold text-white">
+                        {brand.name.substring(0, 2).toUpperCase()}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
