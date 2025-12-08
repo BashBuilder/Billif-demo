@@ -4,9 +4,13 @@ import GetStartedBtn from "../general/get-started-btn";
 import Demo from "../global/demo";
 
 const trustedBrands = [
-  { name: "Qorepay", logo: "/assets/Svg/qoreLogo.svg" },
-  { name: "AgroCourt", logo: "" },
-  { name: "QoreInsure", logo: "" },
+  {
+    name: "Qorepay",
+    logo: "/assets/Logo - Color On White - Transparent (3).png",
+    brandColor: "#4F46E5",
+  },
+  { name: "AgroCourt", logo: "", brandColor: "#10B981" },
+  { name: "QoreInsure", logo: "", brandColor: "#EF4444" },
   // { name: "Qore Insure", logo: "/assets/logos/brand-1.svg" },
 ];
 
@@ -159,8 +163,12 @@ export function HeroSection() {
                         className="max-h-12 w-auto opacity-70 transition-opacity hover:opacity-100"
                       />
                     ) : (
-                      <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-secondary text-sm font-bold text-white">
-                        {brand.name.substring(0, 2).toUpperCase()}
+                      <div
+                        className={`flex items-center justify-center rounded-lg p-4 text-3xl font-bold text-white`}
+                        style={{ color: brand.brandColor }}
+                      >
+                        {/* {brand.name.substring(0, 2).toUpperCase()} */}
+                        {brand.name}
                       </div>
                     )}
                   </div>
