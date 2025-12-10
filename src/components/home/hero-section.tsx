@@ -11,7 +11,6 @@ const trustedBrands = [
   },
   { name: "AgroCourt", logo: "", brandColor: "#10B981" },
   { name: "QoreInsure", logo: "", brandColor: "#EF4444" },
-  // { name: "Qore Insure", logo: "/assets/logos/brand-1.svg" },
 ];
 
 export function HeroSection() {
@@ -57,11 +56,23 @@ export function HeroSection() {
           {/* Hero Image/Dashboard */}
           <div className="relative mx-auto max-w-5xl">
             <div className="relative rounded-3xl border border-border/20 bg-gradient-to-br from-primary/5 to-secondary/5 p-8 shadow-2xl lg:p-12">
-              <img
+              <video
+                className="w-full rounded-2xl border border-border/30 shadow-xl"
+                // alt="Bill Intelligent Flow Technologies - Modern Financial Dashboard"
+                loop
+                autoPlay
+              >
+                <source
+                  src="/video/Video_20251205_100646 (1) (1) (1).mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              {/* <img
                 src="/assets/images/Screenshot 2025-08-25 091834.png"
                 alt="Bill Intelligent Flow Technologies - Modern Financial Dashboard"
                 className="w-full rounded-2xl border border-border/30 shadow-xl"
-              />
+              /> */}
 
               {/* Floating Elements */}
               <div className="absolute -left-4 -top-6 rounded-2xl border border-border/20 bg-white p-4 shadow-lg">
@@ -164,7 +175,7 @@ export function HeroSection() {
                       />
                     ) : (
                       <div
-                        className={`flex items-center justify-center rounded-lg p-4 text-3xl font-bold text-white`}
+                        className={`flex items-center justify-center rounded-lg p-4 font-heading text-3xl font-bold text-white`}
                         style={{ color: brand.brandColor }}
                       >
                         {/* {brand.name.substring(0, 2).toUpperCase()} */}
