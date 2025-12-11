@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { CheckCircle } from "lucide-react";
-import GetStartedBtn from "../general/get-started-btn";
+// import GetStartedBtn from "../general/get-started-btn";
 import Demo from "../global/demo";
 import Fade from "../global/fade";
+import DemoTour from "../global/demo-tour";
 
 const trustedBrands = [
   {
@@ -51,7 +52,8 @@ export function HeroSection() {
                 duration={2}
                 className="flex flex-col items-center justify-center gap-4 sm:flex-row"
               >
-                <GetStartedBtn />
+                <DemoTour />
+                {/* <GetStartedBtn /> */}
                 <Demo />
               </Fade>
             </div>
