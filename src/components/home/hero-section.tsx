@@ -68,10 +68,9 @@ export function HeroSection() {
 
           {/* Hero Image/Dashboard */}
           <div className="relative mx-auto max-w-7xl">
-            <Fade className="relative rounded-3xl border border-border/20 bg-gradient-to-br from-primary/5 to-secondary/5 p-8 shadow-2xl lg:p-12">
+            <Fade className="relative rounded-3xl border border-border/20 bg-gradient-to-br from-primary/5 to-secondary/5 p-2 shadow-2xl lg:p-12">
               <video
                 className="w-full rounded-2xl border border-border/30 shadow-xl"
-                // alt="Bill Intelligent Flow Technologies - Modern Financial Dashboard"
                 loop
                 autoPlay
                 muted
