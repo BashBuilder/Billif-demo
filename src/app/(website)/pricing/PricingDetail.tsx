@@ -7,9 +7,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import CalendlyWidget from "@/components/Widget/calendly";
 import Link from "next/link";
 import { dashboardLink } from "@/data/links";
+import HeaderLayout1 from "@/components/global/header-layout-1";
 
 export default function PricingPage() {
   const pricingTiers = [
@@ -47,30 +47,13 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="bg-gradient-to-br from-primary via-primary to-secondary py-20 text-white lg:py-32">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mx-auto max-w-4xl space-y-8">
-            <h1 className="text-navy-900 text-4xl font-bold lg:text-6xl">
-              Purchase Credits.{" "}
-              <span className="text-teal-600">Unlock Efficiency.</span>
-            </h1>
-
-            <p className="mx-auto max-w-3xl text-slate-300">
-              Choose the perfect credit package for your business needs. More
-              credits mean greater savings per unit.
-            </p>
-            <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Link href="/contact">
-                <Button className="bg-teal-600 px-8 text-white hover:bg-teal-700">
-                  Contact sales
-                </Button>
-              </Link>
-
-              <CalendlyWidget />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeaderLayout1
+        mainTitle="Purchase Credits"
+        subTitle="Unlock Efficiency."
+        description="Choose the perfect credit package for your business needs. More credits mean greater savings per unit."
+        showContactButton={true}
+        showCalendlyButton={true}
+      />
 
       <section className="py-20">
         <div className="container mx-auto px-4">

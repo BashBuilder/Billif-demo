@@ -50,7 +50,7 @@ export function HeroSection() {
               </Fade>
               <Fade
                 duration={2}
-                className="flex flex-col items-center justify-center gap-4 sm:flex-row"
+                className="flex items-center justify-center gap-4 sm:flex-row md:flex-col"
               >
                 <DemoTour />
                 {/* <GetStartedBtn /> */}
@@ -84,12 +84,6 @@ export function HeroSection() {
                   type="video/mp4"
                 />
               </video>
-
-              {/* <img
-                src="/assets/images/Screenshot 2025-08-25 091834.png"
-                alt="Bill Intelligent Flow Technologies - Modern Financial Dashboard"
-                className="w-full rounded-2xl border border-border/30 shadow-xl"
-              /> */}
 
               {/* Floating Elements */}
               <Fade className="absolute -left-4 -top-6 rounded-2xl border border-border/20 bg-white p-4 shadow-lg">
