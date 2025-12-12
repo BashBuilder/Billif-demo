@@ -41,7 +41,7 @@ export default function ServicesPage() {
       </Fade>
 
       {/* Hero Section */}
-      <section className="relative z-10 py-32">
+      <section className="relative z-10 py-20 pt-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <Fade duration={1}>
@@ -88,8 +88,8 @@ export default function ServicesPage() {
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary to-primary/80 py-20 text-primary-foreground">
-        <div className="container mx-auto flex px-4 max-md:flex-col">
-          <div className="mx-auto max-w-4xl text-center">
+        <div className="container mx-auto flex gap-6 px-4 max-md:flex-col">
+          <Fade className="mx-auto max-w-4xl text-center">
             <h1 className="mb-6 text-4xl font-bold md:text-5xl">
               Comprehensive Financial Automation Solutions
             </h1>
@@ -99,12 +99,14 @@ export default function ServicesPage() {
               management, we deliver fast, accurate, and effortless solutions.
             </p>
             <GetStartedBtn />
-          </div>
-          <img
-            src="/assets/images/Screenshot 2025-09-02 124718.png"
-            alt="Financial automation services overview"
-            className="mx-auto w-full max-w-3xl rounded-lg shadow-2xl"
-          />
+          </Fade>
+          <Fade className="w-full max-w-3xl">
+            <img
+              src="/assets/images/Screenshot 2025-09-02 124718.png"
+              alt="Financial automation services overview"
+              className="mx-auto w-full rounded-lg shadow-2xl"
+            />
+          </Fade>
         </div>
       </section>
 

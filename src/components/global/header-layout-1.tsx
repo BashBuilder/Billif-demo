@@ -32,10 +32,7 @@ const HeaderLayout1 = ({
             <p className="mx-auto max-w-3xl text-slate-300">{description}</p>
           </Fade>
 
-          <Fade
-            duration={1}
-            className="flex justify-center gap-4 sm:flex-row md:flex-col"
-          >
+          <Fade duration={1} className="flex justify-center gap-4">
             {showContactButton && (
               <Link href="/contact">
                 <Button className="bg-teal-600 px-8 text-white hover:bg-teal-700">

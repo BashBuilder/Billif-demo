@@ -14,8 +14,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import ContactUs from "@/components/modules/general/GetStarted";
-import Link from "next/link";
-import CalendlyWidget from "@/components/Widget/calendly";
+import HeaderLayout1 from "@/components/global/header-layout-1";
 
 export default function ResourcesPage() {
   const [blogs, setBlogs] = useState<BlogPost[]>([]);
@@ -44,46 +43,13 @@ export default function ResourcesPage() {
   }
   return (
     <div className="min-h-screen bg-background">
-      <section className="bg-gradient-to-br from-primary via-primary to-secondary py-20 text-white lg:py-32">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mx-auto max-w-4xl space-y-8">
-            <h1 className="text-navy-900 text-4xl font-bold lg:text-6xl">
-              Learn, Grow,
-              <span className="text-teal-600"> and Optimize</span>
-            </h1>
-
-            <p className="mx-auto max-w-3xl text-slate-300">
-              Access our comprehensive library of resources to master financial
-              automation and drive your business forward.
-            </p>
-            <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Link href="/contact">
-                <Button className="bg-teal-600 px-8 text-white hover:bg-teal-700">
-                  Contact sales
-                </Button>
-              </Link>
-
-              <CalendlyWidget />
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Hero Section */}
-      {/* <section className="px-4 py-20 pt-32">
-        <div className="mx-auto max-w-7xl text-center">
-          <Badge variant="secondary" className="mb-6">
-            Resources
-          </Badge>
-          <h1 className="mb-6 text-4xl font-bold text-primary md:text-6xl">
-            Learn, grow, and optimize
-          </h1>
-          <p className="mx-auto mb-8 max-w-3xl text-xl text-muted-foreground">
-            Access our comprehensive library of resources to master financial
-            automation and drive your business forward.
-          </p>
-        </div>
-      </section> */}
-
+      <HeaderLayout1
+        mainTitle="Learn, Grow,"
+        subTitle="and Optimize"
+        description="Access our comprehensive library of resources to master financial automation and drive your business forward."
+        showContactButton={true}
+        showCalendlyButton={true}
+      />
       {loading && (
         <div className="flex w-full items-center justify-center py-20">
           <span className="animate-pulse italic text-muted-foreground">

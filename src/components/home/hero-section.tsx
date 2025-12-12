@@ -19,7 +19,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="flex min-h-screen items-center bg-gradient-to-b from-primary/70 via-white to-white py-20"
+      className="flex min-h-screen items-center bg-gradient-to-b from-primary/50 via-white to-white py-20"
     >
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="space-y-12 text-center">
@@ -50,10 +50,9 @@ export function HeroSection() {
               </Fade>
               <Fade
                 duration={2}
-                className="flex items-center justify-center gap-4 sm:flex-row md:flex-col"
+                className="flex items-center justify-center gap-4"
               >
                 <DemoTour />
-                {/* <GetStartedBtn /> */}
                 <Demo />
               </Fade>
             </div>

@@ -8,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   BarChart3,
@@ -24,72 +23,32 @@ import {
 import Image from "next/image";
 import GetStartedBtn from "@/components/general/get-started-btn";
 import Demo from "@/components/global/demo";
+import HeaderLayout2 from "@/components/global/header-layout-2";
 
 export default function AnalyticsPage() {
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#1B3057] via-[#1B3057] to-secondary text-white">
-        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge
-                  variant="secondary"
-                  className="border-white/20 bg-white/10 text-white"
-                >
-                  Real-time Analytics
-                </Badge>
-                <h1 className="text-balance text-5xl font-bold leading-tight">
-                  Instant answers.
-                  <span className="text-secondary"> Zero blind spots.</span>
-                </h1>
-                <p className="text-pretty text-xl leading-relaxed text-blue-100">
-                  See & control it. Get real-time visibility into every dollar
+      <HeaderLayout2
+        showBadge={true}
+        showTrialButton={true}
+        badgeText="Real-time Analytics"
+        mainTitle=" Instant answers. "
+        subTitle="Zero blind spots. "
+        description=" See & control it. Get real-time visibility into every dollar
                   with no manual work. Advanced insights and analytics are built
-                  around your business flow.
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-4 sm:flex-row">
-                <GetStartedBtn />
-                <Demo />
-              </div>
-
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary">99.9%</div>
-                  <div className="text-sm text-blue-200">Accuracy Rate</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary">24/7</div>
-                  <div className="text-sm text-blue-200">Real-time Updates</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary">85%</div>
-                  <div className="text-sm text-blue-200">Time Saved</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="relative rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-sm">
-                <Image
-                  src="/assets/images/1311213_313.jpg"
-                  alt="Business Analytics Dashboard"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-2xl"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                  around your business flow."
+        showCalendlyButton={true}
+        image="/assets/images/1311213_313.jpg"
+        imageAlt="Business Analytics Dashboard"
+        stat1Label="Accuracy Rate"
+        stat1Value="99.9%"
+        stat2Label="Real-time Updates"
+        stat2Value="24/7"
+        stat3Label="Time Saved"
+        stat3Value="85%"
+      />
 
       {/* Interactive Dashboard Preview */}
       <section className="bg-white py-20">

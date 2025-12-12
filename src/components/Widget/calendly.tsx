@@ -55,7 +55,11 @@ const CalendlyWidget: React.FC = ({
   };
 
   return (
-    <Button variant={variant || "default"} size={size || "default"}>
+    <Button
+      variant={variant || "default"}
+      size={size || "default"}
+      className="w-fit"
+    >
       <Link
         href="https://calendly.com/getnextgen/billif-demo"
         target="_blank"
