@@ -88,7 +88,7 @@ export default function BlogPost() {
         <section className="absolute bottom-0 left-0 mx-auto w-full bg-gradient-to-b from-transparent to-white pt-48">
           <div className="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
             <div>
-              <h1 className="mb-6 text-balance font-serif text-5xl font-bold leading-tight text-foreground">
+              <h1 className="mb-6 text-balance font-serif text-5xl font-bold leading-tight text-foreground max-md:text-3xl">
                 {blog?.title}
               </h1>
             </div>

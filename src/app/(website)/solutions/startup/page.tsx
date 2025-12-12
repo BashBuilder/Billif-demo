@@ -6,87 +6,48 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Zap, Shield, Clock } from "lucide-react";
 import Image from "next/image";
 import CtaAction from "@/components/global/cta-action";
-import CalendlyWidget from "@/components/Widget/calendly";
 import Link from "next/link";
-import { dashboardLink, signupLink } from "@/data/links";
+import { dashboardLink } from "@/data/links";
+import HeaderLayout3 from "@/components/global/header-layout-3";
+import Fade from "@/components/global/fade";
 
 export default function StartupsPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-50 to-white py-20 lg:py-32">
-        <div className="container mx-auto px-4">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge
-                  variant="secondary"
-                  className="border-teal-200 bg-teal-50 text-teal-700"
-                >
-                  Built for Growth
-                </Badge>
-                <h1 className="text-4xl font-bold leading-tight text-primary lg:text-6xl">
-                  Finally, financial automation built for{" "}
-                  <span className="text-teal-600">high-growth startups</span>
-                </h1>
-                <p className="text-xl leading-relaxed text-slate-600">
-                  Scale your financial operations with powerful automation
-                  software—so you can run spend, approvals, and reporting in one
-                  place.
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-4 sm:flex-row">
-                <Link href={signupLink}>
-                  <Button size="lg" variant="outline">
-                    Get started for free
-                  </Button>
-                </Link>
-                <CalendlyWidget />
-              </div>
-
-              {/* Trust Indicators */}
-              <div className="flex items-center gap-6 pt-4">
-                <div className="flex items-center gap-2">
-                  <div className="flex -space-x-2">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <div
-                        key={i}
-                        className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-teal-100"
-                      >
-                        <span className="text-xs font-medium text-teal-700">
-                          ★
-                        </span>
-                      </div>
-                    ))}
+      <HeaderLayout3
+        badgeText="Built for Growth"
+        mainTitle="Finally, financial automation built for"
+        subTitle="high-growth startups"
+        description="Scale your financial operations with powerful automation software—so you can run spend, approvals, and reporting in one place."
+        showGetStartedButton
+        showCalendlyWidget
+        imageSrc="/assets/images/5129994_20063.jpg"
+        imageAlt="Startup Dashboard Interface"
+        additionalDesignElements={
+          <Fade duration={1} className="flex items-center gap-6 pt-4">
+            <div className="flex items-center gap-2">
+              <div className="flex -space-x-2">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <div
+                    key={i}
+                    className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-teal-100"
+                  >
+                    <span className="text-xs font-medium text-teal-700">★</span>
                   </div>
-                  <span className="text-sm text-slate-600">500+ startups</span>
-                </div>
+                ))}
               </div>
+              <span className="text-sm text-slate-600">500+ startups</span>
             </div>
-
-            <div className="relative">
-              <div className="relative rounded-2xl bg-white p-8 shadow-2xl">
-                <Image
-                  src="/assets/images/5129994_20063.jpg"
-                  alt="Startup Dashboard Interface"
-                  width={600}
-                  height={400}
-                  className="h-auto w-full rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </Fade>
+        }
+      />
 
       {/* Value Proposition */}
       <section className="bg-gradient-to-br from-primary via-primary to-secondary py-32 text-white">
-        <div className="container mx-auto px-4 text-center">
+        <Fade className="container mx-auto px-4 text-center">
           <h2 className="mb-6 text-2xl font-bold lg:text-4xl">
             Get startup financial automation that scales with you
           </h2>
@@ -94,14 +55,14 @@ export default function StartupsPage() {
             From day one to your startup, everything you need to manage spend,
             corporate cards, expense tracking, and bill pay—all in one place.
           </p>
-        </div>
+        </Fade>
       </section>
 
       {/* Features Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="mb-20 grid items-center gap-16 lg:grid-cols-2">
-            <div className="space-y-6">
+            <Fade className="space-y-6">
               <h3 className="text-3xl font-bold text-primary">
                 A single platform for your startup
               </h3>
@@ -116,8 +77,8 @@ export default function StartupsPage() {
                   Complete setup →
                 </Button>
               </Link>
-            </div>
-            <div className="relative">
+            </Fade>
+            <Fade className="relative">
               <Image
                 src="/assets/images/13420.jpg"
                 alt="Startup Growth Metrics"
@@ -125,11 +86,11 @@ export default function StartupsPage() {
                 height={350}
                 className="h-auto w-full rounded-lg shadow-lg"
               />
-            </div>
+            </Fade>
           </div>
 
           {/* Feature Cards */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <Fade className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card className="border-slate-200 transition-shadow hover:shadow-lg">
               <CardHeader>
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-teal-100">
@@ -183,14 +144,14 @@ export default function StartupsPage() {
                 </CardDescription>
               </CardContent>
             </Card>
-          </div>
+          </Fade>
         </div>
       </section>
 
       {/* Integration Section */}
       <section className="bg-slate-50 py-20">
         <div className="container mx-auto px-4">
-          <div className="mb-16 text-center">
+          <Fade className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Close your books on time, every time
             </h2>
@@ -199,9 +160,9 @@ export default function StartupsPage() {
               Your startup&apos;s financial data flows directly into your
               accounting software.
             </p>
-          </div>
+          </Fade>
 
-          <div className="grid items-center justify-center gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <Fade className="grid items-center justify-center gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-lg bg-white p-6 text-center shadow-sm">
               <div className="mb-2 text-2xl font-bold text-green-600">
                 QuickBooks
@@ -220,7 +181,7 @@ export default function StartupsPage() {
                 Sage
               </div>
             </div>
-          </div>
+          </Fade>
         </div>
       </section>
 

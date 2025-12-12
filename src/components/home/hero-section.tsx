@@ -4,6 +4,7 @@ import { CheckCircle } from "lucide-react";
 import Demo from "../global/demo";
 import Fade from "../global/fade";
 import DemoTour from "../global/demo-tour";
+import DemoVideo from "../global/demo-video";
 
 const trustedBrands = [
   {
@@ -69,19 +70,7 @@ export function HeroSection() {
           {/* Hero Image/Dashboard */}
           <div className="relative mx-auto max-w-7xl">
             <Fade className="relative rounded-3xl border border-border/20 bg-gradient-to-br from-primary/5 to-secondary/5 p-2 shadow-2xl lg:p-12">
-              <video
-                className="w-full rounded-2xl border border-border/30 shadow-xl"
-                loop
-                autoPlay
-                muted
-                playsInline
-                controls
-              >
-                <source
-                  src="/video/Video_20251205_100646 (1) (1) (1).mp4"
-                  type="video/mp4"
-                />
-              </video>
+              <DemoVideo />
 
               {/* Floating Elements */}
               <Fade className="absolute -left-4 -top-6 rounded-2xl border border-border/20 bg-white p-4 shadow-lg">
